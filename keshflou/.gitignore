@@ -5,3 +5,6 @@
 *.psd
 node_modules/
 Thumb.db
+gitignore/
+fonts/
+style.scss
