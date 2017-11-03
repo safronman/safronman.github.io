@@ -144,7 +144,6 @@ header {
   }
 }
 
-
 .header--title {
   float: left;
   width: 586px;
@@ -208,24 +207,25 @@ header {
     transform: skewY(-30deg);
   }
 
+  .form__order {
+    &--title {
+      margin: 0;
 
-  &--title {
-    margin: 0;
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 30px;
+      color: $pink;
+      text-transform: uppercase;
+    }
+    &--consult {
+      margin: 0;
+      margin-bottom: 36px;
 
-    font-weight: bold;
-    font-size: 23px;
-    line-height: 30px;
-    color: $pink;
-    text-transform: uppercase;
-  }
-  &--consult {
-    margin: 0;
-    margin-bottom: 36px;
-
-    font-size: 16px;
-    line-height: 18px;
-    color: $dark-blue;
-    text-transform: lowercase;
+      font-size: 16px;
+      line-height: 18px;
+      color: $dark-blue;
+      text-transform: lowercase;
+    }
   }
   input {
     box-sizing: border-box;
