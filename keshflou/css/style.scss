@@ -24,6 +24,7 @@ header {
   margin: 0 auto;
 
   background: url("../img/bg-header.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .wrapper {
@@ -33,13 +34,13 @@ header {
 }
 
 
-.header-info {
+.header--info {
   position: relative;
 
   padding-top: 40px;
-  .header-logotype {
+  .header--logotype {
     float: left;
-    .header-logo {
+    &__title {
       position: absolute;
       top: 18px;
       left: 0;
@@ -52,7 +53,7 @@ header {
       text-transform: uppercase;
       text-decoration: none;
     }
-    .header-logo-slogan {
+    &__slogan {
       position: absolute;
       top: 58px;
       left: 0;
@@ -65,7 +66,7 @@ header {
       color: $white;
     }
   }
-  .header-logotype::before {
+  .header--logotype::before {
     content: "";
     position: absolute;
     top: 21px;
@@ -80,11 +81,11 @@ header {
 }
 
 
-.header-contact {
+.header--contact {
   position: relative;
 
   float: right;
-  .phone-link {
+  .phone--link {
     position: absolute;
     top: -15px;
     left: -520px;
@@ -95,10 +96,10 @@ header {
     text-transform: uppercase;
     text-decoration: none;
   }
-  .phone-link:nth-child(2) {
+  .phone--link:nth-child(2) {
     left: -250px;
   }
-  .phone-link:before {
+  .phone--link:before {
     content: "";
 
     display: inline-block;
@@ -108,7 +109,7 @@ header {
 
     background: url(../img/icon-viber.png) no-repeat center;
   }
-  .mail-link {
+  .mail--link {
     position: absolute;
     top: 18px;
     left: -165px;
@@ -118,7 +119,7 @@ header {
 }
 
 
-.header-nav ul {
+.header--nav ul {
   margin: 0;
   margin-top: 34px;
   padding: 0;
@@ -144,7 +145,7 @@ header {
 }
 
 
-.header-title {
+.header--title {
   float: left;
   width: 586px;
   h1 {
@@ -168,7 +169,7 @@ header {
 }
 
 
-.header-order {
+.form {
   position: relative;
 
   float: right;
@@ -180,7 +181,8 @@ header {
 
   background-color: #f8f8f8;
   border-radius: 5px;
-  .rectangle-1 {
+
+  &__rectangle--1 {
     content: "";
     position: absolute;
     top: 118px;
@@ -192,7 +194,8 @@ header {
     background-color: $green;
     transform: skewY(30deg);
   }
-  .rectangle-2 {
+
+  &__rectangle--2 {
     content: "";
     position: absolute;
     top: 30px;
@@ -205,7 +208,8 @@ header {
     transform: skewY(-30deg);
   }
 
-  .header-form__title {
+
+  &--title {
     margin: 0;
 
     font-weight: bold;
@@ -214,7 +218,7 @@ header {
     color: $pink;
     text-transform: uppercase;
   }
-  .header-form__consult {
+  &--consult {
     margin: 0;
     margin-bottom: 36px;
 
@@ -246,7 +250,7 @@ header {
     background: $grey url(../img/icon-mail.png) no-repeat;
     background-position: 10px center;
   }
-  p.form-consent {
+  &--consent {
     margin: 0;
     margin-bottom: 24px;
     padding-left: 40px;
@@ -255,7 +259,7 @@ header {
     line-height: 16px;
     text-align: left;
   }
-  p.form-consent::before {
+  &--consent::before {
     content: "";
     position: absolute;
     top: 318px;
@@ -302,13 +306,85 @@ header {
 }
 
 
-.section-title {
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: uppercase;
+.description--video {
+  position: absolute;
+  top: 812px;
 
-  border-bottom: 2px solid $green;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 300px;
+
+  &__heading {
+    position: relative;
+
+    width: 100%;
+
+    text-align: center;
+    &--title {
+      position: absolute;
+      top: -60px;
+      right: 0;
+      left: 0;
+
+      margin: 0;
+
+      font-weight: 100;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+    }
+    &--line {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      left: 0;
+
+      width: 220px;
+      height: 2px;
+      margin: 0 auto;
+
+      background-color: $green;
+    }
+  }
+  .wrapper {
+    background: #f8f8f9;
+    border-radius: 10px;
+    box-shadow: 0 7px 32px -10px;
+  }
+  &__description {
+    float: left;
+    width: 532px;
+    h3 {
+      margin: 0;
+      margin-top: 27px;
+      margin-bottom: 10px;
+
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 30px;
+      color: $pink;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0;
+      margin-bottom: 20px;
+
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+  &__video {
+    float: right;
+    width: 545px;
+    margin-top: 20px;
+  }
 }
+
+
+
+
 
 
 

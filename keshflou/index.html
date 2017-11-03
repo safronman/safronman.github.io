@@ -15,20 +15,20 @@
   <header>
     <div class="wrapper">
       <div class="clearfix">
-        <div class="header-info">
-          <div class="header-logotype">
-            <a class="header-logo" href="#">Cash flow</a>
-            <p class="header-logo-slogan" >Слоган нашей компании</p>
+        <div class="header--info">
+          <div class="header--logotype">
+            <a class="header--logotype__title" href="#">Cash flow</a>
+            <p class="header--logotype__slogan">Слоган нашей компании</p>
           </div>
-          <div class="header-contact">
-            <a class="phone-link" href="tel:+375290000000">+375 29 000 00 00</a>
-            <a class="phone-link" href="tel:+375290000000">+375 29 000 00 00</a>
-            <span class="mail-link">Cashflow@mail.ru</span>
+          <div class="header--contact">
+            <a class="phone--link" href="tel:+375290000000">+375 29 000 00 00</a>
+            <a class="phone--link" href="tel:+375290000000">+375 29 000 00 00</a>
+            <span class="mail--link">Cashflow@mail.ru</span>
             <a class="btn" href="#">Заказать звонок</a>
           </div>
         </div>
       </div>
-      <nav class="header-nav">
+      <nav class="header--nav">
         <ul>
           <li><a href="#">О игре</a></li>
           <li><a href="#">Почему мы</a></li>
@@ -40,38 +40,52 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <div>
 
-        <div class="clearfix">
-          <div  class="header-title">
-            <h1>Игра "Денежный поток" по книге Кийосаки</h1>
-            <p>Тренажерный зал для ума</p>
-          </div>
-          <div class="header-order">
-            <div class="rectangle-1"></div>
-            <div class="rectangle-2"></div>
-            <form class="header-form" action="#" method="post" >
-              <p class="header-form__title">Получите бесплатно</p>
-              <p class="header-form__consult">Консультацию от нашего менеджера</p>
-                <input type="text" id="form-name" name="name" placeholder="Имя">
-                <label for="form-name"></label>
-                <input type="email" id="form-email" name="email" placeholder="E-mail">
-                <label for="form-email"></label>
-              <p class="form-consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
-              <button class="btn btn-form" type="submit" name="form-button">Оставить заявку</button>
-            </form>
-          </div>
+      <div class="clearfix">
+        <div class="header--title">
+          <h1>Игра "Денежный поток" по книге Кийосаки</h1>
+          <p>Тренажерный зал для ума</p>
         </div>
+        <div class="form">
+          <div class="form__rectangle--1"></div>
+          <div class="form__rectangle--2"></div>
 
+          <form class="form__order" action="#" method="post">
+            <p class="form__order--title">Получите бесплатно</p>
+            <p class="form__order--consult">Консультацию от нашего менеджера</p>
+            <input type="text" id="form-name" name="name" placeholder="Имя">
+            <label for="form-name"></label>
+            <input type="email" id="form-email" name="email" placeholder="E-mail">
+            <label for="form-email"></label>
+            <p class="form__order--consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
+            <button class="btn btn-form" type="submit" name="form-button">Оставить заявку</button>
+          </form>
+        </div>
       </div>
+
     </div>
   </header>
 
   <main>
-    <section class="description-video">
-      <h2 class="section-title">Что такое игра ""денежный поток"" ?</h2>
+    <section class="description--video">
+      <div class="description--video__heading">
+        <h2 class="description--video__heading--title">Что такое игра "денежный поток" ?</h2>
+        <span class="description--video__heading--line"></span>
+      </div>
+      <div class="wrapper  clearfix">
+        <div class="description--video__description">
+          <h3>"Бизнес-тренажер Денежный поток" </h3>
+          <p>- это PRO-версия известных настольных экономических игр Cashflow 101 и Cashflow 202. В отличие от оригинала, "Бизнес-тренажер Денежный поток" объединил 2 версии денежного потока в одной коробке. При сохранении основных принципов, он значительно доработан и улучшен, а также адаптирован для СНГ. В него добавлено много новых возможностей, чтобы сделать игровый процесс динамичнее, интереснее и разнообразнее. Благодаря улучшениям, полезный эффект от игры значительно возрос."Бизнес-тренажер Денежный поток" - это PRO-версия известных настольных экономических игр Cashflow 101 и Cashflow 202. В отличие от оригинала, "Бизнес-тренажер Денежный поток" объединил 2 версии денежного потока в одной коробке. При сохранении основных принципов, он значительно доработан и улучшен, а также адаптирован для СНГ. В него добавлено много новых возможностей, чтобы сделать игровый процесс динамичнее, интереснее и разнообразнее. Благодаря улучшениям, полезный эффект от игры значительно возрос.</p>
+        </div>
+        <div class="description--video__video">
+          <img src="./img/video.jpg" alt="" width="545" height="435">
+        </div>
+      </div>
     </section>
-    <section class="variant-game"></section>
+
+    <section class="variant-game">
+      <div class="wrapper"></div>
+    </section>
     <section class="va"></section>
     <section class="play-gallery"></section>
     <section class="description-form"></section>
