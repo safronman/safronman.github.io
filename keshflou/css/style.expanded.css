@@ -274,4 +274,11 @@ header {
   background-color: transparent;
 }
 
+.section-title {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #46c232;
+}
+
 /* the end */
