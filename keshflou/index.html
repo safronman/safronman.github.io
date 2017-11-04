@@ -6,79 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Игра "Денежный поток" по книге Кийосаки</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.expanded.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
+
   <header>
     <div class="wrapper">
-      <div class="clearfix">
-        <div class="header--info">
-          <div class="header--logotype">
-            <a class="header--logotype__title" href="#">Cash flow</a>
-            <p class="header--logotype__slogan">Слоган нашей компании</p>
+      <div class="header">
+        <div class="header-info clearfix">
+          <div class="header-info__logo">
+            <p class="header-info__name"><a class="header-info__link" href="../index.html">Cash flow</a></p>
+            <p class="header-info__slogan">Слоган нашей компании</p>
           </div>
-          <div class="header--contact">
-            <a class="phone--link" href="tel:+375290000000">+375 29 000 00 00</a>
-            <a class="phone--link" href="tel:+375290000000">+375 29 000 00 00</a>
-            <span class="mail--link">Cashflow@mail.ru</span>
-            <a class="btn" href="#">Заказать звонок</a>
+          <div class="header-info__contacts">
+            <a class="header-info__phone" href="tel:+375290000000">+375 29 000 00 00</a>
+            <a class="header-info__phone" href="tel:+375290000000">+375 29 000 00 00</a>
+            <a class="btn header-info__button" href="#">Заказать звонок</a><br>
+            <a class="header-info__mail" href="mailto:cashflow@mail.ru">Cashflow@mail.ru</a>
           </div>
         </div>
+        <nav class="header-menu">
+          <ul class="header-menu__list">
+            <li class="header-menu__item"><a class="header-menu__link" href="#">О игре</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Почему мы</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Фото</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Отзывы</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Купить</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Доставка</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Оплата</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header--nav">
-        <ul>
-          <li><a href="#">О игре</a></li>
-          <li><a href="#">Почему мы</a></li>
-          <li><a href="#">Фото</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Купить</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Оплата</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <div class="clearfix">
-        <div class="header--title">
-          <h1>Игра "Денежный поток" по книге Кийосаки</h1>
-          <p>Тренажерный зал для ума</p>
-        </div>
-        <div class="form">
-          <div class="form__rectangle--1"></div>
-          <div class="form__rectangle--2"></div>
-
-          <form class="form__order" action="#" method="post">
-            <p class="form__order--title">Получите бесплатно</p>
-            <p class="form__order--consult">Консультацию от нашего менеджера</p>
-            <input type="text" id="form-name" name="name" placeholder="Имя">
-            <label for="form-name"></label>
-            <input type="email" id="form-email" name="email" placeholder="E-mail">
-            <label for="form-email"></label>
-            <p class="form__order--consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
-            <button class="btn btn-form" type="submit" name="form-button">Оставить заявку</button>
-          </form>
-        </div>
+      <div class="header-title">
+        <h1 class="header-title__title">Игра "Денежный поток" по книге Кийосаки</h1>
+        <p class="header-title__desc">Тренажерный зал для ума</p>
       </div>
-
+      <form class="form" action="#" method="post">
+        <div class="form__rectangle-1"></div>
+        <div class="form__rectangle-2"></div>
+        <p class="form__title">Получите бесплатно</p>
+        <p class="form__consult">Консультацию от нашего менеджера</p>
+        <input type="text" id="form-name" name="name" placeholder="Имя">
+        <label for="form-name"></label>
+        <input type="email" id="form-email" name="email" placeholder="E-mail">
+        <label for="form-email"></label>
+        <p class="form__consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
+        <button class="btn form__button" type="submit" name="form-button">Оставить заявку</button>
+      </form>
     </div>
   </header>
 
   <main>
-    <section class="description--video">
-      <div class="description--video__heading">
-        <h2 class="description--video__heading--title">Что такое игра "денежный поток" ?</h2>
-        <span class="description--video__heading--line"></span>
-      </div>
-      <div class="wrapper  clearfix">
-        <div class="description--video__description">
-          <h3>"Бизнес-тренажер Денежный поток" </h3>
-          <p>- это PRO-версия известных настольных экономических игр Cashflow 101 и Cashflow 202. В отличие от оригинала, "Бизнес-тренажер Денежный поток" объединил 2 версии денежного потока в одной коробке. При сохранении основных принципов, он значительно доработан и улучшен, а также адаптирован для СНГ. В него добавлено много новых возможностей, чтобы сделать игровый процесс динамичнее, интереснее и разнообразнее. Благодаря улучшениям, полезный эффект от игры значительно возрос."Бизнес-тренажер Денежный поток" - это PRO-версия известных настольных экономических игр Cashflow 101 и Cashflow 202. В отличие от оригинала, "Бизнес-тренажер Денежный поток" объединил 2 версии денежного потока в одной коробке. При сохранении основных принципов, он значительно доработан и улучшен, а также адаптирован для СНГ. В него добавлено много новых возможностей, чтобы сделать игровый процесс динамичнее, интереснее и разнообразнее. Благодаря улучшениям, полезный эффект от игры значительно возрос.</p>
-        </div>
-        <div class="description--video__video">
-          <img src="./img/video.jpg" alt="" width="545" height="435">
+    <section class="about-game">
+      <div class="wrapper">
+        <h2 class="about-game__title">Что такое игра "денежный поток" ?</h2>
+        <span class="about-game__line"></span>
+        <div class="about-game__wrapper clearfix">
+          <div class="about-game__description">
+            <h3>"Бизнес-тренажер Денежный поток"</h3>
+            <p>- это PRO-версия известных настольных экономических игр Cashflow 101 и Cashflow 202. В отличие от оригинала, "Бизнес-тренажер Денежный поток" объединил 2 версии денежного потока в одной коробке. При сохранении основных принципов, он значительно
+              доработан и улучшен, а также адаптирован для СНГ. В него добавлено много новых возможностей, чтобы сделать игровый процесс динамичнее, интереснее и разнообразнее. Благодаря улучшениям, полезный эффект от игры значительно возрос."Бизнес-тренажер
+              Денежный поток" - это PRO-версия известных настольных экономических игр Cashflow 101 и Cashflow 202. В отличие от оригинала, "Бизнес-тренажер Денежный поток" объединил 2 версии денежного потока в одной коробке. При сохранении основных принципов,
+              он значительно доработан и улучшен, а также адаптирован для СНГ. В него добавлено много новых возможностей, чтобы сделать игровый процесс динамичнее, интереснее и разнообразнее. Благодаря улучшениям, полезный эффект от игры значительно возрос.</p>
+          </div>
+          <div class="about-game__video">
+            <img src="./img/video.jpg" alt="" width="545" height="435">
+          </div>
         </div>
       </div>
     </section>

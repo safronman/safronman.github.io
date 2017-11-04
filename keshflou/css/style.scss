@@ -1,4 +1,6 @@
+@import "normalize.css";
 $green: #46c232;
+$light-green: #00ff3e;
 $black: #000000;
 $white: #ffffff;
 $pink: #ff003b;
@@ -11,7 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/*CLEARFIX ДЛЯ FLOAT*/
+/* Clearfix для float */
 .clearfix::after {
   content: "";
 
@@ -24,8 +26,9 @@ header {
   margin: 0 auto;
 
   background: url("../img/bg-header.jpg") no-repeat center;
-  background-size: cover;
 }
+
+/* Внешняя обертка */
 
 .wrapper {
   width: 1134px;
@@ -33,121 +36,158 @@ header {
   padding: 0 33px;
 }
 
+/* Button */
 
-.header--info {
-  position: relative;
+.btn {
+  padding: 14px 44px;
 
-  padding-top: 40px;
-  .header--logotype {
-    float: left;
-    &__title {
-      position: absolute;
-      top: 18px;
-      left: 0;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
 
-      margin-left: 78px;
-
-      font-size: 36px;
-      line-height: 38px;
-      color: #00ff3e;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-    &__slogan {
-      position: absolute;
-      top: 58px;
-      left: 0;
-
-      margin: 0;
-      margin-left: 80px;
-
-      font-size: 16px;
-      line-height: 18px;
-      color: $white;
-    }
-  }
-  .header--logotype::before {
-    content: "";
-    position: absolute;
-    top: 21px;
-    left: 0;
-
-    display: inline-block;
-    width: 67px;
-    height: 46px;
-
-    background: url(../img/icon-logo.png) no-repeat center;;
+  border: 2px solid $green;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid darken($green, 10%);
   }
 }
 
 
-.header--contact {
-  position: relative;
+/* Header info */
 
-  float: right;
-  .phone--link {
-    position: absolute;
-    top: -15px;
-    left: -520px;
+.header-info {
+  padding-top: 20px;
+
+  &__logo {
+    position: relative;
+
+    float: left;
+    width: 300px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 67px;
+      height: 46px;
+
+      background: url(../img/icon-logo.png) no-repeat center;;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    padding-left: 80px;
+  }
+
+  &__link {
+    font-size: 36px;
+    line-height: 38px;
+    color: $light-green;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__slogan {
+    margin: 0;
+    padding-left: 80px;
+
+    font-size: 16px;
+    line-height: 18px;
+    color: $white;
+  }
+
+  &__contacts {
+    position: relative;
+
+    float: right;
+    width: 740px;
+  }
+
+  &__phone {
+    position: relative;
+
+    margin-right: 30px;
+    margin-left: 70px;
 
     font-size: 22px;
     line-height: 24px;
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-  }
-  .phone--link:nth-child(2) {
-    left: -250px;
-  }
-  .phone--link:before {
-    content: "";
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -30px;
 
-    display: inline-block;
-    width: 18px;
-    height: 19px;
-    margin-right: 10px;
+      width: 18px;
+      height: 19px;
 
-    background: url(../img/icon-viber.png) no-repeat center;
+      background: url(../img/icon-viber.png) no-repeat center;
+    }
+    &:nth-child(2) {
+      margin-right: 0;
+      margin-left: 30px;
+    }
   }
-  .mail--link {
-    position: absolute;
-    top: 18px;
-    left: -165px;
 
+  &__mail {
+    margin-left: 377px;
+
+    font-size: 16px;
+    line-height: 18px;
     color: $white;
+    text-decoration: none;
+  }
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
+/* Header menu */
 
-.header--nav ul {
-  margin: 0;
-  margin-top: 34px;
-  padding: 0;
+.header-menu {
+  &__list {
+    margin: 0;
+    margin-top: 18px;
+    padding: 0;
 
-  list-style: none;
-  li {
+    list-style: none;
+  }
+  &__item {
     display: inline-block;
     margin-right: 89px;
-    a {
-      font-size: 14px;
-      line-height: 16px;
-      color: $white;
-      text-transform: uppercase;
-      text-decoration: none;
+    &:last-child {
+      margin-right: 0;
     }
-    a:hover {
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
       border-bottom: 2px solid $green;
     }
   }
-  li:last-child {
-    margin-right: 0;
-  }
 }
 
-.header--title {
+/* Header title */
+
+.header-title {
   float: left;
   width: 586px;
-  h1 {
+  &__title {
     margin: 0;
     margin-top: 200px;
 
@@ -157,7 +197,7 @@ header {
     color: $white;
     text-transform: uppercase;
   }
-  p {
+  &__desc {
     margin: 0;
     margin-top: 20px;
 
@@ -166,6 +206,7 @@ header {
     color: $white;
   }
 }
+
 
 
 .form {
@@ -181,7 +222,7 @@ header {
   background-color: #f8f8f8;
   border-radius: 5px;
 
-  &__rectangle--1 {
+  &__rectangle-1 {
     content: "";
     position: absolute;
     top: 118px;
@@ -194,7 +235,7 @@ header {
     transform: skewY(30deg);
   }
 
-  &__rectangle--2 {
+  &__rectangle-2 {
     content: "";
     position: absolute;
     top: 30px;
@@ -207,24 +248,44 @@ header {
     transform: skewY(-30deg);
   }
 
-  .form__order {
-    &--title {
+  &__title {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 30px;
+    color: $pink;
+    text-transform: uppercase;
+  }
+  &__consult {
+    margin: 0;
+    margin-bottom: 36px;
+
+    font-size: 16px;
+    line-height: 18px;
+    color: $dark-blue;
+    text-transform: lowercase;
+  }
+  &__consent {
+    margin: 0;
+    margin-bottom: 24px;
+    padding-left: 40px;
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 318px;
+      left: 65px;
+
+      display: inline-block;
+      width: 8px;
+      height: 11px;
       margin: 0;
 
-      font-weight: bold;
-      font-size: 23px;
-      line-height: 30px;
-      color: $pink;
-      text-transform: uppercase;
-    }
-    &--consult {
-      margin: 0;
-      margin-bottom: 36px;
-
-      font-size: 16px;
-      line-height: 18px;
-      color: $dark-blue;
-      text-transform: lowercase;
+      background: url(../img/icon-lock.png) no-repeat center;
     }
   }
   input {
@@ -250,112 +311,56 @@ header {
     background: $grey url(../img/icon-mail.png) no-repeat;
     background-position: 10px center;
   }
-  &--consent {
-    margin: 0;
-    margin-bottom: 24px;
-    padding-left: 40px;
+  &__button {
+    display: block;
+    margin: 0 auto;
 
-    font-size: 14px;
-    line-height: 16px;
-    text-align: left;
-  }
-  &--consent::before {
-    content: "";
-    position: absolute;
-    top: 318px;
-    left: 65px;
+    color: $black;
 
-    display: inline-block;
-    width: 8px;
-    height: 11px;
-    margin: 0;
-
-    background: url(../img/icon-lock.png) no-repeat center;
+    background-color: transparent;
   }
 }
 
 
-/* btn */
-
-.btn {
-  padding: 14px 44px;
-
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: $white;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  border: 2px solid $green;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  border: 2px solid darken($green, 10%);
-}
-
-.btn-form {
-  display: block;
-  margin: 0 auto;
-
-  color: $black;
-
-  background-color: transparent;
-}
 
 
-.description--video {
-  position: absolute;
-  top: 812px;
-
+.about-game {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 300px;
-
-  &__heading {
-    position: relative;
-
-    width: 100%;
-
-    text-align: center;
-    &--title {
-      position: absolute;
-      top: -60px;
-      right: 0;
-      left: 0;
-
-      margin: 0;
-
-      font-weight: 100;
-      font-size: 20px;
-      line-height: 26px;
-      text-align: center;
-      color: $white;
-      text-transform: uppercase;
-    }
-    &--line {
-      position: absolute;
-      top: -30px;
-      right: 0;
-      left: 0;
-
-      width: 220px;
-      height: 2px;
-      margin: 0 auto;
-
-      background-color: $green;
-    }
-  }
-  .wrapper {
+  margin-bottom: 100px;
+  &__wrapper {
     background: #f8f8f9;
     border-radius: 10px;
     box-shadow: 0 7px 32px -10px;
   }
+
+  &__title {
+    margin: 0;
+    margin-top: -100px;
+    margin-bottom: 6px;
+
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+  }
+  &__line {
+    display: block;
+    width: 220px;
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    background-color: $green;
+  }
+
   &__description {
     float: left;
-    width: 532px;
+    width: 526px;
+    padding-right: 10px;
+    padding-left: 25px;
     h3 {
       margin: 0;
       margin-top: 27px;
@@ -375,10 +380,12 @@ header {
       line-height: 23px;
     }
   }
+
   &__video {
     float: right;
     width: 545px;
     margin-top: 20px;
+    padding-right: 25px;
   }
 }
 
