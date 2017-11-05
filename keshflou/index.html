@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Игра "Денежный поток" по книге Кийосаки</title>
-  <link rel="stylesheet" href="css/style.expanded.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -21,10 +21,10 @@
             <p class="header-info__slogan">Слоган нашей компании</p>
           </div>
           <div class="header-info__contacts">
-            <a class="header-info__phone" href="tel:+375290000000">+375 29 000 00 00</a>
-            <a class="header-info__phone" href="tel:+375290000000">+375 29 000 00 00</a>
+            <a class="header-info__phone" href="tel:+375290000000" title="+375 29 000 00 00">+375 29 000 00 00</a>
+            <a class="header-info__phone" href="tel:+375290000000" title="+375 29 000 00 00">+375 29 000 00 00</a>
             <a class="btn header-info__button" href="#">Заказать звонок</a><br>
-            <a class="header-info__mail" href="mailto:cashflow@mail.ru">Cashflow@mail.ru</a>
+            <a class="header-info__mail" href="mailto:cashflow@mail.ru" title="cashflow@mail.ru">Cashflow@mail.ru</a>
           </div>
         </div>
         <nav class="header-menu">
@@ -40,30 +40,32 @@
           </ul>
         </nav>
       </div>
-      <div class="header-title">
-        <h1 class="header-title__title">Игра "Денежный поток" по книге Кийосаки</h1>
-        <p class="header-title__desc">Тренажерный зал для ума</p>
-      </div>
-      <form class="form" action="#" method="post">
-        <div class="form__rectangle-1"></div>
-        <div class="form__rectangle-2"></div>
-        <p class="form__title">Получите бесплатно</p>
-        <p class="form__consult">Консультацию от нашего менеджера</p>
-        <input type="text" id="form-name" name="name" placeholder="Имя">
-        <label for="form-name"></label>
-        <input type="email" id="form-email" name="email" placeholder="E-mail">
-        <label for="form-email"></label>
-        <p class="form__consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
-        <button class="btn form__button" type="submit" name="form-button">Оставить заявку</button>
-      </form>
     </div>
   </header>
 
   <main>
+    <section class="promo clearfix">
+      <div class="wrapper">
+        <div class="promo-heading">
+          <h1 class="promo-heading__title">Игра "Денежный поток" по книге Кийосаки</h1>
+          <p class="promo-heading__desc">Тренажерный зал для ума</p>
+        </div>
+        <form class="form" action="#" method="post">
+          <p class="form__title">Получите бесплатно</p>
+          <p class="form__consult">Консультацию от нашего менеджера</p>
+          <input type="text" id="form-name" name="name" placeholder="Имя">
+          <label for="form-name"></label>
+          <input type="email" id="form-email" name="email" placeholder="E-mail">
+          <label for="form-email"></label>
+          <p class="form__consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
+          <button class="btn form__button" type="submit" name="form-button">Оставить заявку</button>
+        </form>
+      </div>
+    </section>
+
     <section class="about-game">
       <div class="wrapper">
         <h2 class="about-game__title">Что такое игра "денежный поток" ?</h2>
-        <span class="about-game__line"></span>
         <div class="about-game__wrapper clearfix">
           <div class="about-game__description">
             <h3>"Бизнес-тренажер Денежный поток"</h3>
@@ -85,7 +87,7 @@
     <section class="va"></section>
     <section class="play-gallery"></section>
     <section class="description-form"></section>
-    <section class="partner"></section>
+    <section class="partner">    </section>
     <section class="response"></section>
     <section class="map"></section>
     <section class="security"></section>

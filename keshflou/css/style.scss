@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "blocks/promo.scss";
 $green: #46c232;
 $light-green: #00ff3e;
 $black: #000000;
@@ -11,22 +12,29 @@ $dark-blue: #19033c;
 body {
   font-weight: 100;
   font-family: "Open Sans", sans-serif;
+
+  background: url("../img/bg-header.jpg") no-repeat top center;
 }
 
 /* Clearfix для float */
-.clearfix::after {
+
+.clearfix::before,
+.clearfix:after {
   content: "";
 
-  display: block;
+  display: table;
+}
+.clearfix:after {
   clear: both;
 }
 
-header {
-  height: 862px;
-  margin: 0 auto;
 
-  background: url("../img/bg-header.jpg") no-repeat center;
+
+header {
+  margin: 0 auto;
+  margin-bottom: 130px;
 }
+
 
 /* Внешняя обертка */
 
@@ -162,13 +170,16 @@ header {
     padding: 0;
 
     list-style: none;
+    text-align: justify;
+    &::after {
+      content: "";
+
+      display: inline-block;
+      width: 100%;
+    }
   }
   &__item {
     display: inline-block;
-    margin-right: 89px;
-    &:last-child {
-      margin-right: 0;
-    }
   }
   &__link {
     font-size: 14px;
@@ -182,151 +193,12 @@ header {
   }
 }
 
-/* Header title */
-
-.header-title {
-  float: left;
-  width: 586px;
-  &__title {
-    margin: 0;
-    margin-top: 200px;
-
-    font-weight: 100;
-    font-size: 46px;
-    line-height: 55px;
-    color: $white;
-    text-transform: uppercase;
-  }
-  &__desc {
-    margin: 0;
-    margin-top: 20px;
-
-    font-size: 28px;
-    line-height: 34px;
-    color: $white;
-  }
-}
-
-
-
-.form {
-  position: relative;
-
-  float: right;
-  box-sizing: border-box;
-  width: 428px;
-  height: 439px;
-  margin-top: 150px;
-  padding: 48px 48px;
-
-  background-color: #f8f8f8;
-  border-radius: 5px;
-
-  &__rectangle-1 {
-    content: "";
-    position: absolute;
-    top: 118px;
-    left: 0;
-
-    width: 8px;
-    height: 78px;
-
-    background-color: $green;
-    transform: skewY(30deg);
-  }
-
-  &__rectangle-2 {
-    content: "";
-    position: absolute;
-    top: 30px;
-    right: 0;
-
-    width: 56px;
-    height: 70px;
-
-    background-color: $green;
-    transform: skewY(-30deg);
-  }
-
-  &__title {
-    margin: 0;
-
-    font-weight: bold;
-    font-size: 23px;
-    line-height: 30px;
-    color: $pink;
-    text-transform: uppercase;
-  }
-  &__consult {
-    margin: 0;
-    margin-bottom: 36px;
-
-    font-size: 16px;
-    line-height: 18px;
-    color: $dark-blue;
-    text-transform: lowercase;
-  }
-  &__consent {
-    margin: 0;
-    margin-bottom: 24px;
-    padding-left: 40px;
-
-    font-size: 14px;
-    line-height: 16px;
-    text-align: left;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 318px;
-      left: 65px;
-
-      display: inline-block;
-      width: 8px;
-      height: 11px;
-      margin: 0;
-
-      background: url(../img/icon-lock.png) no-repeat center;
-    }
-  }
-  input {
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 20px;
-    padding-left: 38px;
-
-    color: 13px;
-
-    background-color: $grey;
-    border: none;
-    border-radius: 10px;
-  }
-  input[type="text"] {
-    background: $grey url(../img/icon-name.png) no-repeat;
-    background-position: 10px center;
-  }
-  input[type="email"] {
-    margin-bottom: 30px;
-
-    background: $grey url(../img/icon-mail.png) no-repeat;
-    background-position: 10px center;
-  }
-  &__button {
-    display: block;
-    margin: 0 auto;
-
-    color: $black;
-
-    background-color: transparent;
-  }
-}
-
-
-
+/* About game */
 
 .about-game {
   box-sizing: border-box;
   width: 100%;
+  /*margin-top: -100px;*/
   margin-bottom: 100px;
   &__wrapper {
     background: #f8f8f9;
@@ -336,8 +208,7 @@ header {
 
   &__title {
     margin: 0;
-    margin-top: -100px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 
     font-weight: 100;
     font-size: 20px;
@@ -345,15 +216,18 @@ header {
     text-align: center;
     color: $white;
     text-transform: uppercase;
-  }
-  &__line {
-    display: block;
-    width: 220px;
-    height: 2px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    &::after {
+      content: "";
 
-    background-color: $green;
+      display: block;
+      width: 20%;
+      height: 2px;
+      margin: 0 auto;
+      margin-top: 6px;
+      margin-bottom: 20px;
+
+      background-color: $green;
+    }
   }
 
   &__description {
