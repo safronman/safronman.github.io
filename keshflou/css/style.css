@@ -148,28 +148,6 @@ body {
   box-shadow: 0 7px 32px -10px;
 }
 
-.about-game__heading {
-  margin: 0;
-  margin-bottom: 10px;
-  font-weight: 100;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.about-game__heading::after {
-  content: "";
-  display: block;
-  width: 20%;
-  height: 2px;
-  margin: 0 auto;
-  margin-top: 6px;
-  margin-bottom: 20px;
-  background-color: #46c232;
-}
-
 .about-game__content {
   float: left;
   width: 526px;
@@ -200,6 +178,30 @@ body {
   width: 545px;
   margin-top: 20px;
   padding-right: 25px;
+}
+
+.about-game__caption {
+  display: inline-block;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-game__caption::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background-color: #46c232;
 }
 
 .promo {
@@ -236,11 +238,13 @@ body {
   padding: 38px 48px;
   background-color: #f8f8f8;
   border-radius: 5px;
+  box-shadow: 0 0 19px -5px;
 }
 
 .form--right {
   float: right;
   width: 38%;
+  margin-right: 33px;
 }
 
 .form::before {
@@ -274,6 +278,11 @@ body {
   text-transform: uppercase;
 }
 
+.form__title--next-line {
+  display: block;
+  margin-top: 10px;
+}
+
 .form__consult {
   display: block;
   margin: 0;
@@ -283,6 +292,10 @@ body {
   line-height: 18px;
   color: #19033c;
   text-transform: lowercase;
+}
+
+.form__consult--first-letter {
+  text-transform: none;
 }
 
 .form__consent {
@@ -319,13 +332,22 @@ input {
   border-radius: 10px;
 }
 
-input[type="text"] {
+.field__name {
   background: #f2f2f2 url(../img/icon-name.png) no-repeat;
   background-position: 10px center;
 }
 
-input[type="email"] {
-  margin-bottom: 30px;
+.field__city {
+  background: #f2f2f2 url(../img/icon-city.png) no-repeat;
+  background-position: 10px center;
+}
+
+.field__tel {
+  background: #f2f2f2 url(../img/icon-phone.png) no-repeat;
+  background-position: 10px center;
+}
+
+.field__mail {
   background: #f2f2f2 url(../img/icon-mail.png) no-repeat;
   background-position: 10px center;
 }
@@ -358,4 +380,57 @@ input[type="email"] {
   display: block;
   margin: 0 auto;
   color: #000000;
+}
+
+.btn--map {
+  display: inline-block;
+  margin: 0 auto;
+  color: #000000;
+  background-color: #46c232;
+}
+
+.heading-h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.heading-h2::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background-color: #46c232;
+}
+
+.heading-h2--white {
+  color: #ffffff;
+}
+
+.map {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.map__img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.shadow-sections {
+  width: 1134px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 33px 0;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 19px -5px;
 }

@@ -29,4 +29,13 @@
 
     color: $black;
   }
+
+  &--map {
+    display: inline-block;
+    margin: 0 auto;
+
+    color: $black;
+
+    background-color: $green;
+  }
 }

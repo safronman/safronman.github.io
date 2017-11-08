@@ -6,10 +6,12 @@
 
   background-color: #f8f8f8;
   border-radius: 5px;
+  box-shadow: 0 0 19px -5px;
 
   &--right {
     float: right;
     width: 38%;
+    margin-right: 33px;
   }
 
   &::before {
@@ -47,6 +49,11 @@
   line-height: 30px;
   color: $pink;
   text-transform: uppercase;
+
+  &--next-line {
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 .form__consult {
@@ -59,6 +66,10 @@
   line-height: 18px;
   color: $dark-blue;
   text-transform: lowercase;
+
+  &--first-letter {
+    text-transform: none;
+  }
 }
 
 .form__consent {
@@ -100,16 +111,23 @@ input {
   border: none;
   border-radius: 10px;
 }
-input[type="text"] {
+
+.field__name {
   background: $grey url(../img/icon-name.png) no-repeat;
   background-position: 10px center;
 }
-input[type="email"] {
-  margin-bottom: 30px;
 
-  background: $grey url(../img/icon-mail.png) no-repeat;
+.field__city {
+  background: $grey url(../img/icon-city.png) no-repeat;
   background-position: 10px center;
 }
 
+.field__tel {
+  background: $grey url(../img/icon-phone.png) no-repeat;
+  background-position: 10px center;
+}
 
-
+.field__mail {
+  background: $grey url(../img/icon-mail.png) no-repeat;
+  background-position: 10px center;
+}
