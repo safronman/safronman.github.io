@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* sass */
 @import url(normalize.css);
 .clearfix::before,
@@ -17,7 +16,6 @@ body {
   background: url("../img/bg-header.jpg") no-repeat top center;
 }
 
-/* Внешняя обертка */
 .container {
   width: 1134px;
   margin: 0 auto;
