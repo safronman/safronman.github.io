@@ -1,0 +1,19 @@
+.delivery {
+  padding: 0 30px;
+
+  text-align: justify;
+
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.delivery__content {
+  display: inline-block;
+  width: 28%;
+
+  text-align: center;
+}

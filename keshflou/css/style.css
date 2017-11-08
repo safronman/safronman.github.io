@@ -434,3 +434,20 @@ input {
   border-radius: 10px;
   box-shadow: 0 0 19px -5px;
 }
+
+.delivery {
+  padding: 0 30px;
+  text-align: justify;
+}
+
+.delivery::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.delivery__content {
+  display: inline-block;
+  width: 28%;
+  text-align: center;
+}
