@@ -1,142 +1,6 @@
 @charset "UTF-8";
+/* sass */
 @import url(normalize.css);
-/* Promo */
-.promo {
-  margin-bottom: 64px;
-}
-
-.promo-heading {
-  float: left;
-  width: 586px;
-  margin-top: 50px;
-}
-
-.promo-heading__title {
-  margin: 0;
-  font-weight: 100;
-  font-size: 46px;
-  line-height: 55px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.promo-heading__desc {
-  margin: 0;
-  margin-top: 20px;
-  font-size: 28px;
-  line-height: 34px;
-  color: #ffffff;
-}
-
-.form {
-  position: relative;
-  float: right;
-  box-sizing: border-box;
-  width: 428px;
-  padding: 38px 48px;
-  background-color: #f8f8f8;
-  border-radius: 5px;
-}
-
-.form::before {
-  content: "";
-  position: absolute;
-  top: 118px;
-  left: 0;
-  width: 8px;
-  height: 78px;
-  background-color: #46c232;
-  transform: skewY(30deg);
-}
-
-.form::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  right: 0;
-  width: 56px;
-  height: 70px;
-  background-color: #46c232;
-  transform: skewY(-30deg);
-}
-
-.form__title {
-  margin: 0;
-  font-weight: bold;
-  font-size: 23px;
-  line-height: 30px;
-  color: #ff003b;
-  text-transform: uppercase;
-}
-
-.form__consult {
-  margin: 0;
-  margin-bottom: 36px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #19033c;
-  text-transform: lowercase;
-}
-
-.form__consent {
-  position: relative;
-  margin: 0;
-  margin-bottom: 24px;
-  padding-left: 40px;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: left;
-}
-
-.form__consent::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 16px;
-  display: inline-block;
-  width: 8px;
-  height: 11px;
-  margin: 0;
-  background: url(../img/icon-lock.png) no-repeat center;
-}
-
-.form input {
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 20px;
-  padding-left: 38px;
-  color: 13px;
-  background-color: #f2f2f2;
-  border: none;
-  border-radius: 10px;
-}
-
-.form input[type="text"] {
-  background: #f2f2f2 url(../img/icon-name.png) no-repeat;
-  background-position: 10px center;
-}
-
-.form input[type="email"] {
-  margin-bottom: 30px;
-  background: #f2f2f2 url(../img/icon-mail.png) no-repeat;
-  background-position: 10px center;
-}
-
-.form__button {
-  display: block;
-  margin: 0 auto;
-  color: #000000;
-  background-color: transparent;
-}
-
-body {
-  font-weight: 100;
-  font-family: "Open Sans", sans-serif;
-  background: url("../img/bg-header.jpg") no-repeat top center;
-}
-
-/* Clearfix для float */
 .clearfix::before,
 .clearfix:after {
   content: "";
@@ -147,37 +11,24 @@ body {
   clear: both;
 }
 
-header {
-  margin: 0 auto;
-  margin-bottom: 130px;
+body {
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+  background: url("../img/bg-header.jpg") no-repeat top center;
 }
 
 /* Внешняя обертка */
-.wrapper {
+.container {
   width: 1134px;
   margin: 0 auto;
   padding: 0 33px;
 }
 
-/* Button */
-.btn {
-  padding: 14px 44px;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid #46c232;
-  border-radius: 5px;
-  cursor: pointer;
+.promo {
+  margin-top: 130px;
+  margin-bottom: 64px;
 }
 
-.btn:hover {
-  border: 2px solid #379928;
-}
-
-/* Header info */
 .header-info {
   padding-top: 20px;
 }
@@ -259,13 +110,6 @@ header {
   text-decoration: none;
 }
 
-.header-info__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-/* Header menu */
 .header-menu__list {
   margin: 0;
   margin-top: 18px;
@@ -296,21 +140,17 @@ header {
   border-bottom: 2px solid #46c232;
 }
 
-/* About game */
 .about-game {
-  box-sizing: border-box;
-  width: 100%;
-  /*margin-top: -100px;*/
   margin-bottom: 100px;
 }
 
-.about-game__wrapper {
+.about-game__inner {
   background: #f8f8f9;
   border-radius: 10px;
   box-shadow: 0 7px 32px -10px;
 }
 
-.about-game__title {
+.about-game__heading {
   margin: 0;
   margin-bottom: 10px;
   font-weight: 100;
@@ -321,7 +161,7 @@ header {
   text-transform: uppercase;
 }
 
-.about-game__title::after {
+.about-game__heading::after {
   content: "";
   display: block;
   width: 20%;
@@ -332,14 +172,14 @@ header {
   background-color: #46c232;
 }
 
-.about-game__description {
+.about-game__content {
   float: left;
   width: 526px;
   padding-right: 10px;
   padding-left: 25px;
 }
 
-.about-game__description h3 {
+.about-game__title {
   margin: 0;
   margin-top: 27px;
   margin-bottom: 10px;
@@ -350,7 +190,7 @@ header {
   text-transform: uppercase;
 }
 
-.about-game__description p {
+.about-game__description {
   margin: 0;
   margin-bottom: 20px;
   font-size: 16px;
@@ -364,4 +204,160 @@ header {
   padding-right: 25px;
 }
 
-/* the end */
+.promo {
+  margin-top: 130px;
+  margin-bottom: 64px;
+}
+
+.promo-heading {
+  float: left;
+  width: 586px;
+  margin-top: 50px;
+}
+
+.promo-heading__title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 46px;
+  line-height: 55px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo-heading__desc {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 28px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.form {
+  position: relative;
+  box-sizing: border-box;
+  padding: 38px 48px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.form--right {
+  float: right;
+  width: 38%;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 118px;
+  left: 0;
+  width: 8px;
+  height: 78px;
+  background-color: #46c232;
+  transform: skewY(30deg);
+}
+
+.form::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 56px;
+  height: 70px;
+  background-color: #46c232;
+  transform: skewY(-30deg);
+}
+
+.form__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 30px;
+  color: #ff003b;
+  text-transform: uppercase;
+}
+
+.form__consult {
+  display: block;
+  margin: 0;
+  margin-bottom: 36px;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 18px;
+  color: #19033c;
+  text-transform: lowercase;
+}
+
+.form__consent {
+  position: relative;
+  margin: 0;
+  margin-bottom: 24px;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.form__consent::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 16px;
+  display: inline-block;
+  width: 8px;
+  height: 11px;
+  margin: 0;
+  background: url(../img/icon-lock.png) no-repeat center;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px;
+  padding-left: 38px;
+  color: 13px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  background: #f2f2f2 url(../img/icon-name.png) no-repeat;
+  background-position: 10px center;
+}
+
+input[type="email"] {
+  margin-bottom: 30px;
+  background: #f2f2f2 url(../img/icon-mail.png) no-repeat;
+  background-position: 10px center;
+}
+
+.btn {
+  padding: 14px 44px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #46c232;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid #379928;
+}
+
+.btn--header {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn--form {
+  display: block;
+  margin: 0 auto;
+  color: #000000;
+}

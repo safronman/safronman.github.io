@@ -1,0 +1,32 @@
+.btn {
+  padding: 14px 44px;
+
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: 2px solid $green;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid darken($green, 10%);
+  }
+
+  &--header {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--form {
+    display: block;
+    margin: 0 auto;
+
+    color: $black;
+  }
+}

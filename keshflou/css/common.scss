@@ -1,0 +1,25 @@
+.clearfix::before,
+.clearfix:after {
+  content: "";
+
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+body {
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+
+  background: url("../img/bg-header.jpg") no-repeat top center;
+}
+
+
+/* Внешняя обертка */
+.container {
+  width: 1134px;
+  margin: 0 auto;
+  padding: 0 33px;
+}

@@ -1,0 +1,90 @@
+.header-info {
+  padding-top: 20px;
+}
+
+.header-info__logo {
+  position: relative;
+
+  float: left;
+  width: 300px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 67px;
+    height: 46px;
+
+    background: url(../img/icon-logo.png) no-repeat center;;
+  }
+}
+
+.header-info__name {
+  margin: 0;
+  padding-left: 80px;
+}
+
+.header-info__link {
+  font-size: 36px;
+  line-height: 38px;
+  color: $light-green;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-info__slogan {
+  margin: 0;
+  padding-left: 80px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+}
+
+.header-info__contacts {
+  position: relative;
+
+  float: right;
+  width: 740px;
+}
+
+.header-info__phone {
+  position: relative;
+
+  margin-right: 30px;
+  margin-left: 70px;
+
+  font-size: 22px;
+  line-height: 24px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -30px;
+
+    width: 18px;
+    height: 19px;
+
+    background: url(../img/icon-viber.png) no-repeat center;
+  }
+
+  &:nth-child(2) {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+}
+
+.header-info__mail {
+  margin-left: 377px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+  text-decoration: none;
+}

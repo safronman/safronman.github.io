@@ -1,0 +1,32 @@
+.header-menu__list {
+  margin: 0;
+  margin-top: 18px;
+  padding: 0;
+
+  list-style: none;
+  text-align: justify;
+
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.header-menu__item {
+  display: inline-block;
+}
+
+.header-menu__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 2px solid $green;
+  }
+}
+

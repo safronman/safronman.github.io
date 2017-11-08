@@ -1,0 +1,71 @@
+.about-game {
+  margin-bottom: 100px;
+}
+
+.about-game__inner {
+  background: #f8f8f9;
+  border-radius: 10px;
+  box-shadow: 0 7px 32px -10px;
+}
+
+.about-game__heading {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 20%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 6px;
+    margin-bottom: 20px;
+
+    background-color: $green;
+  }
+}
+
+.about-game__content {
+  float: left;
+  width: 526px;
+  padding-right: 10px;
+  padding-left: 25px;
+}
+
+.about-game__title {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.about-game__description {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 23px;
+}
+
+
+
+.about-game__video {
+  float: right;
+  width: 545px;
+  margin-top: 20px;
+  padding-right: 25px;
+}
+
