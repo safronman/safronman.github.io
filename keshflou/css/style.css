@@ -582,7 +582,7 @@ input {
   left: 260px;
   width: 32px;
   height: 32px;
-  background: url(../../img/icon-support.png) no-repeat center;
+  background: url(../img/icon-support.png) no-repeat center;
 }
 
 .section-heading--icon::after {
