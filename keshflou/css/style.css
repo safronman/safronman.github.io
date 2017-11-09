@@ -22,11 +22,6 @@ body {
   padding: 0 33px;
 }
 
-.promo {
-  margin-top: 130px;
-  margin-bottom: 64px;
-}
-
 .header-info {
   padding-top: 20px;
 }
@@ -136,72 +131,6 @@ body {
 
 .header-menu__link:hover {
   border-bottom: 2px solid #46c232;
-}
-
-.about-game {
-  margin-bottom: 100px;
-}
-
-.about-game__inner {
-  background: #f8f8f9;
-  border-radius: 10px;
-  box-shadow: 0 7px 32px -10px;
-}
-
-.about-game__content {
-  float: left;
-  width: 526px;
-  padding-right: 10px;
-  padding-left: 25px;
-}
-
-.about-game__title {
-  margin: 0;
-  margin-top: 27px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 23px;
-  line-height: 30px;
-  color: #ff003b;
-  text-transform: uppercase;
-}
-
-.about-game__description {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 23px;
-}
-
-.about-game__video {
-  float: right;
-  width: 545px;
-  margin-top: 20px;
-  padding-right: 25px;
-}
-
-.about-game__caption {
-  display: inline-block;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: 100;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: left;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.about-game__caption::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin: 0 auto;
-  margin-top: 6px;
-  margin-bottom: 20px;
-  background-color: #46c232;
 }
 
 .promo {
@@ -352,6 +281,215 @@ input {
   background-position: 10px center;
 }
 
+.about-game {
+  margin-bottom: 100px;
+}
+
+.about-game__inner {
+  background: #f8f8f9;
+  border-radius: 10px;
+  box-shadow: 0 7px 32px -10px;
+}
+
+.about-game__content {
+  float: left;
+  width: 526px;
+  padding-right: 10px;
+  padding-left: 25px;
+}
+
+.about-game__title {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 30px;
+  color: #ff003b;
+  text-transform: uppercase;
+}
+
+.about-game__description {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.about-game__video {
+  float: right;
+  width: 545px;
+  margin-top: 20px;
+  padding-right: 25px;
+}
+
+.about-game__caption {
+  display: inline-block;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-game__caption::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background-color: #46c232;
+}
+
+.shadow-sections {
+  width: 1134px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 33px 0;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 19px -5px;
+}
+
+/*.benefits {
+  margin-bottom: 100px;
+
+  text-align: justify;
+
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.benefits__content {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 50px;
+
+  text-align: center;
+
+}*/
+.benefits {
+  margin-bottom: 100px;
+  padding: 0 30px;
+}
+
+.benefits__content {
+  float: left;
+  width: 25%;
+  margin: 0 auto;
+  margin-right: 131px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.benefits__content:nth-child(3n) {
+  margin-right: 0;
+}
+
+.benefits__image {
+  margin-bottom: 24px;
+}
+
+.benefits__title {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.benefits__title::after {
+  content: "";
+  display: block;
+  width: 42%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #46c232;
+}
+
+.map {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.map__img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.delivery {
+  margin-bottom: 38px;
+  padding: 0 30px;
+  text-align: justify;
+}
+
+.delivery::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.delivery__content {
+  display: inline-block;
+  width: 28%;
+  vertical-align: top;
+  text-align: center;
+}
+
+.delivery__city {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.delivery__region {
+  display: block;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.delivery__way {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.payment {
+  margin-bottom: 54px;
+  padding: 0 90px;
+  text-align: justify;
+}
+
+.payment::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.payment__image {
+  display: inline-block;
+  margin-top: 30px;
+  vertical-align: top;
+}
+
+.support__content {
+  margin: 0;
+  padding: 0 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
 .btn {
   padding: 14px 44px;
   font-size: 14px;
@@ -389,7 +527,15 @@ input {
   background-color: #46c232;
 }
 
-.heading-h2 {
+.btn--benefits {
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+  color: #000000;
+  background-color: #46c232;
+}
+
+.section-heading {
   margin: 0;
   margin-bottom: 10px;
   font-weight: 100;
@@ -400,7 +546,7 @@ input {
   text-transform: uppercase;
 }
 
-.heading-h2::after {
+.section-heading::after {
   content: "";
   display: block;
   width: 20%;
@@ -411,43 +557,34 @@ input {
   background-color: #46c232;
 }
 
-.heading-h2--white {
+.section-heading--white {
   color: #ffffff;
 }
 
-.map {
+.section-heading__subtitle {
   margin-bottom: 50px;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 20px;
   text-align: center;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-.map__img {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.section-heading--icon {
+  position: relative;
 }
 
-.shadow-sections {
-  width: 1134px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  padding: 33px 0;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 19px -5px;
-}
-
-.delivery {
-  padding: 0 30px;
-  text-align: justify;
-}
-
-.delivery::after {
+.section-heading--icon::before {
   content: "";
-  display: inline-block;
-  width: 100%;
+  position: absolute;
+  top: -3px;
+  left: 260px;
+  width: 32px;
+  height: 32px;
+  background: url(../../img/icon-support.png) no-repeat center;
 }
 
-.delivery__content {
-  display: inline-block;
-  width: 28%;
-  text-align: center;
+.section-heading--icon::after {
+  width: 47%;
 }

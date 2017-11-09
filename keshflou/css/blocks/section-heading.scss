@@ -1,0 +1,59 @@
+.section-heading {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 20%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 6px;
+    margin-bottom: 20px;
+
+    background-color: $green;
+  }
+
+  &--white {
+    color: $white;
+  }
+}
+
+.section-heading__subtitle {
+  margin-bottom: 50px;
+
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.section-heading--icon {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 260px;
+
+    width: 32px;
+    height: 32px;
+
+    background: url(../../img/icon-support.png) no-repeat center;
+  }
+
+  &::after {
+    width: 47%;
+  }
+}
