@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* Slider */
+.slick-loading .slick-list {
+  background: #ffffff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-weight: normal;
+  font-family: "slick";
+  font-style: normal;
+
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+}
+
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.slick-dots {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+
+  cursor: pointer;
+}
+.slick-dots li button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  content: "•";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  font-size: 6px;
+  line-height: 20px;
+  font-family: "slick";
+  text-align: center;
+  color: black;
+
+  opacity: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  color: red;
+}
