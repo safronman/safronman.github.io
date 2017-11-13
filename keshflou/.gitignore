@@ -6,3 +6,6 @@
 node_modules/
 Thumb.db
 gitignore/
+fonts/Circe
+fonts/HelveticaNeueCyr
+fonts/SegoeUI

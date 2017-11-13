@@ -590,10 +590,62 @@ input {
   width: 47%;
 }
 
-.slider {
+.partner__slider {
   padding: 0 30px;
 }
 
-.slider__item {
+.partner__item {
   padding: 0 15px;
+}
+
+.review {
+  margin-bottom: 100px;
+  padding: 0 30px;
+  border: 1px solid black;
+}
+
+.review__item {
+  width: 264px;
+  background-color: rgba(244, 254, 115, 0.2);
+}
+
+.review__number {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 40px;
+  color: #dddddd;
+}
+
+.review__description {
+  font-size: 14px;
+  line-height: 25px;
+  color: #111111;
+}
+
+.review__author {
+  position: relative;
+}
+
+.review__name {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  color: #19033c;
+}
+
+.review__social {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  color: #19033c;
+}
+
+.review__link {
+  font-size: 0;
+}
+
+.review__icon {
+  position: absolute;
+  top: -3px;
+  left: 125px;
 }

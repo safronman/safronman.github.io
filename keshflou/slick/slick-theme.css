@@ -1,19 +1,4 @@
 @charset "UTF-8";
-/* Slider */
-.slick-loading .slick-list {
-  background: #ffffff url("./ajax-loader.gif") center center no-repeat;
-}
-
-/* Icons */
-@font-face {
-  font-weight: normal;
-  font-family: "slick";
-  font-style: normal;
-
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
-}
-
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -25,7 +10,7 @@
   display: block;
   width: 100%;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 24px;
   padding: 0;
 
   list-style: none;
@@ -66,25 +51,18 @@
   opacity: 1;
 }
 .slick-dots li button:before {
-  content: "•";
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
 
-  width: 20px;
-  height: 20px;
+  width: 8px;
+  height: 8px;
 
-  font-size: 6px;
-  line-height: 20px;
-  font-family: "slick";
-  text-align: center;
-  color: black;
-
+  background-color: black;
+  border-radius: 50%;
   opacity: 1;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  color: red;
+  background-color: red;
 }

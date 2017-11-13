@@ -158,29 +158,50 @@
 
       <h2 class="section-heading">Нашу игру используют в таких компаниях</h2>
 
-      <div class="slider">
-        <div class="slider__item">
-          <img class="slider__img" src="img/logo-1.png" alt="Грузовая компания"> <!-- width="117" height="64" -->
+      <div class="partner__slider">
+        <div class="partner__item">
+          <img class="partner__img" src="img/logo-1.png" alt="Грузовая компания"> <!-- width="117" height="64" -->
         </div>
-        <div class="slider__item">
-          <img class="slider__img" src="img/logo-2.png" alt="Alberta"> <!-- width="85" height="78" -->
+        <div class="partner__item">
+          <img class="partner__img" src="img/logo-2.png" alt="Alberta"> <!-- width="85" height="78" -->
         </div>
-        <div class="slider__item">
-          <img class="slider__img" src="img/logo-3.png" alt="Danket"> <!--  width="175" height="54" -->
+        <div class="partner__item">
+          <img class="partner__img" src="img/logo-3.png" alt="Danket"> <!--  width="175" height="54" -->
         </div>
-        <div class="slider__item">
+        <div class="partner__item">
           <img class="slider__img" src="img/logo-4.png" alt="Сабидом"> <!--  width="228" height="61" -->
         </div>
-        <div class="slider__item">
+        <div class="partner__item">
           <img class="slider__img" src="img/logo-5.png" alt="Радио сеть"> <!-- width="95" height="62" -->
         </div>
-        <div class="slider__item">
-          <img class="slider__img" src="img/logo-6.png" alt="Московская пивоваренная компания"> <!--  width="217" height="51" -->
+        <div class="partner__item">
+          <img class="partner__img" src="img/logo-6.png" alt="Московская пивоваренная компания"> <!--  width="217" height="51" -->
         </div>
       </div>
 
     </section>
-    <!-- <section class="review"></section> -->
+    <section class="review">
+      <h2 class="section-heading">Более 100 отзывов</h2>
+
+      <div class="review__slider">
+
+        <div class="review__item">
+          <div class="review__number">01</div>
+          <p class="review__description">В отличие от оригинала,<br> "Бизнес-тренажер Денежный поток" объединил 2 версии денежного потока в одной коробке. При сохранении основных принципов, он значительно доработан и улучшен, а также адаптирован для СНГ.</p>
+          <div class="review__author">
+            <img class="review__img" src="img/vk-man.jpg" alt="Аватар Вконтакте">
+            <div class="review__name">Иванов Иван</div>
+              <div class="review__social">
+                <div class="review__title">Я в соц. сети</div>
+                <a class="review__link" href="#"><img class="review__icon" src="./img/icon-vk.png" alt="">Вконтакте</a>
+              </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
 
     <section class="map">
       <h2 class="section-heading">В нашу игру играют по всему миру</h2>
@@ -246,7 +267,7 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-    $('.slider').slick({
+    $('.partner__slider').slick({
       slidesToShow: 5,
       variableWidth: true,
       arrows: false,
