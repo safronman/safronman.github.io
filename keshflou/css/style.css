@@ -704,7 +704,7 @@ input {
 }
 
 .photo__slide {
-  background: #46c232 url(../../img/icon-zoom.png) no-repeat center;
+  background: #46c232 url(../img/icon-zoom.png) no-repeat center;
 }
 
 .photo__image {
@@ -727,6 +727,6 @@ input {
   width: 100%;
   height: 757px;
   margin-bottom: 100px;
-  background: url(../../img/bg-order.jpg) no-repeat center;
+  background: url(../img/bg-order.jpg) no-repeat center;
   background-size: cover;
 }
