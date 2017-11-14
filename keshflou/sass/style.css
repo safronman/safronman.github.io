@@ -1,6 +1,6 @@
 /* sass */
-@import url(../../javascript/vendor/slick/slick-theme.css);
-@import url(../../javascript/vendor/slick/slick.css);
+@import url(../javascript/vendor/slick/slick-theme.css);
+@import url(../javascript/vendor/slick/slick.css);
 @import url(vendor/normalize/normalize.css);
 .clearfix::before,
 .clearfix:after {
