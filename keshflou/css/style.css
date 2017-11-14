@@ -14,13 +14,12 @@ body {
   font-weight: 100;
   font-family: "Open Sans", sans-serif;
   background: url("../img/bg-header.jpg") no-repeat top center;
-  background-color: #545454;
 }
 
 .container {
-  width: 1134px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 33px;
+  padding: 0 30px;
 }
 
 .header-info {
@@ -349,10 +348,11 @@ input {
 }
 
 .shadow-sections {
-  width: 1134px;
+  box-sizing: border-box;
+  width: 1200px;
   margin: 0 auto;
   margin-bottom: 100px;
-  padding: 33px 0;
+  padding: 33px 30px;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 19px -5px;
@@ -590,33 +590,35 @@ input {
   width: 47%;
 }
 
-.partner__slider {
-  padding: 0 30px;
-}
-
 .partner__item {
-  padding: 0 15px;
-}
-
-.review {
-  margin-bottom: 100px;
-  padding: 0 30px;
-  border: 1px solid black;
+  padding: 0 19px;
 }
 
 .review__item {
-  width: 264px;
-  background-color: rgba(244, 254, 115, 0.2);
+  margin: 0 12px;
 }
 
 .review__number {
+  position: relative;
+  margin-left: 30px;
   font-weight: bold;
   font-size: 35px;
   line-height: 40px;
   color: #dddddd;
 }
 
+.review__number::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  width: 22px;
+  height: 32px;
+  background-color: #46c232;
+}
+
 .review__description {
+  margin: 20px 0 50px 0;
   font-size: 14px;
   line-height: 25px;
   color: #111111;
@@ -624,20 +626,32 @@ input {
 
 .review__author {
   position: relative;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+}
+
+.review__author::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  height: 5px;
+  background-color: #46c232;
 }
 
 .review__name {
   position: absolute;
   top: 0;
-  left: 80px;
-  color: #19033c;
+  left: 84px;
+  color: #111111;
 }
 
 .review__social {
   position: absolute;
-  top: 30px;
-  left: 80px;
-  color: #19033c;
+  top: 44px;
+  left: 84px;
 }
 
 .review__link {
@@ -646,6 +660,6 @@ input {
 
 .review__icon {
   position: absolute;
-  top: -3px;
-  left: 125px;
+  top: -4px;
+  left: 116px;
 }
