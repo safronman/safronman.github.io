@@ -1,0 +1,16 @@
+.order {
+  position: relative;
+}
+
+.order__inner {
+  position: absolute;
+  top: -55px;
+  z-index: -1;
+
+  width: 100%;
+  height: 757px;
+  margin-bottom: 100px;
+
+  background: url(../../img/bg-order.jpg) no-repeat center;
+  background-size: cover;
+}

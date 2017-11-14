@@ -13,7 +13,8 @@
 body {
   font-weight: 100;
   font-family: "Open Sans", sans-serif;
-  background: url("../img/bg-header.jpg") no-repeat top center;
+  background: url(../img/bg-header.jpg) no-repeat top center;
+  background-size: auto;
 }
 
 .container {
@@ -351,8 +352,7 @@ input {
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 100px;
-  padding: 33px 30px;
+  padding: 33px 0;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 19px -5px;
@@ -419,7 +419,11 @@ input {
 }
 
 .map {
-  margin-bottom: 50px;
+  margin: 0 30px;
+  margin-bottom: 90px;
+}
+
+.map__inner {
   text-align: center;
 }
 
@@ -590,8 +594,43 @@ input {
   width: 47%;
 }
 
+.section-heading--order {
+  margin-top: 140px;
+  color: #ffffff;
+}
+
+.section-heading--order::after {
+  width: 8%;
+}
+
+.section-heading--review::after,
+.section-heading--payment::after {
+  width: 15%;
+}
+
+.section-heading--benefits::after,
+.section-heading--map::after {
+  width: 28%;
+}
+
+.section-heading--partner::after {
+  width: 36%;
+}
+
+.section-heading--photo::after {
+  width: 52%;
+}
+
+.partner {
+  margin: 0 30px;
+}
+
 .partner__item {
   padding: 0 19px;
+}
+
+.review {
+  margin: 0 30px;
 }
 
 .review__item {
@@ -662,4 +701,32 @@ input {
   position: absolute;
   top: -4px;
   left: 116px;
+}
+
+.photo__slide {
+  background: #46c232 url(../../img/icon-zoom.png) no-repeat center;
+}
+
+.photo__image {
+  opacity: 1;
+}
+
+.photo__image:hover {
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.order {
+  position: relative;
+}
+
+.order__inner {
+  position: absolute;
+  top: -55px;
+  z-index: -1;
+  width: 100%;
+  height: 757px;
+  margin-bottom: 100px;
+  background: url(../../img/bg-order.jpg) no-repeat center;
+  background-size: cover;
 }

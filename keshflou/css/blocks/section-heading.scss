@@ -57,3 +57,40 @@
     width: 47%;
   }
 }
+
+.section-heading--order {
+  margin-top: 140px;
+
+  color: $white;
+
+  &::after {
+    width: 8%;
+  }
+}
+
+.section-heading--review,
+.section-heading--payment {
+  &::after {
+    width: 15%;
+  }
+}
+
+
+.section-heading--benefits,
+.section-heading--map {
+  &::after {
+    width: 28%;
+  }
+}
+
+.section-heading--partner {
+  &::after {
+    width: 36%;
+  }
+}
+
+.section-heading--photo {
+  &::after {
+    width: 52%;
+  }
+}
