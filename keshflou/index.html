@@ -6,12 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Игра "Денежный поток" по книге Кийосаки</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="sass/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-
-  <!-- slick slider-->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -54,9 +50,9 @@
       </div>
       <form class="form form--right" action="#" method="post">
         <div class="form__title">Получите бесплатно<span class="form__consult">Консультацию от нашего менеджера</span></div>
-        <input  class="field__name" type="text" id="form-name" name="name" placeholder="Имя">
+        <input  class="form__input form__input--name" type="text" id="form-name" name="name" placeholder="Имя">
         <label for="form-name"></label>
-        <input class="field__mail" type="email" id="form-email" name="email" placeholder="E-mail">
+        <input class="form__input form__input--mail" type="email" id="form-email" name="email" placeholder="E-mail">
         <label for="form-email"></label>
         <p class="form__consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
         <button class="btn btn--form" type="submit" name="form-button">Оставить заявку</button>
@@ -156,11 +152,11 @@
         <div class="form__consult form__consult--first-letter">Хочешь получать самую свежую информацию о датах проведения игр в твоём городе?
           <span class="form__title form__title--next-line">Запишись на игру</span>
         </div>
-        <input class="field__name" type="text" id="form-name" name="name" placeholder="Имя">
+        <input class="form__input form__input--name" type="text" id="form-name" name="name" placeholder="Имя">
         <label for="form-name"></label>
-        <input class="field__tel" type="tel" id="form-tel" name="tel" placeholder="Телефон">
+        <input class="form__input form__input--tel" type="tel" id="form-tel" name="tel" placeholder="Телефон">
         <label for="form-tel"></label>
-        <input class="field__city" type="text" id="form-city" name="city" placeholder="Город">
+        <input class="form__input form__input--city" type="text" id="form-city" name="city" placeholder="Город">
         <label for="form-city"></label>
         <p class="form__consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
         <button class="btn btn--form" type="submit" name="form-button">Оставить заявку</button>
@@ -361,19 +357,13 @@
     <section class="contacts-form"></section> -->
   </main>
 
-  <footer>
-
-  </footer>
+  <footer></footer>
 
   <!-- slick slider-->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="js/slider.js"></script>
-
-
-
-
+  <script type="text/javascript" src="javascript/vendor/slick/slick.min.js"></script>
+  <script type="text/javascript" src="javascript/script.js"></script>
 
 </body>
 

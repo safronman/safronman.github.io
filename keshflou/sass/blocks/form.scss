@@ -98,36 +98,33 @@
   }
 }
 
-input {
+.form__input {
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 30px;
   padding: 20px;
   padding-left: 38px;
 
-  color: 13px;
-
-  background-color: $grey;
   border: none;
   border-radius: 10px;
-}
 
-.field__name {
-  background: $grey url(../img/icon-name.png) no-repeat;
-  background-position: 10px center;
-}
+  &--name {
+    background: $grey url(../img/icon-name.png) no-repeat;
+    background-position: 10px center;
+  }
 
-.field__city {
-  background: $grey url(../img/icon-city.png) no-repeat;
-  background-position: 10px center;
-}
+  &--mail {
+    background: $grey url(../img/icon-mail.png) no-repeat;
+    background-position: 10px center;
+  }
 
-.field__tel {
-  background: $grey url(../img/icon-phone.png) no-repeat;
-  background-position: 10px center;
-}
+  &--city {
+    background: $grey url(../img/icon-city.png) no-repeat;
+    background-position: 10px center;
+  }
 
-.field__mail {
-  background: $grey url(../img/icon-mail.png) no-repeat;
-  background-position: 10px center;
+  &--tel {
+    background: $grey url(../img/icon-phone.png) no-repeat;
+    background-position: 10px center;
+  }
 }
