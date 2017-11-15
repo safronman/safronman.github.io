@@ -8,12 +8,6 @@
   border-radius: 5px;
   box-shadow: 0 0 19px -5px;
 
-  &--right {
-    float: right;
-    width: 38%;
-    margin-right: 33px;
-  }
-
   &::before {
     content: "";
     position: absolute;

@@ -3,3 +3,33 @@
   margin-bottom: 64px;
 }
 
+.promo__form {
+  float: right;
+  width: 38%;
+  margin-right: 33px;
+}
+
+.promo__heading {
+  float: left;
+  width: 586px;
+  margin-top: 50px;
+}
+
+.promo__title {
+  margin: 0;
+
+  font-weight: 100;
+  font-size: 46px;
+  line-height: 55px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  margin: 0;
+  margin-top: 20px;
+
+  font-size: 28px;
+  line-height: 34px;
+  color: $white;
+}

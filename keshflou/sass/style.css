@@ -115,12 +115,6 @@ body {
   box-shadow: 0 0 19px -5px;
 }
 
-.form--right {
-  float: right;
-  width: 38%;
-  margin-right: 33px;
-}
-
 .form::before {
   content: "";
   position: absolute;
@@ -269,72 +263,6 @@ body {
   background-color: #46c232;
 }
 
-.about-game {
-  margin-bottom: 100px;
-}
-
-.about-game__inner {
-  background: #f8f8f9;
-  border-radius: 10px;
-  box-shadow: 0 7px 32px -10px;
-}
-
-.about-game__content {
-  float: left;
-  width: 526px;
-  padding-right: 10px;
-  padding-left: 25px;
-}
-
-.about-game__title {
-  margin: 0;
-  margin-top: 27px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 23px;
-  line-height: 30px;
-  color: #ff003b;
-  text-transform: uppercase;
-}
-
-.about-game__description {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 23px;
-}
-
-.about-game__video {
-  float: right;
-  width: 545px;
-  margin-top: 20px;
-  padding-right: 25px;
-}
-
-.about-game__caption {
-  display: inline-block;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: 100;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: left;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.about-game__caption::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin: 0 auto;
-  margin-top: 6px;
-  margin-bottom: 20px;
-  background-color: #46c232;
-}
-
 .header-info {
   padding-top: 20px;
 }
@@ -451,13 +379,19 @@ body {
   margin-bottom: 64px;
 }
 
-.promo-heading {
+.promo__form {
+  float: right;
+  width: 38%;
+  margin-right: 33px;
+}
+
+.promo__heading {
   float: left;
   width: 586px;
   margin-top: 50px;
 }
 
-.promo-heading__title {
+.promo__title {
   margin: 0;
   font-weight: 100;
   font-size: 46px;
@@ -466,12 +400,81 @@ body {
   text-transform: uppercase;
 }
 
-.promo-heading__desc {
+.promo__description {
   margin: 0;
   margin-top: 20px;
   font-size: 28px;
   line-height: 34px;
   color: #ffffff;
+}
+
+.about-game {
+  margin-bottom: 100px;
+}
+
+.about-game__inner {
+  background: #f8f8f9;
+  border-radius: 10px;
+  box-shadow: 0 7px 32px -10px;
+}
+
+.about-game__content {
+  float: left;
+  width: 526px;
+  padding-right: 10px;
+  padding-left: 25px;
+}
+
+.about-game__title {
+  margin: 27px 0 10px 0;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 30px;
+  color: #ff003b;
+  text-transform: uppercase;
+}
+
+.about-game__description {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.about-game__video {
+  float: right;
+  width: 545px;
+  margin-top: 20px;
+  padding-right: 25px;
+}
+
+.about-game__caption {
+  display: inline-block;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-game__caption::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background-color: #46c232;
+}
+
+.about-game__form {
+  float: right;
+  width: 38%;
+  margin-right: 33px;
 }
 
 .shadow-sections {
