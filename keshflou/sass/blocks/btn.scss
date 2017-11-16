@@ -4,7 +4,7 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: $white;
+  color: $black;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -18,23 +18,20 @@
   }
 
   &--header {
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: inline-block;
+    margin-left: 20px;
+
+    color: $white;
   }
 
   &--form {
     display: block;
     margin: 0 auto;
-
-    color: $black;
   }
 
   &--map {
     display: inline-block;
     margin: 0 auto;
-
-    color: $black;
 
     background-color: $green;
   }
@@ -44,8 +41,26 @@
     width: 10%;
     margin: 0 auto;
 
-    color: $black;
-
     background-color: $green;
+  }
+
+  &--order {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  &--white-order {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+
+    background-color: $white;
+  }
+
+  &--blue-form {
+    padding: 20px 44px;
+
+    color: $white;
   }
 }

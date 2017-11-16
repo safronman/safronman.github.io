@@ -1,7 +1,7 @@
 /* sass */
-@import url(../javascript/vendor/slick/slick-theme.css);
-@import url(../javascript/vendor/slick/slick.css);
-@import url(vendor/normalize/normalize.css);
+@import url(../css/vendor/slick/slick-theme.css);
+@import url(../css/vendor/slick/slick.css);
+@import url(../css/vendor/normalize/normalize.css);
 .clearfix::before,
 .clearfix:after {
   content: "";
@@ -137,6 +137,46 @@ body {
   transform: skewY(-30deg);
 }
 
+.form--blue {
+  padding: 20px;
+  background: url(../img/bg-order.jpg) no-repeat top;
+}
+
+.form--blue::before, .form--blue::after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+.form__transparent-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 1200px;
+  height: 220px;
+  background-color: #171d29;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+
+.form__transparent-view {
+  position: relative;
+  z-index: 2;
+}
+
+.form__promo-text {
+  margin-bottom: 14px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #46c232;
+}
+
+.form__promo-text--white {
+  color: #ffffff;
+}
+
 .form__title {
   margin: 0;
   font-weight: bold;
@@ -188,6 +228,15 @@ body {
   background: url(../img/icon-lock.png) no-repeat center;
 }
 
+.form__consent--white {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.form__consent--white::before {
+  top: 2px;
+}
+
 .form__input {
   box-sizing: border-box;
   width: 100%;
@@ -196,6 +245,11 @@ body {
   padding-left: 38px;
   border: none;
   border-radius: 10px;
+}
+
+.form__input--blue-form {
+  width: 295px;
+  margin-right: 12px;
 }
 
 .form__input--name {
@@ -223,7 +277,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   background-color: transparent;
@@ -237,21 +291,19 @@ body {
 }
 
 .btn--header {
-  position: absolute;
-  top: 0;
-  right: 0;
+  display: inline-block;
+  margin-left: 20px;
+  color: #ffffff;
 }
 
 .btn--form {
   display: block;
   margin: 0 auto;
-  color: #000000;
 }
 
 .btn--map {
   display: inline-block;
   margin: 0 auto;
-  color: #000000;
   background-color: #46c232;
 }
 
@@ -259,8 +311,25 @@ body {
   display: block;
   width: 10%;
   margin: 0 auto;
-  color: #000000;
   background-color: #46c232;
+}
+
+.btn--order {
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.btn--white-order {
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.btn--blue-form {
+  padding: 20px 44px;
+  color: #ffffff;
 }
 
 .header-info {
@@ -305,15 +374,20 @@ body {
 }
 
 .header-info__contacts {
-  position: relative;
   float: right;
-  width: 740px;
+}
+
+.header-info__inner {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-info__inner--left60 {
+  margin-left: 60px;
 }
 
 .header-info__phone {
   position: relative;
-  margin-right: 30px;
-  margin-left: 70px;
   font-size: 22px;
   line-height: 24px;
   color: #ffffff;
@@ -331,13 +405,10 @@ body {
   background: url(../img/icon-viber.png) no-repeat center;
 }
 
-.header-info__phone:nth-child(2) {
-  margin-right: 0;
-  margin-left: 30px;
-}
-
 .header-info__mail {
-  margin-left: 377px;
+  display: block;
+  padding-top: 6px;
+  padding-left: 56px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -413,7 +484,7 @@ body {
 }
 
 .about-game__inner {
-  background: #f8f8f9;
+  background: #f8f8f8;
   border-radius: 10px;
   box-shadow: 0 7px 32px -10px;
 }
@@ -487,27 +558,6 @@ body {
   box-shadow: 0 0 19px -5px;
 }
 
-/*.benefits {
-  margin-bottom: 100px;
-
-  text-align: justify;
-
-  &::after {
-    content: "";
-
-    display: inline-block;
-    width: 100%;
-  }
-}
-
-.benefits__content {
-  display: inline-block;
-  width: 25%;
-  margin-bottom: 50px;
-
-  text-align: center;
-
-}*/
 .benefits {
   margin-bottom: 100px;
   padding: 0 30px;
@@ -599,7 +649,6 @@ body {
   margin: 20px 0 50px 0;
   font-size: 14px;
   line-height: 25px;
-  color: #111111;
 }
 
 .review__author {
@@ -607,7 +656,6 @@ body {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
-  color: #111111;
 }
 
 .review__author::after {
@@ -623,7 +671,6 @@ body {
   position: absolute;
   top: 0;
   left: 84px;
-  color: #111111;
 }
 
 .review__social {
@@ -729,7 +776,122 @@ body {
   z-index: -1;
   width: 100%;
   height: 757px;
-  margin-bottom: 100px;
   background: url(../img/bg-order.jpg) no-repeat center;
   background-size: cover;
+}
+
+.order__list {
+  margin-top: 92px;
+  margin-bottom: 80px;
+}
+
+.order__variant {
+  position: relative;
+  display: inline-block;
+  width: 365px;
+  padding-bottom: 26px;
+  vertical-align: top;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.order__variant::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 14px;
+  height: 48px;
+  background-color: #46c232;
+}
+
+.order__variant::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 56px;
+  height: 70px;
+  background-color: #46c232;
+  transform: skewY(-30deg);
+}
+
+.order__variant--green {
+  margin: 0 48px;
+  margin-top: -23px;
+  padding-bottom: 48px;
+  color: #ffffff;
+  background-color: #46c232;
+}
+
+.order__variant--green::before {
+  top: 41px;
+  background-color: #ffffff;
+}
+
+.order__variant--green::after {
+  top: 53px;
+  background-color: #ffffff;
+}
+
+.order__title {
+  padding-top: 30px;
+  padding-bottom: 51px;
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.order__title--min {
+  padding-top: 16px;
+  padding-bottom: 18px;
+}
+
+.order__price {
+  padding-bottom: 30px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.order__value {
+  font-weight: bold;
+  font-size: 26px;
+  color: #ff003b;
+}
+
+.order__value--lowercase {
+  padding-left: 5px;
+  text-transform: lowercase;
+}
+
+.order__value--white {
+  color: #ffffff;
+}
+
+.order__link {
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: none;
+}
+
+.order__form {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.order__form::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  width: 100%;
+  height: 3px;
+  background-color: #46c232;
 }

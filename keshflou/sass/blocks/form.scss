@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 38px 48px;
 
-  background-color: #f8f8f8;
+  background-color: $gray-lightest;
   border-radius: 5px;
   box-shadow: 0 0 19px -5px;
 
@@ -33,6 +33,52 @@
     background-color: $green;
     transform: skewY(-30deg);
   }
+
+  &--blue {
+    padding: 20px;
+
+    background: url(../img/bg-order.jpg) no-repeat top;
+
+    &::before,
+    &::after {
+      content: "";
+
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+.form__transparent-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 1200px;
+  height: 220px;
+
+  background-color: $blue-darken;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+
+.form__transparent-view {
+  position: relative;
+  z-index: 2;
+}
+
+.form__promo-text {
+  margin-bottom: 14px;
+
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: $green;
+
+  &--white {
+    color: $white;
+  }
 }
 
 .form__title {
@@ -58,7 +104,7 @@
   font-weight: 100;
   font-size: 16px;
   line-height: 18px;
-  color: $dark-blue;
+  color: $blue-dark;
   text-transform: lowercase;
 
   &--first-letter {
@@ -90,6 +136,16 @@
 
     background: url(../img/icon-lock.png) no-repeat center;
   }
+
+  &--white {
+    margin-bottom: 0;
+
+    color: $white;
+
+    &::before {
+      top: 2px;
+    }
+  }
 }
 
 .form__input {
@@ -102,23 +158,28 @@
   border: none;
   border-radius: 10px;
 
+  &--blue-form {
+    width: 295px;
+    margin-right: 12px;
+  }
+
   &--name {
-    background: $grey url(../img/icon-name.png) no-repeat;
+    background: $gray url(../img/icon-name.png) no-repeat;
     background-position: 10px center;
   }
 
   &--mail {
-    background: $grey url(../img/icon-mail.png) no-repeat;
+    background: $gray url(../img/icon-mail.png) no-repeat;
     background-position: 10px center;
   }
 
   &--city {
-    background: $grey url(../img/icon-city.png) no-repeat;
+    background: $gray url(../img/icon-city.png) no-repeat;
     background-position: 10px center;
   }
 
   &--tel {
-    background: $grey url(../img/icon-phone.png) no-repeat;
+    background: $gray url(../img/icon-phone.png) no-repeat;
     background-position: 10px center;
   }
 }

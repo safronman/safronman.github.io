@@ -9,8 +9,141 @@
 
   width: 100%;
   height: 757px;
-  margin-bottom: 100px;
 
   background: url(../img/bg-order.jpg) no-repeat center;
   background-size: cover;
+}
+
+.order__list {
+  margin-top: 92px;
+  margin-bottom: 80px;
+}
+
+.order__variant {
+  position: relative;
+
+  display: inline-block;
+  width: 365px;
+  padding-bottom: 26px;
+
+  vertical-align: top;
+
+  background-color: $gray-lightest;
+  border-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+
+    width: 14px;
+    height: 48px;
+
+    background-color: $green;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+
+    width: 56px;
+    height: 70px;
+
+    background-color: $green;
+    transform: skewY(-30deg);
+  }
+}
+
+.order__variant--green {
+  margin: 0 48px;
+  margin-top: -23px;
+  padding-bottom: 48px;
+
+  color: $white;
+
+  background-color: $green;
+
+  &::before {
+    top: 41px;
+
+    background-color: $white;
+  }
+
+  &::after {
+    top: 53px;
+
+    background-color: $white;
+  }
+}
+
+.order__title {
+  padding-top: 30px;
+  padding-bottom: 51px;
+  padding-left: 40px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  &--min {
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
+}
+
+.order__price {
+  padding-bottom: 30px;
+  padding-left: 20px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.order__value {
+  font-weight: bold;
+  font-size: 26px;
+  color: $pink;
+
+  &--lowercase {
+    padding-left: 5px;
+
+    text-transform: lowercase;
+  }
+
+  &--white {
+    color: $white;
+  }
+}
+
+.order__link {
+  display: block;
+  padding-top: 10px;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: none;
+}
+
+.order__form {
+  position: relative;
+
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: $green;
+  }
 }

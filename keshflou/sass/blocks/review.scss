@@ -14,7 +14,7 @@
   font-weight: bold;
   font-size: 35px;
   line-height: 40px;
-  color: $light-grey;
+  color: $gray-light;
 
   &::before {
     content: "";
@@ -34,7 +34,6 @@
 
   font-size: 14px;
   line-height: 25px;
-  color: $light-black;
 }
 
 .review__author {
@@ -44,7 +43,6 @@
 
   font-size: 14px;
   line-height: 16px;
-  color: $light-black;
 
   &::after {
     content: "";
@@ -62,8 +60,6 @@
   position: absolute;
   top: 0;
   left: 84px;
-
-  color: $light-black;
 }
 
 .review__social {
@@ -81,23 +77,3 @@
   top: -4px;
   left: 116px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
