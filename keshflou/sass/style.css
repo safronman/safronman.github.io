@@ -1,7 +1,7 @@
 /* sass */
-@import url(../css/vendor/slick/slick-theme.css);
-@import url(../css/vendor/slick/slick.css);
-@import url(../css/vendor/normalize/normalize.css);
+@import url(vendor/slick/slick-theme.css);
+@import url(vendor/slick/slick.css);
+@import url(vendor/normalize/normalize.css);
 .clearfix::before,
 .clearfix:after {
   content: "";
