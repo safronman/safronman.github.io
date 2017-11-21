@@ -260,7 +260,7 @@ body {
 .header-info__logo {
   position: relative;
   float: left;
-  width: 300px; }
+  padding-left: 80px; }
   .header-info__logo::before {
     content: "";
     position: absolute;
@@ -271,8 +271,7 @@ body {
     background: url(../img/icon-logo.png) no-repeat center; }
 
 .header-info__name {
-  margin: 0;
-  padding-left: 80px; }
+  margin: 0; }
 
 .header-info__link {
   font-size: 36px;
@@ -283,7 +282,6 @@ body {
 
 .header-info__slogan {
   margin: 0;
-  padding-left: 80px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff; }

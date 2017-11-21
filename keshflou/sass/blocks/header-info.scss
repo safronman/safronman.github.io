@@ -6,7 +6,7 @@
   position: relative;
 
   float: left;
-  width: 300px;
+  padding-left: 80px;
 
   &::before {
     content: "";
@@ -17,13 +17,12 @@
     width: 67px;
     height: 46px;
 
-    background: url(../img/icon-logo.png) no-repeat center;;
+    background: url(../img/icon-logo.png) no-repeat center;
   }
 }
 
 .header-info__name {
   margin: 0;
-  padding-left: 80px;
 }
 
 .header-info__link {
@@ -36,7 +35,6 @@
 
 .header-info__slogan {
   margin: 0;
-  padding-left: 80px;
 
   font-size: 16px;
   line-height: 18px;
