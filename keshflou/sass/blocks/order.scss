@@ -15,18 +15,16 @@
 }
 
 .order__list {
-  margin-top: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 80px;
 }
 
 .order__variant {
   position: relative;
 
-  display: inline-block;
   width: 365px;
-  padding-bottom: 26px;
-
-  vertical-align: top;
 
   background-color: $gray-lightest;
   border-radius: 5px;
@@ -58,10 +56,6 @@
 }
 
 .order__variant--green {
-  margin: 0 48px;
-  margin-top: -23px;
-  padding-bottom: 48px;
-
   color: $white;
 
   background-color: $green;
@@ -80,24 +74,20 @@
 }
 
 .order__title {
-  padding-top: 30px;
-  padding-bottom: 51px;
-  padding-left: 40px;
+  margin: 30px 0 50px 40px;
 
   font-weight: bold;
   font-size: 20px;
   line-height: 22px;
   text-transform: uppercase;
 
-  &--min {
-    padding-top: 16px;
-    padding-bottom: 18px;
+  &--three {
+    margin: 10px 0 12px 40px;
   }
 }
 
 .order__price {
-  padding-bottom: 30px;
-  padding-left: 20px;
+  margin: 0 0 30px 20px;
 
   font-size: 16px;
   line-height: 18px;
@@ -122,28 +112,23 @@
 
 .order__link {
   display: block;
-  padding-top: 10px;
+  margin: 0 0 20px 40px;
 
+  font-weight: bold;
   font-size: 14px;
   line-height: 14px;
+  color: $violet-dark;
   text-transform: none;
+
+  &:hover {
+    color: $violet;
+  }
 }
 
 .order__form {
-  position: relative;
-
   width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
+  padding-top: 10px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -15px;
-
-    width: 100%;
-    height: 3px;
-
-    background-color: $green;
-  }
+  border-top: 3px solid $green;
 }

@@ -341,35 +341,42 @@
       </div>
     </section>
 
-    <section class="delivery">
+    <section class="delivery  clearfix">
       <h2 class="section-heading">Доставка</h2>
-      <div class="delivery__content">
-        <img class="deliver__image" src="img/delivery-moscow.png" alt="Доставка в Москву" width="193" height="193">
-        <p class="delivery__city">Москва
-          <span class="delivery__region">+ Моковская область</span>
-        </p>
-        <p class="delivery__way">Доставка по городу курьером,<br> - самовывоз</p>
-      </div>
-      <div class="delivery__content">
-        <img class="deliver__image" src="img/delivery-sp.png" alt="Санкт-Петербург" width="193" height="193">
-        <p class="delivery__city">Санкт-Петербург
-          <span class="delivery__region">+ Ленинградская область</span>
-        </p>
-        <p class="delivery__way">Доставка по городу курьером,<br> - самовывоз</p>
-      </div>
-      <div class="delivery__content">
-        <img class="deliver__image" src="img/delivery-russia.png" alt="Доставка по России" width="193" height="193">
-        <p class="delivery__city">Остальные города РФ</p>
-        <p class="delivery__way">Доставка почтой РФ,<br> Доставка курьерской службой</p>
+
+      <div class="delivery__inner">
+        <div class="delivery__content">
+          <img class="deliver__image" src="img/delivery-moscow.png" alt="Доставка в Москву" width="193" height="193">
+          <p class="delivery__city">Москва
+            <span class="delivery__region">+ Моковская область</span>
+          </p>
+          <p class="delivery__way">Доставка по городу курьером,<br> - самовывоз</p>
+        </div>
+
+        <div class="delivery__content">
+          <img class="deliver__image" src="img/delivery-sp.png" alt="Санкт-Петербург" width="193" height="193">
+          <p class="delivery__city">Санкт-Петербург
+            <span class="delivery__region">+ Ленинградская область</span>
+          </p>
+          <p class="delivery__way">Доставка по городу курьером,<br> - самовывоз</p>
+        </div>
+
+        <div class="delivery__content">
+          <img class="deliver__image" src="img/delivery-russia.png" alt="Доставка по России" width="193" height="193">
+          <p class="delivery__city  delivery__city--rf">Остальные города РФ</p>
+          <p class="delivery__way">Доставка почтой РФ,<br> Доставка курьерской службой</p>
+        </div>
       </div>
     </section>
 
     <section class="payment">
       <h2 class="section-heading  section-heading--payment">Способы оплаты</h2>
-      <img class="payment__image" src="img/money-ya.png" alt="Яндекс деньги" width="172" height="85">
-      <img class="payment__image" src="img/money-qiwi.png" alt="Киви кошелек" width="245" height="81">
-      <img class="payment__image" src="img/money-skrill.png" alt="Money skrill" width="151" height="79">
-      <img class="payment__image" src="img/money-visa-mastercard.png" alt="Visa и Mastercard" width="253" height="82">
+      <div class="payment__inner">
+        <img class="payment__image" src="img/money-ya.png" alt="Яндекс деньги" width="172" height="85">
+        <img class="payment__image" src="img/money-qiwi.png" alt="Киви кошелек" width="245" height="81">
+        <img class="payment__image" src="img/money-skrill.png" alt="Money skrill" width="151" height="79">
+        <img class="payment__image" src="img/money-visa-mastercard.png" alt="Visa и Mastercard" width="253" height="82">
+      </div>
     </section>
 
     <section class="support">
@@ -384,29 +391,29 @@
       <h2 class="section-heading  section-heading--order">Сделать заказ</h2>
 
       <div class="order__list  container">
+
         <div class="order__variant">
           <div class="order__title">Оригинал</div>
           <div class="order__price">Цена: <span class="order__value  order__value--lowercase">от <span class="order__value">20 000</span> руб.</span>
           </div>
-          <a href="#" class="btn btn--order">Заказать</a>
+          <a href="#" class="btn  btn--order">Заказать</a>
         </div>
 
         <div class="order__variant  order__variant--green">
           <div class="order__title">Бизнес тренажер<br>денежный поток</div>
           <div class="order__price">Цена: <span class="order__value order__value--white  order__value--lowercase">от <span class="order__value order__value--white">25 000</span> руб.</span>
           </div>
-          <a href="#" class="btn  btn--white-order ">Заказать</a>
+          <a href="#" class="btn  btn--white-order">Заказать</a>
         </div>
 
         <div class="order__variant">
-          <div class="order__title  order__title--min">Бизнес тренажер<br>денежный поток
-            <a href="#" class="order__link">+ Игра "Вот такая ситуация"</a>
-          </div>
-
+          <div class="order__title  order__title--three">Бизнес тренажер<br>денежный поток</div>
+          <a href="#" class="order__link">+ Игра "Вот такая ситуация"</a>
           <div class="order__price">Цена: <span class="order__value  order__value--lowercase">от <span class="order__value">30 000</span> руб.</span>
           </div>
           <a href="#" class="btn  btn--order">Заказать</a>
         </div>
+
       </div>
 
       <div class="order__form">
@@ -416,13 +423,17 @@
             <div class="form__promo-text">Если вы сомневаетесь в покупке, мы позавем вас на ближайшую игру в вашем городе,<br>
               <span class="form__promo-text  form__promo-text--white">что бы вы лично ощутили эффект.</span>
             </div>
-            <input class="form__input  form__input--name  form__input--blue-form" type="text" id="form-name" name="name" placeholder="Имя">
-            <label for="form-name"></label>
-            <input class="form__input form__input--tel  form__input--blue-form" type="tel" id="form-tel" name="tel" placeholder="Телефон">
-            <label for="form-tel"></label>
-            <input class="form__input form__input--city  form__input--blue-form" type="text" id="form-city" name="city" placeholder="Город">
-            <label for="form-city"></label>
-            <button class="btn  btn--blue-form" type="submit" name="form-button">Оставить заявку</button>
+
+            <div class="form__inner">
+              <input class="form__input  form__input--name  form__input--blue-form" type="text" id="form-name" name="name" placeholder="Имя">
+              <label for="form-name"></label>
+              <input class="form__input form__input--tel  form__input--blue-form" type="tel" id="form-tel" name="tel" placeholder="Телефон">
+              <label for="form-tel"></label>
+              <input class="form__input form__input--city  form__input--blue-form" type="text" id="form-city" name="city" placeholder="Город">
+              <label for="form-city"></label>
+              <button class="btn  btn--blue-form" type="submit" name="form-button">Оставить заявку</button>
+            </div>
+
             <p class="form__consent  form__consent--white">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
           </div>
         </form>

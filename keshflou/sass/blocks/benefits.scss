@@ -6,9 +6,7 @@
 .benefits__content {
   float: left;
   width: 25%;
-  margin: 0 auto;
-  margin-right: 131px;
-  margin-bottom: 80px;
+  margin: 0 131px 80px 0;
 
   text-align: center;
 }
@@ -32,10 +30,12 @@
     display: block;
     width: 42%;
     height: 2px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
 
     background-color: $green;
   }
+}
+
+.benefits__description {
+  margin: 0;
 }
