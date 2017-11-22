@@ -1,4 +1,7 @@
 .shadow-sections {
+  position: relative;
+  z-index: 2;
+
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;

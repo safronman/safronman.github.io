@@ -14,9 +14,9 @@
 
   <header class="container">
     <div class="header-info clearfix">
-      <div class="header-info__logo">
-        <p class="header-info__name"><a class="header-info__link" href="../index.html">Cash flow</a></p>
-        <p class="header-info__slogan">Слоган нашей компании</p>
+      <div class="logo">
+        <p class="logo__name"><a class="logo__link" href="../index.html">Cash flow</a></p>
+        <p class="logo__slogan">Слоган нашей компании</p>
       </div>
 
       <div class="header-info__contacts">
@@ -387,65 +387,115 @@
   </div>
 
   <div class="order">
-    <div class="order__inner">
-      <h2 class="section-heading  section-heading--order">Сделать заказ</h2>
+    <h2 class="section-heading  section-heading--order">Сделать заказ</h2>
 
-      <div class="order__list  container">
+    <div class="order__list">
 
-        <div class="order__variant">
-          <div class="order__title">Оригинал</div>
-          <div class="order__price">Цена: <span class="order__value  order__value--lowercase">от <span class="order__value">20 000</span> руб.</span>
-          </div>
-          <a href="#" class="btn  btn--order">Заказать</a>
+      <div class="order__variant">
+        <div class="order__title">Оригинал</div>
+        <div class="order__price">Цена: <span class="order__value  order__value--lowercase">от <span class="order__value">20 000</span> руб.</span>
         </div>
-
-        <div class="order__variant  order__variant--green">
-          <div class="order__title">Бизнес тренажер<br>денежный поток</div>
-          <div class="order__price">Цена: <span class="order__value order__value--white  order__value--lowercase">от <span class="order__value order__value--white">25 000</span> руб.</span>
-          </div>
-          <a href="#" class="btn  btn--white-order">Заказать</a>
-        </div>
-
-        <div class="order__variant">
-          <div class="order__title  order__title--three">Бизнес тренажер<br>денежный поток</div>
-          <a href="#" class="order__link">+ Игра "Вот такая ситуация"</a>
-          <div class="order__price">Цена: <span class="order__value  order__value--lowercase">от <span class="order__value">30 000</span> руб.</span>
-          </div>
-          <a href="#" class="btn  btn--order">Заказать</a>
-        </div>
-
+        <a href="#" class="btn  btn--order">Заказать</a>
       </div>
 
-      <div class="order__form">
-        <form class="form  form--blue" action="#" method="post">
-          <div class="form__transparent-cover"></div>
-          <div class="form__transparent-view">
-            <div class="form__promo-text">Если вы сомневаетесь в покупке, мы позавем вас на ближайшую игру в вашем городе,<br>
-              <span class="form__promo-text  form__promo-text--white">что бы вы лично ощутили эффект.</span>
-            </div>
-
-            <div class="form__inner">
-              <input class="form__input  form__input--name  form__input--blue-form" type="text" id="form-name" name="name" placeholder="Имя">
-              <label for="form-name"></label>
-              <input class="form__input form__input--tel  form__input--blue-form" type="tel" id="form-tel" name="tel" placeholder="Телефон">
-              <label for="form-tel"></label>
-              <input class="form__input form__input--city  form__input--blue-form" type="text" id="form-city" name="city" placeholder="Город">
-              <label for="form-city"></label>
-              <button class="btn  btn--blue-form" type="submit" name="form-button">Оставить заявку</button>
-            </div>
-
-            <p class="form__consent  form__consent--white">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
-          </div>
-        </form>
+      <div class="order__variant  order__variant--green">
+        <div class="order__title">Бизнес тренажер<br>денежный поток</div>
+        <div class="order__price">Цена: <span class="order__value order__value--white  order__value--lowercase">от <span class="order__value order__value--white">25 000</span> руб.</span>
+        </div>
+        <a href="#" class="btn  btn--white-order">Заказать</a>
       </div>
 
+      <div class="order__variant">
+        <div class="order__title  order__title--three">Бизнес тренажер<br>денежный поток</div>
+        <a href="#" class="order__link">+ Игра "Вот такая ситуация"</a>
+        <div class="order__price">Цена: <span class="order__value  order__value--lowercase">от <span class="order__value">30 000</span> руб.</span>
+        </div>
+        <a href="#" class="btn  btn--order">Заказать</a>
+      </div>
 
+    </div>
+
+    <div class="order__form">
+      <form class="form  form--blue" action="#" method="post">
+        <div class="form__transparent-cover"></div>
+        <div class="form__transparent-view">
+          <div class="form__promo-text">Если вы сомневаетесь в покупке, мы позавем вас на ближайшую игру в вашем городе,<br>
+            <span class="form__promo-text  form__promo-text--white">что бы вы лично ощутили эффект.</span>
+          </div>
+
+          <div class="form__inner">
+            <input class="form__input  form__input--name  form__input--blue-form" type="text" id="form-name" name="name" placeholder="Имя">
+            <label for="form-name"></label>
+            <input class="form__input form__input--tel  form__input--blue-form" type="tel" id="form-tel" name="tel" placeholder="Телефон">
+            <label for="form-tel"></label>
+            <input class="form__input form__input--city  form__input--blue-form" type="text" id="form-city" name="city" placeholder="Город">
+            <label for="form-city"></label>
+            <button class="btn  btn--blue-form" type="submit" name="form-button">Оставить заявку</button>
+          </div>
+
+          <p class="form__consent  form__consent--white">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
+        </div>
+      </form>
     </div>
   </div>
 
+  <section class="contacts  clearfix">
+    <div class="contacts__content">
+      <h3 class="contacts__title">Контакты</h3>
+      <div class="contact__inner">
+        <div class="contacts__address">Республика Беларусь,<br>
+          220138, г. Минск, ул. Энтузиастов д.10, офис 204</div>
+        <a class="contacts__phone" href="tel:+375290000000" title="+375 29 000 00 00">+375 (29) 000 00 00</a>
+        <a class="contacts__phone" href="tel:+375290000000" title="+375 29 000 00 00">+375 (29) 000 00 00</a>
+        <a class="contacts__mail" href="mailto:cashflow@mail.ru" title="cashflow@mail.ru">E-MAIL: Cashflow@mail.ru</a>
+        <a class="contacts__vk" href="http://vk.com">Написать нам ВК</a>
+        <a class="contacts__viber" href="http://viber.com">Написать нам в VIBER</a>
+      </div>
+    </div>
+
+    <div class="contacts__form">
+      <form class="form" action="#" method="post">
+        <div class="form__title">Получите бесплатно<span class="form__consult">Консультацию от нашего менеджера</span></div>
+        <input  class="form__input  form__input--name" type="text" id="form-name" name="name" placeholder="Имя">
+        <label for="form-name"></label>
+        <input class="form__input  form__input--mail" type="email" id="form-email" name="email" placeholder="E-mail">
+        <label for="form-email"></label>
+        <p class="form__consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
+        <button class="btn  btn--form" type="submit" name="form-button">Оставить заявку</button>
+      </form>
+    </div>
+  </section>
   </main>
 
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__column">
+        <a class="footer__developer" href="http://xameleon.by/">Агенство по привлечению клиентов<br>
+          Xameleon.by</a>
+      </div>
+
+      <div class="footer__column">
+        <div class="footer__container">
+          <div class="footer__social">
+            <a href="https://www.instagram.com/"><img src="./img/icon-inst.png" alt="Инстаграм"></a>
+            <a href="https://vk.com"><img src="./img/icon-vk-big.png" alt="Вконтакте"></a>
+          </div>
+          <p class="footer__license">Все права защищены</p>
+          <p class="footer__copyright">Копирайт 2017</p>
+          <p class="footer__politics">Политика конфиденциальности</p>
+        </div>
+      </div>
+
+      <div class="footer__column">
+        <div class="logo">
+          <p class="logo__name"><a class="logo__link" href="../index.html">Cash flow</a></p>
+          <p class="logo__slogan">Слоган нашей компании</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
   <!-- slick slider-->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
