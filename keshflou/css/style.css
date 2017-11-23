@@ -163,6 +163,9 @@ body {
   text-transform: lowercase; }
   .form__consult--first-letter {
     text-transform: none; }
+  .form__consult--modal {
+    width: 315px;
+    text-transform: none; }
 
 .form__consent {
   position: relative;
@@ -802,3 +805,59 @@ body {
 .footer__politics {
   margin: 0;
   text-transform: uppercase; }
+
+.modal__form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  display: none;
+  width: 460px;
+  margin: 0 auto;
+  margin-top: -240px;
+  margin-left: -230px;
+  animation: down;
+  animation-duration: 1s; }
+  .modal__form--show {
+    display: block; }
+
+@keyframes down {
+  0% {
+    transform: translateY(-1000px); }
+  60% {
+    transform: translateY(10px); }
+  80% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0px); } }
+
+.modal__close-form {
+  position: absolute;
+  top: -45px;
+  right: -45px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 18px;
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  opacity: 0.8; }
+  .modal__close-form:hover {
+    color: #f8f8f8;
+    border: 2px solid #f8f8f8;
+    cursor: pointer;
+    opacity: 1; }
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 20, 37, 0.84); }
+  .modal__overlay--show {
+    display: block; }

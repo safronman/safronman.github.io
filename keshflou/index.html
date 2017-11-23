@@ -474,7 +474,6 @@
         <a class="footer__developer" href="http://xameleon.by/">Агенство по привлечению клиентов<br>
           Xameleon.by</a>
       </div>
-
       <div class="footer__column">
         <div class="footer__container">
           <div class="footer__social">
@@ -486,7 +485,6 @@
           <p class="footer__politics">Политика конфиденциальности</p>
         </div>
       </div>
-
       <div class="footer__column">
         <div class="logo">
           <p class="logo__name"><a class="logo__link" href="../index.html">Cash flow</a></p>
@@ -496,6 +494,23 @@
 
     </div>
   </footer>
+
+  <!-- Модальное окно -->
+  <div class="modal__form">
+    <form class="form" action="#" method="post">
+      <div class="form__consult form__consult--modal">Хочешь получать информацию об игре напрямую от менеджера, оставьте заявку и мы с Вами свяжемся.
+        <span class="form__title form__title--next-line">Заказать звонок</span>
+      </div>
+      <input class="form__input form__input--name" type="text" id="form-name" name="name" placeholder="Имя">
+      <label for="form-name"></label>
+      <input class="form__input form__input--tel" type="tel" id="form-tel" name="tel" placeholder="Телефон">
+      <label for="form-tel"></label>
+      <p class="form__consent">Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
+      <button class="btn btn--form" type="submit" name="form-button">Оставить заявку</button>
+    </form>
+    <button class="modal__close-form">X</button>
+  </div>
+  <div class="modal__overlay"></div>
 
   <!-- slick slider-->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
