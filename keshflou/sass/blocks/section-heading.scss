@@ -1,6 +1,5 @@
 .section-heading {
   margin: 0;
-  margin-bottom: 10px;
 
   font-weight: 100;
   font-size: 20px;
@@ -15,9 +14,7 @@
     display: block;
     width: 20%;
     height: 2px;
-    margin: 0 auto;
-    margin-top: 6px;
-    margin-bottom: 20px;
+    margin: 6px auto 20px;
 
     background-color: $green;
   }
@@ -28,7 +25,7 @@
 }
 
 .section-heading__subtitle {
-  margin-bottom: 50px;
+  margin: 0 0 50px;
 
   font-weight: 100;
   font-size: 18px;
@@ -59,12 +56,11 @@
 }
 
 .section-heading--order {
-  margin-top: 140px;
-
   color: $white;
 
   &::after {
     width: 8%;
+    margin-bottom: 92px;
   }
 }
 
@@ -72,20 +68,27 @@
 .section-heading--payment {
   &::after {
     width: 15%;
+    margin-bottom: 40px;
   }
 }
 
+.section-heading--benefits {
+  &::after {
+    width: 28%;
+  }
+}
 
-.section-heading--benefits,
 .section-heading--map {
   &::after {
     width: 28%;
+    margin-bottom: 40px;
   }
 }
 
 .section-heading--partner {
   &::after {
     width: 36%;
+    margin-bottom: 40px;
   }
 }
 

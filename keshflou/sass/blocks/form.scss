@@ -37,7 +37,7 @@
   &--blue {
     padding: 20px;
 
-    background: url(../img/bg-order.jpg) no-repeat top;
+    background: $blue-dark url(../img/bg-order.jpg) no-repeat top;
 
     &::before,
     &::after {
@@ -110,6 +110,12 @@
   &--first-letter {
     text-transform: none;
   }
+
+  &--modal {
+    width: 315px;
+
+    text-transform: none;
+  }
 }
 
 .form__consent {
@@ -148,6 +154,12 @@
   }
 }
 
+.form__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
 .form__input {
   box-sizing: border-box;
   width: 100%;
@@ -160,7 +172,7 @@
 
   &--blue-form {
     width: 295px;
-    margin-right: 12px;
+    margin-bottom: 0;
   }
 
   &--name {

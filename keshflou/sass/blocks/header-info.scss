@@ -1,46 +1,6 @@
 .header-info {
+  margin-bottom: 18px;
   padding-top: 20px;
-}
-
-.header-info__logo {
-  position: relative;
-
-  float: left;
-  width: 300px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 67px;
-    height: 46px;
-
-    background: url(../img/icon-logo.png) no-repeat center;;
-  }
-}
-
-.header-info__name {
-  margin: 0;
-  padding-left: 80px;
-}
-
-.header-info__link {
-  font-size: 36px;
-  line-height: 38px;
-  color: $light-green;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.header-info__slogan {
-  margin: 0;
-  padding-left: 80px;
-
-  font-size: 16px;
-  line-height: 18px;
-  color: $white;
 }
 
 .header-info__contacts {

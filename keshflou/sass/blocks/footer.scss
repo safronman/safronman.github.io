@@ -1,0 +1,63 @@
+.footer {
+  background: url(../img/bg-order.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.footer__developer {
+  position: relative;
+
+  display: block;
+  margin-left: 40px;
+
+  color: $white;
+  text-decoration: none;
+
+  &::before {
+    content: "X";
+    position: absolute;
+    top: -8px;
+    left: -40px;
+
+    display: inline-block;
+
+    font-weight: normal;
+    font-size: 43px;
+    color: $pink;
+  }
+}
+
+.footer__container {
+  position: relative;
+
+  text-align: center;
+  color: $white;
+}
+
+.footer__social {
+  margin-bottom: 10px;
+}
+
+.footer__license {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer__copyright {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer__politics {
+  margin: 0;
+
+  text-transform: uppercase;
+}

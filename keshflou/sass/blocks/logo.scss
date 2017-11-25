@@ -1,0 +1,38 @@
+.logo {
+  position: relative;
+
+  float: left;
+  padding-left: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 67px;
+    height: 46px;
+
+    background: url(../img/icon-logo.png) no-repeat center;
+  }
+}
+
+.logo__name {
+  margin: 0;
+}
+
+.logo__link {
+  font-size: 36px;
+  line-height: 38px;
+  color: $light-green;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo__slogan {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+}
