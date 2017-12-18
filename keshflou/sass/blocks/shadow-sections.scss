@@ -11,3 +11,16 @@
   border-radius: 10px;
   box-shadow: 0 0 19px -5px;
 }
+
+@media (max-width: 1260px) {
+  .shadow-sections {
+    width: auto;
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .shadow-sections {
+    margin: 0 10px;
+  }
+}

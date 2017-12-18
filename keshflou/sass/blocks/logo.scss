@@ -36,3 +36,19 @@
   line-height: 18px;
   color: $white;
 }
+
+@media (max-width: 1200px) {
+  .logo--footer {
+    float: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 825px) {
+  .logo--header {
+    display: block;
+    float: none;
+    width: 200px;
+    margin: 0 auto 20px;
+  }
+}

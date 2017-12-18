@@ -30,7 +30,8 @@
   }
 
   &--map {
-    display: inline-block;
+    display: block;
+    width: 160px;
     margin: 0 auto;
 
     background-color: $green;
@@ -38,7 +39,7 @@
 
   &--benefits {
     display: block;
-    width: 10%;
+    width: 130px;
     margin: 0 auto;
 
     background-color: $green;
@@ -64,3 +65,20 @@
     color: $white;
   }
 }
+
+
+@media (max-width: 1260px) {
+  .btn--blue-form {
+    display: block;
+    margin: 0 auto;
+    padding: 14px 76px;
+  }
+}
+
+@media (max-width: 825px) {
+  .btn--header {
+    margin: 0;
+    padding: 14px 76px;
+  }
+}
+

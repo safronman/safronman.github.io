@@ -1,15 +1,20 @@
 .footer {
   background: url(../img/bg-order.jpg) no-repeat top center;
-  background-size: cover;
 }
 
 .footer__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 1200px;
   margin: 0 auto;
   padding: 30px;
+}
+
+.footer__column {
+  display: block;
+  width: 360px;
 }
 
 .footer__developer {
@@ -60,4 +65,31 @@
   margin: 0;
 
   text-transform: uppercase;
+}
+
+
+@media (max-width: 1280px) {
+  .footer__inner {
+    width: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__inner {
+    display: block;
+  }
+  .footer__column {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer__inner {
+    padding: 20px 10px;
+  }
+
+  .footer__column {
+    display: block;
+    width: auto;
+  }
 }

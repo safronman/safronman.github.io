@@ -8,8 +8,8 @@
   float: left;
 
   font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .contacts__title {
@@ -28,7 +28,7 @@
 .contacts__address {
   position: relative;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   &::before {
     content: "";
@@ -46,13 +46,13 @@
 
 .contacts__phone {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   color: $black;
   text-decoration: none;
 
   &:nth-child(4) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -67,8 +67,8 @@
 .contacts__vk {
   position: relative;
 
-  display: inline-block;
-  margin-right: 90px;
+  display: block;
+  margin-bottom: 20px;
 
   color: $black;
   text-transform: uppercase;
@@ -91,7 +91,7 @@
 .contacts__viber {
   position: relative;
 
-  display: inline-block;
+  display: block;
 
   color: $black;
   text-transform: uppercase;
@@ -101,7 +101,7 @@
     content: "";
     position: absolute;
     top: -3px;
-    left: -40px;
+    left: -43px;
 
     display: inline-block;
     width: 29px;
@@ -113,5 +113,64 @@
 
 .contacts__form {
   float: right;
-  width: 38%;
+  width: 460px;
+}
+
+@media (max-width: 1260px) {
+  .contacts {
+    width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .contacts__content {
+    float: none;
+    width: 380px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .contacts__title {
+    text-align: center;
+  }
+
+  .contact__inner {
+    margin-left: 0;
+  }
+
+  .contacts__form {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .contacts__mail {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .contacts {
+    padding: 0 10px;
+  }
+
+  .contacts__address,
+  .contacts__phone,
+  .contacts__mail,
+  .contacts__vk,
+  .contacts__viber {
+    margin-left: 40px;
+    &::before {
+      left: -40px;
+    }
+  }
+
+  .contacts__content {
+    width: 90%;
+  }
+
+  .contacts__form {
+    width: auto;
+    padding: 0;
+  }
 }

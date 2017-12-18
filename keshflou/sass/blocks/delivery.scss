@@ -5,11 +5,12 @@
 
 .delivery__inner {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .delivery__content {
-  width: 28%;
+  width: auto;
 
   font-size: 16px;
   line-height: 20px;
@@ -38,4 +39,11 @@
 
 .delivery__way {
   margin: 0;
+}
+
+@media (max-width: 820px) {
+  .delivery__content {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
 }

@@ -7,17 +7,51 @@ $('.partner__slider').slick({
   variableWidth: true
 });
 
-$('.review__slider').slick({
-  arrows: false,
-  dots: true,
-  slidesToShow: 4
-});
-
 $('.photo__slider').slick({
    arrows: false,
    dots: true,
-   slidesToShow: 3
+   slidesToShow: 3,
+   responsive: [
+     {
+       breakpoint: 817,
+       settings: {
+         slidesToShow: 2
+       }
+     },
+     {
+       breakpoint: 417,
+       settings: {
+         slidesToShow: 1
+       }
+     }
+   ]
  });
+
+$('.review__slider').slick({
+  arrows: false,
+  dots: true,
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 1160,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 914,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 660,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 
 });
 

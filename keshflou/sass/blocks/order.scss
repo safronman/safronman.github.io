@@ -11,6 +11,7 @@
 
 .order__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 1200px;
@@ -131,4 +132,54 @@
   padding-top: 10px;
 
   border-top: 3px solid $green;
+}
+
+
+@media (max-width: 1260px) {
+  .order__list {
+    width: auto;
+  }
+
+  .order__form {
+    width: 460px;
+  }
+}
+
+
+@media (max-width: 1210px) {
+  .order__list {
+    display: block;
+  }
+
+  .order__variant {
+    margin: 0 auto 30px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .order__form {
+    width: auto;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 428px) {
+  .order__variant {
+    width: 100%;
+
+    text-align: center;
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order__title,
+  .order__price {
+    margin: 20px 0;
+  }
 }

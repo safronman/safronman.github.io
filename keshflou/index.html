@@ -12,21 +12,22 @@
 
 <body>
 
-  <header class="container">
+  <header>
     <div class="header-info clearfix">
-      <div class="logo">
+      <div class="logo logo--header">
         <p class="logo__name"><a class="logo__link" href="../index.html">Cash flow</a></p>
         <p class="logo__slogan">Слоган нашей компании</p>
       </div>
 
       <div class="header-info__contacts">
 
-        <div class="header-info__inner">
-          <a class="header-info__phone" href="tel:+375290000000" title="+375 29 000 00 00">+375 29 000 00 00</a>
+        <div class="header-info__inner  header-info__inner--tablet">
+          <a class="header-info__phone" href="tel:+375290000000" title="+375 29 000 00 00">+375 (29) 123-45-67</a>
         </div>
 
         <div class="header-info__inner header-info__inner--left60">
-          <a class="header-info__phone" href="tel:+375290000000" title="+375 29 000 00 00">+375 29 000 00 00</a>
+          <a class="header-info__phone" href="tel:+375290000000" title="+375 29 000 00 00">+375 (29) 987-65-43</a>
+          <a class="header-info__phone header-info__phone--tablet" href="tel:+375290000000" title="+375 29 000 00 00">+375 (29) 123-45-67</a>
           <a class="header-info__mail" href="mailto:cashflow@mail.ru" title="cashflow@mail.ru">Cashflow@mail.ru</a>
         </div>
 
@@ -53,7 +54,7 @@
 
   <main>
 
-    <section class="promo container clearfix">
+    <section class="promo clearfix">
       <div class="promo__heading">
         <h1 class="promo__title">Игра "Денежный поток" по книге Кийосаки</h1>
         <p class="promo__description">Тренажерный зал для ума</p>
@@ -73,7 +74,7 @@
 
     </section>
 
-    <section class="about-game container">
+    <section class="about-game">
       <h2 class="section-heading  section-heading--white">Что такое игра "денежный поток" ?</h2>
       <div class="about-game__inner clearfix">
         <div class="about-game__content">
@@ -84,7 +85,11 @@
             он значительно доработан и улучшен, а также адаптирован для СНГ. В него добавлено много новых возможностей, чтобы сделать игровый процесс динамичнее, интереснее и разнообразнее. Благодаря улучшениям, полезный эффект от игры значительно возрос.</p>
         </div>
         <div class="about-game__video">
-          <img src="./img/video.jpg" alt="Видео о keshflow" width="545" height="435">
+        <video class="about-game__azino" controls>
+          <source src="video/azino.mp4" type='video/mp4'>
+          <source src="video/azino.webm" type='video/webm'>
+          <source src="video/azino.ogv" type='video/ogg'>
+        </video>
         </div>
       </div>
     </section>
@@ -95,7 +100,7 @@
       <h2 class="section-heading  section-heading--benefits">Мы предлагаем бизнес тренажёр денежный поток</h2>
       <h3 class="section-heading__subtitle">2-е издание изменино и дополнено</h3>
 
-      <div class="clearfix">
+      <div class="benefits__inner">
         <div class="benefits__content">
           <img class="benefits__image" src="img/icon-time.jpg" alt="Иконка часов" width="58" height="72">
           <div class="benefits__title">Второе издание</div>
@@ -336,7 +341,7 @@
     <section class="map">
       <h2 class="section-heading  section-heading--map">В нашу игру играют по всему миру</h2>
       <div class="map__inner">
-        <img class="map__img" src="img/map.jpg" alt="Страны в которых играют в keshflow" width="948" height="468">
+        <img class="map__img" src="img/map.jpg" alt="Страны в которых играют в keshflow">
         <a class="btn  btn--map" href="#">Сделать заказ</a>
       </div>
     </section>
@@ -372,12 +377,13 @@
     <section class="payment">
       <h2 class="section-heading  section-heading--payment">Способы оплаты</h2>
       <div class="payment__inner">
-        <img class="payment__image" src="img/money-ya.png" alt="Яндекс деньги" width="172" height="85">
-        <img class="payment__image" src="img/money-qiwi.png" alt="Киви кошелек" width="245" height="81">
-        <img class="payment__image" src="img/money-skrill.png" alt="Money skrill" width="151" height="79">
-        <img class="payment__image" src="img/money-visa-mastercard.png" alt="Visa и Mastercard" width="253" height="82">
+        <img class="payment__image-1" src="img/money-ya.png" alt="Яндекс деньги" width="172" height="85">
+        <img class="payment__image-2" src="img/money-qiwi.png" alt="Киви кошелек" width="245" height="81">
+        <img class="payment__image-3" src="img/money-skrill.png" alt="Money skrill" width="151" height="79">
+        <img class="payment__image-4" src="img/money-visa-mastercard.png" alt="Visa и Mastercard" width="253" height="82">
       </div>
     </section>
+
 
     <section class="support">
       <h2 class="section-heading  section-heading--icon">Тех поддержка в рабочее время skype, viber, e-mail</h2>
@@ -474,6 +480,7 @@
         <a class="footer__developer" href="http://xameleon.by/">Агенство по привлечению клиентов<br>
           Xameleon.by</a>
       </div>
+
       <div class="footer__column">
         <div class="footer__container">
           <div class="footer__social">
@@ -485,8 +492,9 @@
           <p class="footer__politics">Политика конфиденциальности</p>
         </div>
       </div>
+
       <div class="footer__column">
-        <div class="logo">
+        <div class="logo logo--footer">
           <p class="logo__name"><a class="logo__link" href="../index.html">Cash flow</a></p>
           <p class="logo__slogan">Слоган нашей компании</p>
         </div>

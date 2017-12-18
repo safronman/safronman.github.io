@@ -9,3 +9,13 @@
 .map__img {
   margin-bottom: 50px;
 }
+
+
+@media (max-width: 1100px) {
+  .map {
+    margin: 10px;
+  }
+  .map__img {
+    width: 90%;
+  }
+}
