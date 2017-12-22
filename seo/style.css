@@ -2,6 +2,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans", sans-serif;
+
+  background-color: yellow;
 }
 
 h1 {
@@ -64,4 +66,8 @@ h1 {
 
 .experience__heading {
   text-align: center;
+}
+
+.experience__sliders {
+  background-color: purple;
 }
