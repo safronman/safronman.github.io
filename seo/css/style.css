@@ -1,11 +1,11 @@
 body {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   text-align: center;
 }
@@ -17,8 +17,6 @@ h1 {
   width: 1200px;
   margin: 0 auto;
   margin-bottom: 50px;
-
-  border: 1px solid blue;
 }
 
 .about-me__photo {
@@ -34,8 +32,6 @@ h1 {
   width: 1200px;
   margin: 0 auto;
   margin-bottom: 50px;
-
-  border: 1px solid green;
 }
 
 .intern-ship__question {
@@ -47,8 +43,6 @@ h1 {
   width: 1200px;
   margin: 0 auto;
   margin-bottom: 50px;
-
-  border: 1px solid red;
 }
 
 .useful__question {
@@ -60,8 +54,6 @@ h1 {
   width: 1200px;
   margin: 0 auto;
   margin-bottom: 50px;
-
-  border: 1px solid purple;
 }
 
 .experience__heading {
@@ -69,8 +61,27 @@ h1 {
 }
 
 .experience__picture {
-  margin: 0 auto;
+  display: block;
+  margin: 0 auto 40px;
 }
+
+.experience__sliders {
+  margin-bottom: 100px;
+}
+
+.experience__title {
+  text-align: center;
+}
+
+.experience__list-main {
+  margin: 20px 0 10px;
+}
+
+.experience__list-meta {
+  margin-bottom: 40px;
+}
+
+
 
 
 .slick-slide img {
