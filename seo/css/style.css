@@ -14,19 +14,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
   margin-bottom: 50px;
 }
 
 .about-me__photo {
   margin-right: 50px;
 }
-
-
-
-
-
 
 .intern-ship {
   width: 1200px;
@@ -81,9 +74,20 @@ h1 {
   margin-bottom: 40px;
 }
 
-
-
+.slick-dotted.slick-slider {
+  margin-bottom: 100px;
+}
 
 .slick-slide img {
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .about-me,
+  .intern-ship,
+  .useful,
+  .experience {
+    width: auto;
+    padding: 0 20px;
+  }
 }
