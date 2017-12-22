@@ -72,3 +72,7 @@ h1 {
 .experience__sliders {
   background-color: purple;
 }
+
+.experience__slider {
+  margin: 0 auto;
+}
