@@ -3,12 +3,8 @@ body {
   line-height: 18px;
   font-family: "Open Sans", sans-serif;
 
-  background-color: yellow;
-}
-
 h1 {
   text-align: center;
-  color: red;
 }
 
 .about-me {
@@ -69,10 +65,6 @@ h1 {
   text-align: center;
 }
 
-.experience__sliders {
-  background-color: purple;
-}
-
-.experience__slider {
+.slick-slide img {
   margin: 0 auto;
 }

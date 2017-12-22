@@ -154,16 +154,15 @@
   top: 0;
   left: 0;
 
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
 
   font-size: 6px;
   line-height: 20px;
   font-family: "slick";
   text-align: center;
-  color: black;
 
-  background-color: red;
+  background-color: black;
   border-radius: 50%;
   opacity: 0.25;
 
