@@ -1,93 +1,135 @@
 body {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   font-family: "Open Sans", sans-serif;
 }
 
-h1 {
-  margin-bottom: 50px;
+.section__heading-h1 {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 30px 0 50px;
 
   text-align: center;
 }
 
+.section__heading-h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.section__heading-h2--about {
+  text-align: left;
+}
+
+.section__heading-h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+
+/*about me*/
 .about-me {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .about-me__photo {
   margin-right: 50px;
 }
 
+.about-me__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.about-me__list:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
 .intern-ship {
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
-.intern-ship__question {
-  text-align: center;
-}
 
 
 .useful {
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
-.useful__question {
-  text-align: center;
+.useful__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 26px;
 }
+
+
+
+
 
 
 .experience {
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
-.experience__heading {
-  text-align: center;
+.experience__request {
+  font-style: italic;
 }
 
-.experience__picture {
+
+.step {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.step__picture {
   display: block;
   margin: 0 auto 40px;
 }
 
-.experience__sliders {
+.step__list {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+.thanks {
   margin-bottom: 50px;
 }
 
-.experience__title {
-  text-align: center;
-}
-
-.experience__list-main {
-  margin: 20px 0 10px;
-}
-
-.experience__list-meta {
-  margin-bottom: 40px;
-}
-
+/*slick slider*/
 .slick-dotted.slick-slider {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .slick-slide img {
   margin: 0 auto 20px;
-}
-
-@media (max-width: 1200px) {
-  .about-me,
-  .intern-ship,
-  .useful,
-  .experience {
-    width: auto;
-    padding: 0 20px;
-  }
 }
