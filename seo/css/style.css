@@ -59,7 +59,7 @@ h1 {
 }
 
 .experience__sliders {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .experience__title {
@@ -79,7 +79,7 @@ h1 {
 }
 
 .slick-slide img {
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 @media (max-width: 1200px) {
