@@ -2,41 +2,40 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-family: "Open Sans", sans-serif;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.section__heading-h1 {
-  font-size: 35px;
-  line-height: 50px;
+.section__heading {
   font-weight: lighter;
   text-transform: uppercase;
+}
+
+.section__heading--h1 {
+  font-size: 35px;
+  line-height: 50px;
   margin: 30px 0 50px;
 
   text-align: center;
 }
 
-.section__heading-h2 {
+.section__heading--h2 {
   font-size: 24px;
   line-height: 28px;
-  font-weight: lighter;
-  text-transform: uppercase;
   text-align: center;
   margin: 0 0 10px;
 }
 
-.section__heading-h2--about {
+.section__heading--h2-about {
   text-align: left;
 }
 
-.section__heading-h3 {
+.section__heading--h3 {
   font-size: 24px;
   line-height: 28px;
-  font-weight: lighter;
-  text-transform: uppercase;
   margin: 0 0 10px;
 }
 
-
-/*about me*/
 .about-me {
   display: flex;
   flex-wrap: wrap;
@@ -61,20 +60,11 @@ body {
   margin-bottom: 0;
 }
 
-
-
-
 .intern-ship {
-  width: 1200px;
-  margin: 0 auto;
   margin-bottom: 80px;
 }
 
-
-
 .useful {
-  width: 1200px;
-  margin: 0 auto;
   margin-bottom: 80px;
 }
 
@@ -86,26 +76,15 @@ body {
   line-height: 26px;
 }
 
-
-
-
-
-
 .experience {
-  width: 1200px;
-  margin: 0 auto;
   margin-bottom: 80px;
 }
-
 .experience__request {
   font-style: italic;
 }
 
-
 .step {
-  width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 80px;  
 }
 
 .step__picture {
@@ -119,7 +98,6 @@ body {
   font-size: 16px;
   line-height: 26px;
 }
-
 
 .thanks {
   margin-bottom: 50px;
