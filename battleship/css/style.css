@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+}
+
+.battleship {
+  position: relative;
+
+  width: 1024px;
+  height: 863px;
+  margin: 0 auto;
+
+  background: url(../img/board.jpg) no-repeat center;
+}
+
+.battleship__message {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 100%;
+  padding: 10px;
+
+  font-size: 24px;
+  text-align: center;
+  color: white;
+
+  border: 2px solid white;
+}
+
+.battleship__table {
+  position: absolute;
+  top: 98px;
+  left: 173px;
+
+  border-spacing: 0;
+  color: white;
+}
+
+.battleship__cell {
+  width: 94px;
+  height: 94px;
+}
+
+.battleship__form {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  padding: 15px;
+
+  background-color: rgb(83, 175, 19);
+}
+
+.battleship__input {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 5px 0 5px 20px;
+
+  font-size: 18px;
+
+  border-color: rgb(83, 175, 19);
+}
+
+.battleship__button {
+  box-sizing: border-box;
+  width: 100px;
+  padding: 5px;
+
+  font-size: 16px;
+  color: white;
+
+  background-color: orangered;
+  border: 2px solid orangered;
+}
+
+.battleship__button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.hit {
+  background: url(../img/ship.png) no-repeat center;
+}
+
+.miss {
+  background: url(../img/miss.png) no-repeat center;
+}
