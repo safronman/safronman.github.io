@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+*.log
+*.pdf
+*.psd
+*.json
+.vscode/
+node_modules/
+Thumb.db
+gitignore/
+fonts/
