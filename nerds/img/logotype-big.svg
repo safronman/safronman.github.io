@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 194.96 74.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_119);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_67);
+      }
+
+      .cls-3, .cls-4, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_132);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_160);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_134);
+      }
+
+      .cls-6 {
+        opacity: 0.63;
+        fill: url(#Degradado_sin_nombre_505);
+      }
+
+      .cls-7 {
+        opacity: 0.65;
+        fill: url(#Degradado_sin_nombre_84);
+      }
+
+      .cls-8 {
+        fill: url(#Degradado_sin_nombre_129);
+      }
+
+      .cls-9 {
+        font-size: 35px;
+        fill: #4f0b42;
+        font-family: Broadway, Broadway;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_119" data-name="Degradado sin nombre 119" x1="65.51" y1="25.29" x2="92.71" y2="58.02" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d66b"/>
+      <stop offset="0.08" stop-color="#27ca6b"/>
+      <stop offset="0.25" stop-color="#12b56c" stop-opacity="0.99"/>
+      <stop offset="0.41" stop-color="#05a96c" stop-opacity="0.99"/>
+      <stop offset="0.56" stop-color="#01a56c" stop-opacity="0.99"/>
+      <stop offset="0.97" stop-color="#002e4f" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_67" data-name="Degradado sin nombre 67" x1="82.66" y1="21.18" x2="82.66" y2="21.18" gradientUnits="userSpaceOnUse">
+      <stop offset="0.01" stop-color="#01b89d"/>
+      <stop offset="0.33" stop-color="#01968e" stop-opacity="0.99"/>
+      <stop offset="1" stop-color="#00466a" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_132" data-name="Degradado sin nombre 132" x1="136.71" y1="28.13" x2="103.95" y2="9.44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#222961"/>
+      <stop offset="0.12" stop-color="#203262"/>
+      <stop offset="0.3" stop-color="#1b4b63" stop-opacity="0.99"/>
+      <stop offset="0.54" stop-color="#137365" stop-opacity="0.99"/>
+      <stop offset="0.81" stop-color="#09aa68" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#00d66b" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_160" data-name="Degradado sin nombre 160" x1="86.49" y1="2.73" x2="159.81" y2="32.53" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#222961" stop-opacity="0"/>
+      <stop offset="0.11" stop-color="#203060" stop-opacity="0.05"/>
+      <stop offset="0.29" stop-color="#1c435c" stop-opacity="0.18"/>
+      <stop offset="0.52" stop-color="#146256" stop-opacity="0.39"/>
+      <stop offset="0.78" stop-color="#0a8c4d" stop-opacity="0.69"/>
+      <stop offset="1" stop-color="#00b545" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_134" data-name="Degradado sin nombre 134" x1="135.44" y1="11.3" x2="93.41" y2="76.54" gradientUnits="userSpaceOnUse">
+      <stop offset="0.01" stop-color="#01c270"/>
+      <stop offset="0.44" stop-color="#019567"/>
+      <stop offset="1" stop-color="#00555b"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_505" data-name="Degradado sin nombre 505" x1="123.96" y1="0.08" x2="109.34" y2="22.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#222961"/>
+      <stop offset="0.42" stop-color="#212d62" stop-opacity="0.98"/>
+      <stop offset="0.59" stop-color="#1f3964" stop-opacity="0.91"/>
+      <stop offset="0.71" stop-color="#1b4f67" stop-opacity="0.78"/>
+      <stop offset="0.82" stop-color="#146e6d" stop-opacity="0.6"/>
+      <stop offset="0.9" stop-color="#0d9673" stop-opacity="0.37"/>
+      <stop offset="0.98" stop-color="#03c77c" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#00d67e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_84" data-name="Degradado sin nombre 84" x1="98.56" y1="31.06" x2="88.1" y2="71.42" gradientUnits="userSpaceOnUse">
+      <stop offset="0.01" stop-color="#01c49d" stop-opacity="0"/>
+      <stop offset="0.1" stop-color="#06a990" stop-opacity="0.16"/>
+      <stop offset="0.32" stop-color="#116d74" stop-opacity="0.51"/>
+      <stop offset="0.55" stop-color="#1a415f" stop-opacity="0.77"/>
+      <stop offset="0.77" stop-color="#1e2853" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#201f4f" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_129" data-name="Degradado sin nombre 129" x1="131.45" y1="45.49" x2="90.44" y2="32.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0.01" stop-color="#01c49d" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#248088" stop-opacity="0.38"/>
+      <stop offset="0.78" stop-color="#4a3472" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#591769" stop-opacity="0.96"/>
+    </linearGradient>
+  </defs>
+  <title>logotype-big</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Objects">
+      <g>
+        <polygon class="cls-1" points="65.62 0 54.53 21.18 85.03 74.21 109.77 74.2 65.62 0"/>
+        <path class="cls-2" d="M82.66,21.18"/>
+        <polygon class="cls-3" points="85.02 21.18 95.03 0 127.61 0.4 140.43 21.07 85.02 21.18"/>
+        <polygon class="cls-4" points="85.02 21.18 95.03 0 127.61 0.4 140.43 21.07 85.02 21.18"/>
+        <polyline class="cls-5" points="85.02 74.2 109.77 74.2 140.43 21.07 127.61 0.4"/>
+        <path class="cls-6" d="M127.61.4c-1,.72-22.47,20.75-22.47,20.75l10.51,0Z"/>
+        <polygon class="cls-7" points="85.03 74.21 91.13 42.87 97.22 53.12 85.03 74.21"/>
+        <polyline class="cls-8" points="85.02 74.2 109.77 74.2 140.43 21.07 127.61 0.4"/>
+      </g>
+      <text class="cls-9" transform="translate(0 47.43)"><tspan xml:space="preserve">RE           EB</tspan></text>
+    </g>
+  </g>
+</svg>

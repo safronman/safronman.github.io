@@ -69,6 +69,10 @@ main,
   padding-top: 49px;
 }
 
+.logo-image {
+  padding-top: 5px;
+}
+
 .logo-pages:hover {
   opacity: 0.8;
 }
@@ -215,19 +219,25 @@ main,
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+#btn-3:checked ~ .slider-controls label[for="btn-3"], 
+#btn-4:checked ~ .slider-controls label[for="btn-4"], 
+#btn-5:checked ~ .slider-controls label[for="btn-5"] {
   border: 2px solid #fb565a;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
-
 #btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
-
 #btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+#btn-4:checked ~ .slides .slide:nth-child(4) {
+  display: block;
+}
+#btn-5:checked ~ .slides .slide:nth-child(5) {
   display: block;
 }
 
@@ -244,19 +254,30 @@ main,
 }
 
 .slide:nth-child(1) {
-  background: url("../img/slide-1.png") no-repeat;
+  background: url("../img/slider-web-design.svg") no-repeat;
   background-position: right bottom;
 }
 
 .slide:nth-child(2) {
-  background: #eeeeee url("../img/slide-2.png") no-repeat;
+  background: #eeeeee url("../img/slider-ui-ux-design.svg") no-repeat;
   background-position: right bottom;
 }
 
 .slide:nth-child(3) {
-  background: #eeeeee url("../img/slide-3.png") no-repeat;
+  background: #eeeeee url("../img/slider-data-analysis.svg") no-repeat;
   background-position: right bottom;
 }
+
+.slide:nth-child(4) {
+  background: #eeeeee url("../img/slider-apps-development.svg") no-repeat;
+  background-position: right bottom;
+}
+
+.slide:nth-child(5) {
+  background: #eeeeee url("../img/slider-teamwork.svg") no-repeat;
+  background-position: right bottom;
+}
+
 
 .slide h3 {
   width: 560px;
