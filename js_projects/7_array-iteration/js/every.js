@@ -23,7 +23,7 @@ let result = numberArray.every((item) => {
   return item >= 0;
 });
 
-console.log(allNumbersPositive);
-console.log(result);
+console.log(allNumbersPositive);    //false
+console.log(result);                //false
 
 

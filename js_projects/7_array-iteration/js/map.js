@@ -21,9 +21,9 @@ let resultArray2 = numberArray.map((item) => {
   return parseInt(item);
 });
 
-console.log(numberArray);
-console.log(resultArray1);
-console.log(resultArray2);
+console.log(numberArray);   // ["1", "-4", "0", "23", "-98", "-87", "55"]
+console.log(resultArray1);  // [1, -4, 0, 23, -98, -87, 55]
+console.log(resultArray2);  // [1, -4, 0, 23, -98, -87, 55]
 
 
 

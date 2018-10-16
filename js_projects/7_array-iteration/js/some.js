@@ -23,5 +23,5 @@ let result = numberArray.some((item) => {
   return item < 0;
 });
 
-console.log(someNumberNegative);
-console.log(result);
+console.log(someNumberNegative);    // true
+console.log(result);                // true

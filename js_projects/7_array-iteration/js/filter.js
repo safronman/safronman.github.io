@@ -23,9 +23,9 @@ let resultArray2 = numberArray.filter((item) => {
   return item < 0;
 });
 
-console.log(numberArray);
-console.log(resultArray1);
-console.log(resultArray2);
+console.log(numberArray); 
+console.log(resultArray1);  // [-4, -98, -87]
+console.log(resultArray2);  // [-4, -98, -87]
 
 
 
