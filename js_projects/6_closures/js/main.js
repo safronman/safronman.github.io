@@ -2,19 +2,16 @@
 // Замыканиями они называются потому, что младшая функция их замыкает внутри старшей.
 
 
-// 2. Замыкание возникает в том случае когда мы из одной функции makeCounter() возвращаем новую функцию counter.
-// Тогда мы говорим, что новая функция counter() замкнута на область видимости родительской функции makeCounter()
+// 2. Замыкание - это функция, которая имеет доступ к переменным, объявленным вне данной функции.
 
 function makeCounter() {
   let currentCount = 0;
 
-  // область видимости функции counter замкнута на переменную currentCount
-  function counter() {
+  // возвращаемая функция замкнута на переменной currentCount
+  return function () {
     currentCount++;
     return currentCount;
   }
-
-  return counter;
 };
 
 
@@ -52,15 +49,15 @@ button2.addEventListener('click', function () {
 // 2 пример
 // Замыкание - функция, которая ссылается на переменные объявленные вне данной функции
 
-function makeGreeting() {
-  let myName = 'Ivan';
+// function makeGreeting() {
+//   let myName = 'Ivan';
 
-  function greeting(personName) {
-    return `Hello ${personName}! My name is ${myName}`;
-  }
+//   function greeting(personName) {
+//     return `Hello ${personName}! My name is ${myName}`;
+//   } 
 
-  return greeting;
-}
+//   return greeting;
+// }
 
-let newGreeting = makeGreeting();
-console.log(newGreeting('John'));
+// let newGreeting = makeGreeting();
+// console.log(newGreeting('John'));
