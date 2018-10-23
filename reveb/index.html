@@ -31,48 +31,66 @@
       <h1 class="visually-hidden">Дизайн студия из Краснодара</h1>
     </div>
 
-    <section class="slider-index">
-      <h2 class="visually-hidden">Наши особенности</h2>
-      <input class="visually-hidden" type="radio" name="toggle" id="btn-1" checked>
-      <input class="visually-hidden" type="radio" name="toggle" id="btn-2">
-      <input class="visually-hidden" type="radio" name="toggle" id="btn-3">
-      <input class="visually-hidden" type="radio" name="toggle" id="btn-4">
-      <input class="visually-hidden" type="radio" name="toggle" id="btn-5">
-      <div class="slider-controls">
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
-        <label for="btn-4"></label>
-        <label for="btn-5"></label>
-      </div>
+    <div class="slider">
+
       <div class="slides">
-        <div class="slide">
-          <h3>Визуальный слой</h3>
-          <p>Почти все люди - визуалы. Мы воспринимаем информацию лучше всего через визуальные образы</p>
-          <a href="#" class="button">Узнать больше</a>
+
+        <div class="slide  slide-hidden  slide-show  clearfix">
+          <div class="slide-content">
+            <h3>Визуальный слой</h3>
+            <p>Почти все люди - визуалы. Мы воспринимаем информацию лучше всего через визуальные образы</p>
+            <a href="#" class="button">Узнать больше</a>
+          </div>
+          <div class="slide-image  slide-image-1"></div>
         </div>
-        <div class="slide">
-          <h3>Аналитический слой</h3>
-          <p>Кто, когда и почему посещал сайт? Понимание этого позволяет вам быть на голову выше конкурентов</p>
-          <a href="#" class="button">Узнать больше</a>
+
+        <div class="slide  slide-hidden  clearfix">
+          <div class="slide-content">
+            <h3>Аналитический слой</h3>
+            <p>Кто, когда и почему посещал сайт? Понимание этого позволяет вам быть на голову выше конкурентов</p>
+            <a href="#" class="button">Узнать больше</a>
+          </div>
+          <div class="slide-image  slide-image-2"></div>
         </div>
-        <div class="slide">
-          <h3>Смысловой слой</h3>
-          <p>При разработке сайта мы полностью погружаемся в ваш бизнес с головой, используя весь ваш опыт</p>
-          <a href="#" class="button">Узнать больше</a>
+
+        <div class="slide  slide-hidden  clearfix">
+          <div class="slide-content">
+            <h3>Смысловой слой</h3>
+            <p>При разработке сайта мы полностью погружаемся в ваш бизнес с головой, используя весь ваш опыт</p>
+            <a href="#" class="button">Узнать больше</a>
+          </div>
+          <div class="slide-image  slide-image-3"></div>
         </div>
-        <div class="slide">
-          <h3>Технический слой</h3>
-          <p>Высокая скорость загрузки, адаптивность, современные веб-технологии - все должно работать,как задумывалось</p>
-          <a href="#" class="button">Узнать больше</a>
+
+        <div class="slide  slide-hidden  clearfix">
+          <div class="slide-content">
+            <h3>Технический слой</h3>
+            <p>Высокая скорость загрузки, адаптивность, современные веб-технологии - все должно работать,как задумывалось</p>
+            <a href="#" class="button">Узнать больше</a>
+          </div>
+          <div class="slide-image  slide-image-4"></div>
         </div>
-        <div class="slide">
-          <h3>Конверсионный слой</h3>
-          <p>Мы знаем, что такое продвижение бизнеса в интернете и поможем вашему сайту приводить новых клиентов</p>
-          <a href="#" class="button">Узнать больше</a>
+        
+        <div class="slide  slide-hidden  clearfix">
+          <div class="slide-content">
+            <h3>Конверсионный слой</h3>
+            <p>Мы знаем, что такое продвижение бизнеса в интернете и поможем вашему сайту приводить новых клиентов</p>
+            <a href="#" class="button">Узнать больше</a>
+          </div>
+          <div class="slide-image  slide-image-5"></div>
         </div>
+
       </div>
-    </section>
+
+      <div class="slider-controls">
+        <div class="slider-control  slider-control-1  slider-control-active"></div>
+        <div class="slider-control  slider-control-2"></div>
+        <div class="slider-control  slider-control-3"></div>
+        <div class="slider-control  slider-control-4"></div>
+        <div class="slider-control  slider-control-5"></div>
+      </div>
+
+    </div>
 
   </header>
 
@@ -89,13 +107,13 @@
         <img src="./img/app.jpg" alt="разработка приложений для расширения вашего бизнеса" width="300" height="146" title="разработка приложений">
         <h3>Приложения</h3>
         <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
-        <a href="#" class="button button-green">Заказать</a>
+        <a href="#" class="button">Заказать</a>
       </div>
       <div class="product-item">
         <img src="./img/game.jpg" alt="разработка презентаций для вашего бизнеса" width="300" height="146" title="разработка презентаций">
         <h3>Игры</h3>
         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-        <a href="#" class="button button-yellow">Заказать</a>
+        <a href="#" class="button">Заказать</a>
       </div>
     </section>
 
@@ -111,7 +129,7 @@
         </ul>
       </div>
       <div class="numbers">
-        <img src="./img/nerds.jpg" alt="Логотип Reveb" width="360" height="208">
+        <img src="./img/logotype-img.svg" alt="Логотип Reveb" width="160">
         <h3>С 2003 года любим точность во всем:</h3>
         <ul class="percent">
           <li>146<span class="sup">%</span></li>
@@ -128,17 +146,17 @@
 
   <section class="our-works clearfix">
     <h2 class="visually-hidden">Наши работы</h2>
-    <div class="column-4">
-      <a href="#"><img class="logo-htmlacademy" src="./img/logo-htmlacademy.png" alt="htmlacademy" width="199" height="68"></a>
+    <div class="works-column">
+      <a href="#"><img class="logo-max" src="./img/logo-1.svg" alt="max" width="150"></a>
     </div>
-    <div class="column-4">
-      <a href="#"><img class="logo-borodinsky" src="./img/logo-borodinsky.png" alt="borodinsky" width="209" height="90"></a>
+    <div class="works-column">
+      <a href="#"><img class="logo-gaming" src="./img/logo-2.svg" alt="gaming" width="150"></a>
     </div>
-    <div class="column-4">
-      <a href="#"><img class="logo-pink" src="./img/logo-pink.png" alt="pink" width="185" height="52"></a>
+    <div class="works-column">
+      <a href="#"><img class="logo-eco" src="./img/logo-3.svg" alt="eco"  width="150"></a>
     </div>
-    <div class="column-4">
-      <a href="#"><img class="logo-mishka" src="./img/logo-mishka.png" alt="mishka" width="173" height="84"></a>
+    <div class="works-column">
+      <a href="#"><img class="logo-candy" src="./img/logo-4.svg" alt="candy"  width="150"></a>
     </div>
   </section>
 
@@ -195,16 +213,15 @@
       <button class="close-modal-form" type="button" name="modal-button-close">Закрыть модальное окно</button>
     </div>
   </div>
+
   <!-- модальное окно для перкрытия основного содержания -->
   <div class="modal-overlay"></div>
 
   <!-- Скрипт для Яндекс карты -->
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script type="text/javascript" src="js/yandexmap.js"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="js/yandexmap.js"></script> -->
 
-  <!-- Скрипт для открытия модального окна формы обратной связи -->
-  <script type="text/javascript" src="js/form.js"></script>
-
-
+  <script src="js/form.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>
