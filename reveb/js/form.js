@@ -3,9 +3,6 @@ let formClose = document.querySelector('.close-modal-form');
 let modalWindow = document.querySelector('.modal-form');
 let overlayWindow = document.querySelector('.modal-overlay');
 let formName = document.querySelector('#your-name');
-let formNameTwo = document.querySelector('form input');
-let formMail = document.querySelector('#your-mail');
-let form = document.querySelector('.modal-form form');
 
 formOpen.addEventListener('click', function() {
   event.preventDefault();
