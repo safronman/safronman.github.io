@@ -35,6 +35,7 @@
   <main class="clearfix">
     <section class="filter">
       <form class="" action="index.html" method="post">
+
         <fieldset>
           <legend class="price">Стоимость:</legend>
           <div class="range-filter">
@@ -47,10 +48,12 @@
               <div class="toggle max-toggle"></div>
             </div>
             <div class="price-control">
-              от <input class="min-price" type="number" value="0"> до <input class="max-price" type="number" value="15000">
+              от <input class="min-price" type="number" value="0">
+              до <input class="max-price" type="number" value="9000">
             </div>
           </div>
         </fieldset>
+
         <fieldset>
           <legend class="grid">Сетка:</legend>
           <ul>
@@ -97,102 +100,22 @@
     </section>
 
     <section class="template">
-      <div class="clearfix">
+
+      <div class="template-sort">
         <b class="sort-title">Сортировать:</b>
-        <div class="clearfix">
-          <ul class="sort-type">
-            <li class="selected">по цене</li>
-            <li>по типу</li>
-            <li>по названию</li>
-          </ul>
-          <ul class="sort-up-down">
-            <li class="up selected"></li>
-            <li class="down"></li>
-          </ul>
-        </div>
+        <select class="select-templates" name="sort">
+          <option class="sort-random" value="random">В случайном порядке</option>
+          <option class="sort-price-from-min" value="price-from-min">По цене: начать с меньшей</option>
+          <option class="sort-price-from-max" value="price-from-max">По цене: начать с большей</option>
+          <option class="sort-name-from-min" value="name-from-min">По названию: от A до Z</option>
+          <option class="sort-name-from-max" value="name-from-max">По названию: от Z до A</option>
+        </select>
       </div>
 
-      <div class="tempalate-items clearfix">
-        <div class="template-item">
-          <div class="browser">
-            <div class="browser-circle browser-circle-1"></div>
-            <div class="browser-circle browser-circle-2"></div>
-            <div class="browser-circle browser-circle-3"></div>
-          </div>
-          <img src="./img/template-1.jpg" alt="Информационный сайт компании Tesla" width="360" height="504">
-          <div class="template-desc">
-            <h2 class="template-title">Tesla car</h2>
-            <p>Информационный сайт компании Tesla</p>
-            <a class="button template-price" href="#">900 руб.</a>
-          </div>
-        </div>
-        <div class="template-item">
-          <div class="browser">
-            <div class="browser-circle browser-circle-1"></div>
-            <div class="browser-circle browser-circle-2"></div>
-            <div class="browser-circle browser-circle-3"></div>
-          </div>
-          <img src="./img/template-2.jpg" alt="Продуктовый лендинг приложения Vapid" width="360" height="504">
-          <div class="template-desc">
-            <h2 class="template-title">Vapid</h2>
-            <p>Продуктовый лендинг приложения Vapid</p>
-            <a class="button template-price" href="#">800 руб.</a>
-          </div>
-        </div>
-        <div class="template-item">
-          <div class="browser">
-            <div class="browser-circle browser-circle-1"></div>
-            <div class="browser-circle browser-circle-2"></div>
-            <div class="browser-circle browser-circle-3"></div>
-          </div>
-          <img src="./img/template-3.jpg" alt="Посадочная страница линейки от Apple" width="360" height="504">
-          <div class="template-desc">
-            <h2 class="template-title">We host</h2>
-            <p>Посадочная страница линейки от Apple</p>
-            <a class="button template-price" href="#">2 100 руб.</a>
-          </div>
-        </div>
-        <div class="template-item">
-          <div class="browser">
-            <div class="browser-circle browser-circle-1"></div>
-            <div class="browser-circle browser-circle-2"></div>
-            <div class="browser-circle browser-circle-3"></div>
-          </div>
-          <img src="./img/template-4.jpg" alt="Elegant - почувствствуй себя элегантной" width="360" height="504">
-          <div class="template-desc">
-            <h2 class="template-title">Elegant</h2>
-            <p>Elegant - почувствствуй себя элегантной</p>
-            <a class="button template-price" href="#">500 руб.</a>
-          </div>
-        </div>
-        <div class="template-item">
-          <div class="browser">
-            <div class="browser-circle browser-circle-1"></div>
-            <div class="browser-circle browser-circle-2"></div>
-            <div class="browser-circle browser-circle-3"></div>
-          </div>
-          <img src="./img/template-5.jpg" alt="Промо сайт компании Brink" width="360" height="504">
-          <div class="template-desc">
-            <h2 class="template-title">Brink</h2>
-            <p>Промо сайт компании Brink</p>
-            <a class="button template-price" href="#">780 руб.</a>
-          </div>
-        </div>
-        <div class="template-item">
-          <div class="browser">
-            <div class="browser-circle browser-circle-1"></div>
-            <div class="browser-circle browser-circle-2"></div>
-            <div class="browser-circle browser-circle-3"></div>
-          </div>
-          <img src="./img/template-6.jpg" alt="Информационный сайт компании Roof" width="360" height="504">
-          <div class="template-desc">
-            <h2 class="template-title">Roof</h2>
-            <p>Информационный сайт компании Roof</p>
-            <a class="button template-price" href="#">1200 руб.</a>
-          </div>
-        </div>
-      </div>
+      <div class="template-items clearfix"></div>
+      
     </section>
+
     <div class="pagination">
       <ul>
         <li><a class="pagination-select">1</a></li>
@@ -256,12 +179,18 @@
   </div>
   <!-- модальное окно для перкрытия основного содержания -->
   <div class="modal-overlay"></div>
+
+  <!-- Скрипт для открытия модального окна формы обратной связи -->
+  <script type="text/javascript" src="js/form.js"></script>
+
+  <script src="js/filter.js"></script>
+
+  <script src="js/templateArray.js"></script>
+  <script src="js/TemplateSorter.js"></script>
+  <script src="js/main.js"></script>
   <!-- Скрипт для Яндекс карты -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script type="text/javascript" src="js/yandexmap.js"></script>
 
-  <!-- Скрипт для открытия модального окна формы обратной связи -->
-  <script type="text/javascript" src="js/form.js"></script>
-  <script src="js/catalog-sort.js"></script>
 </body>
 </html>
