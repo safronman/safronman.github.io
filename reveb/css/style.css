@@ -244,7 +244,7 @@ main,
 }
 
 .filter .max-toggle {
-  left: 162px;
+  left: 220px;
 }
 
 .filter .price-control input[type="number"] {
@@ -365,8 +365,15 @@ main,
   width: 760px;
 }
 
-.template .sort-title {
-  display: block;
+.template-sort {
+  width: 100%;
+  margin: 0 0 35px;
+}
+
+
+.template-sort .sort-title {
+  display: inline-block;
+  margin-right: 20px;
 
   font-weight: bold;
   font-size: 18px;
@@ -375,89 +382,16 @@ main,
   text-transform: uppercase;
 }
 
-.template ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.template li {
+.template-sort .select-templates {
   display: inline-block;
+  padding: 10px;
 
-  vertical-align: top;
-  color: #000000;
-
-  opacity: 0.3;
+  border: 2px solid #000000;
 }
 
-.template li:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
 
-.template li:active {
-  cursor: pointer;
-  opacity: 1;
-}
 
-.template li.selected {
-  opacity: 1;
-}
-
-.template .sort-title {
-  float: left;
-  width: 360px;
-  margin: 0 40px 52px 0;
-}
-
-.template .sort-up-down,
-.template .sort-type {
-  float: right;
-  width: 360px;
-  margin-top: 5px;
-
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.template .sort-type {
-  float: left;
-  width: 280px;
-}
-
-.template .sort-type li {
-  margin-right: 24px;
-}
-
-.template .sort-type li:last-child {
-  margin-right: 0;
-}
-
-.template .sort-up-down {
-  float: right;
-  width: 42px;
-}
-
-.template .sort-up-down .up {
-  width: 9px;
-  height: 9px;
-  margin-right: 20px;
-
-  background: url("../img/icon/sort.png") no-repeat;
-  background-position: center;
-}
-
-.template .sort-up-down .down {
-  width: 9px;
-  height: 9px;
-
-  background: url("../img/icon/sort.png") no-repeat;
-  background-position: center;
-  transform: rotate(180deg);
-}
-
+/* Template items  */
 .template-items {
   width: 760px;
 }
@@ -474,7 +408,7 @@ main,
   margin-right: 40px;
 }
 
-.template-item:hover .template-desc {
+.template-item .template-desc {
   display: block;
 
   cursor: pointer;
