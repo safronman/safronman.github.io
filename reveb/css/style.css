@@ -1125,7 +1125,6 @@ main,
 
 .slide-image {
   height: 400px;
-
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
@@ -1175,4 +1174,21 @@ main,
 .slider-control:hover {
   background-color: #009958;
   cursor: pointer;
+}
+
+
+.slide-animation {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    margin: 0 30%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -18,6 +18,7 @@ function showSlide(event) {
   let activeSlide = document.querySelector('.slide-show');
   activeSlide.classList.remove('slide-show');
   let indexEl = arraySliderControls.indexOf(event.currentTarget);
+  slides[indexEl].classList.add('slide-animation');
   slides[indexEl].classList.add('slide-show');
 }
 
