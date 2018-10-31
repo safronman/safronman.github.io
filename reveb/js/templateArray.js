@@ -2,42 +2,54 @@ let templateArray = [
   {
   src: './img/template-1.jpg',
   title: 'Tesla car',
-  desc: 'Информационный сайт компании Tesla',
-  price: '900'
+  desc: 'Анимированный лэндинг',
+  grid: 'адаптивная',
+  features: 'галерея',
+  price: '2100'
 },
 
 {
   src: './img/template-2.jpg',
   title: 'Vapid',
-  desc: 'Продуктовый лендинг приложения Vapid',
-  price: '800'
+  desc: 'Учебный веб-ресурс',
+  grid: 'резиновая',
+  features: 'преимущества',
+  price: '5600'
 },
 
 {
   src: './img/template-3.jpg',
   title: 'We host',
-  desc: 'Посадочная страница линейки от Apple',
-  price: '2100'
+  desc: 'Интернет-магазин модемов',
+  grid: 'резиновая',
+  features: 'корзина',
+  price: '4700'
 },
 
  {
   src: './img/template-4.jpg',
   title: 'Elegant',
-  desc: 'Elegant - почувствствуй себя элегантной',
-  price: '500'
+  desc: 'Посадочная бьюти страницы',
+  grid: 'фиксированная',
+  features: 'слайдер',
+  price: '1200'
 },
 
 {
   src: './img/template-5.jpg',
   title: 'Brink',
-  desc: 'Промо сайт компании хокейного клуба Brink',
-  price: '780'
+  desc: 'Хоккейный новостной портал',
+  grid: 'адаптивная',
+  features: 'новости',
+  price: '8300'
 },
 
  {
   src: './img/template-6.jpg',
-  title: 'Vapid',
-  desc: 'Информационный сайт компании Roof',
-  price: '1200'
+  title: 'Roof',
+  desc: 'Информационный сайт',
+  grid: 'фиксированная',
+  features: 'слайдер',
+  price: '3300'
 }
 ]
