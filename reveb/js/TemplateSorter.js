@@ -59,7 +59,12 @@ class TemplateSorter {
         <div class="template-desc">
           <h2 class="template-title">${item.title}</h2>
           <p>${item.desc}</p>
-          <a class="button template-price" href="#">${item.price} руб.</a>
+          <ul>
+            <li>Сетка: ${item.grid}</li>
+            <li>Особенности: ${item.features}</li>
+            <li>Стоимость: ${item.price} руб.</li>
+          </ul>
+          <button class="button template-button">В корзину</button>
         </div>`
     });
   }
