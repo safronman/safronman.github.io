@@ -1,10 +1,10 @@
 class TemplateSorter {
-  constructor(tempArray) {
+  constructor() {
     this.selectSort = null;
     this.activeSelect = null;
 
-    this.templateContainer = null;
-    this.templateArray = tempArray;
+    this.renderTemplate = new RenderTemplate();
+    this.renderTemplate.init();
   }
 
   init() {
@@ -15,57 +15,30 @@ class TemplateSorter {
 
       switch (this.activeSelect.value) {
         case 'price-from-min':
-          this.templateArray.sort(this.sortNumbersFromMinToMax);
-          this.render();
+          this.renderTemplate.templateArray.sort(this.sortNumbersFromMinToMax);
+          this.renderTemplate.render();
           break;
 
         case 'price-from-max':
-          this.templateArray.sort(this.sortNumbersFromMaxToMin);
-          this.render();
+          this.renderTemplate.templateArray.sort(this.sortNumbersFromMaxToMin);
+          this.renderTemplate.render();
           break;
 
         case 'name-from-min':
-          this.templateArray.sort(this.sortStringsFromFirstToLast);
-          this.render();
+          this.renderTemplate.templateArray.sort(this.sortStringsFromFirstToLast);
+          this.renderTemplate.render();
           break;
 
         case 'name-from-max':
-          this.templateArray.sort(this.sortStringsFromLastToFirst);
-          this.render();
+          this.renderTemplate.templateArray.sort(this.sortStringsFromLastToFirst);
+          this.renderTemplate.render();
           break;
 
         case 'random':
-          this.shuffleArray(this.templateArray);
-          this.render();
+          this.shuffleArray(this.renderTemplate.templateArray);
+          this.renderTemplate.render();
           break;
       }
-    });
-  }
-
-  render() {
-    this.templateContainer = document.querySelector('.template-items');
-
-    this.templateContainer.innerHTML = '';
-
-    this.templateArray.forEach(item => {
-      this.templateContainer.innerHTML += `
-      <div class="template-item">
-        <div class="browser">
-          <div class="browser-circle browser-circle-1"></div>
-          <div class="browser-circle browser-circle-2"></div>
-          <div class="browser-circle browser-circle-3"></div>
-        </div>
-        <img src='${item.src}' alt="${item.desc}" width="360" height="504">
-        <div class="template-desc">
-          <h2 class="template-title">${item.title}</h2>
-          <p>${item.desc}</p>
-          <ul>
-            <li>Сетка: ${item.grid}</li>
-            <li>Особенности: ${item.features}</li>
-            <li>Стоимость: ${item.price} руб.</li>
-          </ul>
-          <button class="button template-button">В корзину</button>
-        </div>`
     });
   }
 
@@ -104,3 +77,7 @@ class TemplateSorter {
     }
   }
 }
+
+
+let templateSorter = new TemplateSorter();
+templateSorter.init();
