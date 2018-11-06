@@ -1,3 +1,3 @@
-let sort1 = new TemplateSorter(templateArray);
-sort1.init();
-sort1.render();
+// let sort1 = new TemplateSorter(templateArray);
+// sort1.init();
+// sort1.render();
