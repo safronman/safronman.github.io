@@ -1,0 +1,21 @@
+@mixin container() {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 110px;
+
+  border: 1px solid red;
+
+  @media (max-width: 1200px) {
+    width: 640px;
+    padding: 0 54px;
+
+    border: 1px solid orange;
+  }
+
+  @media (max-width: 768px) {
+    width: 320px;
+    padding: 0;
+
+    border: 1px solid skyblue;
+  }
+}

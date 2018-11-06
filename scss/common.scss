@@ -1,0 +1,26 @@
+body {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+/* Чтобы картинки не вылазили за родительский блок */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Скрытие элементов с сохранением доступности */
+.visually-hidden {
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+
+  border: 0 !important;
+
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
