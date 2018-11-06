@@ -15,11 +15,11 @@
 let myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
 
 // 1. Удаление элементов из массива
-let deleteFishElement = myFish.splice(4, myFish.length);  
-console.log(myFish);  // ["angel", "clown", "drum", "mandarin"]  
+let deleteFishElement = myFish.splice(4, myFish.length);
+console.log(myFish);  // ["angel", "clown", "drum", "mandarin"]
 
 // 2. Замена элементов массива
-let replaceFishElement = myFish.splice(2, 1, 'ariel');    
+let replaceFishElement = myFish.splice(2, 1, 'ariel');
 console.log(myFish);  // ["angel", "clown", "ariel", "mandarin"]
 
 // 3. Добавление элементов массива без удаления
