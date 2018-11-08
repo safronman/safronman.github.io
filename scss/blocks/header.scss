@@ -1,0 +1,12 @@
+.header {
+  @include container();
+  margin-bottom: 50px;
+}
+
+.header__heading {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}

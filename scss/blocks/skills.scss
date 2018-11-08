@@ -1,0 +1,46 @@
+.skills {
+  margin-bottom: 50px;
+
+  @include container();
+}
+
+.skills__heading {
+  margin: 0 0 20px;
+
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skills__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.skills__item {
+  position: relative;
+
+  margin: 0;
+  padding: 0 0 0 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: lightblue;
+    border-radius: 50%;
+  }
+
+  &--separator {
+    margin-bottom: 30px;
+  }
+}

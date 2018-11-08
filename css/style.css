@@ -341,8 +341,8 @@ template {
 }
 
 body {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -368,21 +368,55 @@ img {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.header {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 50px; 
+  padding: 0 110px;
+
+  border: 1px solid lightgrey;
+}
+@media (max-width: 1200px) {
+  .header {
+    width: 640px;
+    padding: 0 54px;
+
+    border: 1px solid lightblue;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    width: 320px;
+    padding: 0;
+
+    border: 1px solid lightpink;
+  }
+}
+
+.header__heading {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .hello {
   display: flex;
   justify-content: space-between;
   width: 960px;
   margin: 0 auto;
+  margin-bottom: 50px;
   padding: 0 110px;
 
-  border: 1px solid red;
+  border: 1px solid lightgrey;
 }
 @media (max-width: 1200px) {
   .hello {
     width: 640px;
     padding: 0 54px;
 
-    border: 1px solid orange;
+    border: 1px solid lightblue;
   }
 }
 @media (max-width: 768px) {
@@ -390,27 +424,196 @@ img {
     width: 320px;
     padding: 0;
 
-    border: 1px solid skyblue;
+    border: 1px solid lightpink;
   }
 }
 
-.hello__information {
-  width: 50%;
-  margin-right: 30px;
+.hello__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+
+  border: 1px solid lightgrey;
 }
 
-.hello__photo {
-  width: 50%;
+.hello__information {
+  width: 45%;
+  margin-right: 30px;
+
+  border: 1px solid lightgrey;
 }
 
 .hello__title {
-  font-weight: 300; 
+  margin: 0 0 15px;
+
+  font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.hello__description {
+.hello__list {
+  margin: 0 0 15px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.hello__link {
+  color: black;
+  text-decoration: none;
+}
+
+.skills {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 110px;
+
+  border: 1px solid lightgrey;
+}
+@media (max-width: 1200px) {
+  .skills {
+    width: 640px;
+    padding: 0 54px;
+
+    border: 1px solid lightblue;
+  }
+}
+@media (max-width: 768px) {
+  .skills {
+    width: 320px;
+    padding: 0;
+
+    border: 1px solid lightpink;
+  }
+}
+
+.skills__heading {
+  margin: 0 0 20px;
+
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skills__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.skills__item {
+  position: relative;
+
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.skills__item::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: lightblue;
+  border-radius: 50%;
+}
+.skills__item--separator {
+  margin-bottom: 30px;
+}
+
+.projects {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 110px;
+
+  border: 1px solid lightgrey;
+}
+@media (max-width: 1200px) {
+  .projects {
+    width: 640px;
+    padding: 0 54px;
+
+    border: 1px solid lightblue;
+  }
+}
+@media (max-width: 768px) {
+  .projects {
+    width: 320px;
+    padding: 0;
+
+    border: 1px solid lightpink;
+  }
+}
+
+.projects__heading {
+  margin: 0 0 20px;
+
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__content {
+  width: 38%;
+
+  border: 1px solid lightgreen;
+}
+
+.project__description {
+  width: 58%;
+
+  border: 1px solid lightgreen;
+}
+
+.project__title {
+  margin: 0 0 15px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.project__item {
+  position: relative;
+
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.project__item::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: lightblue;
+  border-radius: 50%;
 }

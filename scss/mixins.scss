@@ -3,19 +3,19 @@
   margin: 0 auto;
   padding: 0 110px;
 
-  border: 1px solid red;
+  border: 1px solid lightgrey;
 
   @media (max-width: 1200px) {
     width: 640px;
     padding: 0 54px;
 
-    border: 1px solid orange;
+    border: 1px solid lightblue;
   }
 
   @media (max-width: 768px) {
     width: 320px;
     padding: 0;
 
-    border: 1px solid skyblue;
+    border: 1px solid lightpink;
   }
 }

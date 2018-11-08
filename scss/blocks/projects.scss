@@ -1,0 +1,15 @@
+.projects {
+  margin-bottom: 50px;
+
+  @include container();
+}
+
+.projects__heading {
+  margin: 0 0 20px;
+
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
