@@ -82,13 +82,12 @@ class Calculator {
         break;
 
       default:
-        result = "Unknown operation";
+        result = "Неизвестная операция";
         break;
     }
 
     this.input.value = result;
   }
-
 
   clearInputValue (event) {
     this.input.value = '0';
