@@ -4,22 +4,19 @@
 }
 
 .project__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 38%;
-
-  border: 1px solid lightgreen;
+  width: 50%;
 }
 
-.project__description {
-  width: 60%;
+.project__video {
+  display: block;
+  width: 380px;
+  margin: 0 auto 25px;
 
-  border: 1px solid lightgreen;
+  border: 6px solid #3333ff;
 }
 
 .project__title {
-  margin: 0 0 15px;
+  margin: 0 0 25px;
 
   font-weight: 300;
   font-size: 24px;
@@ -29,7 +26,7 @@
 }
 
 .project__list {
-  margin: 0 0 50px;
+  margin: 0 0 25px;
   padding: 0;
 
   list-style: none;
@@ -53,8 +50,3 @@
     background-color: #000000;
   }
 }
-
-// .project__buttons {
-//   display: flex;
-//   justify-content: space-between;
-// }
