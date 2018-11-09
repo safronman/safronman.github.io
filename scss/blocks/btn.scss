@@ -1,0 +1,28 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 52%;
+  margin: 0 auto 15px;
+  padding: 12px 40px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #3333ff;
+  border: 2px solid #3333ff;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 10px 10px 20px rgba(51, 51, 255, 0.2);
+  }
+
+  &:active {
+    box-shadow: 10px 10px 20px rgba(51, 51, 255, 0.2);
+  }
+}

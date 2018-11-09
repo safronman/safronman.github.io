@@ -1,12 +1,17 @@
 .header {
-  @include container();
-  margin-bottom: 50px;
+  min-height: 300px;
+
+  background: url(../../img/bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 .header__heading {
+  margin: 0;
+
   font-weight: 300;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 300px;
   text-align: center;
   text-transform: uppercase;
 }

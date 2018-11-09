@@ -4,12 +4,17 @@
 }
 
 .project__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 38%;
+
   border: 1px solid lightgreen;
 }
 
 .project__description {
-  width: 58%;
+  width: 60%;
+
   border: 1px solid lightgreen;
 }
 
@@ -24,8 +29,9 @@
 }
 
 .project__list {
-  margin: 0;
+  margin: 0 0 50px;
   padding: 0;
+
   list-style: none;
 }
 
@@ -33,18 +39,22 @@
   position: relative;
 
   margin: 0;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 22px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 12px;
     left: 0;
 
-    width: 6px;
-    height: 6px;
+    width: 14px;
+    height: 1px;
 
-    background-color: lightblue;
-    border-radius: 50%;
+    background-color: #000000;
   }
 }
+
+// .project__buttons {
+//   display: flex;
+//   justify-content: space-between;
+// }

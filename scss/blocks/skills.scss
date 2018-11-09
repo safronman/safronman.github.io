@@ -5,13 +5,30 @@
 }
 
 .skills__heading {
-  margin: 0 0 20px;
+  position: relative;
+
+  margin: 0 0 60px;
 
   font-weight: 300;
   font-size: 30px;
   line-height: 42px;
   text-align: center;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+
+    width: 130px;
+    height: 20px;
+    margin-left: -65px;
+
+    background-image: url(../../img/zigzag.svg);
+    background-repeat: no-repeat;
+    transform: rotate(-180deg);
+  }
 }
 
 .skills__list {
@@ -36,7 +53,7 @@
     width: 6px;
     height: 6px;
 
-    background-color: lightblue;
+    background-color: #3333ff;
     border-radius: 50%;
   }
 
