@@ -10,13 +10,13 @@ let pinArea = document.querySelector('.range-control');
 let scale = document.querySelector('.scale');
 let initialScale = document.querySelector('.initial-scale');
 
-// Определяем шаг ползунка в зависимости от длины шкалы и заданных значений 
+// Определяем шаг ползунка в зависимости от длины шкалы и заданных значений
 let maxInputValue = endInput.value;
 let computedStyle = getComputedStyle(scale);
 let scaleLength = parseInt(computedStyle.width);
 let pinStep = Math.round(maxInputValue / scaleLength); // 41 px
 
-// Ширина ползунка = 20px 
+// Ширина ползунка = 20px
 let pinWidth = 20;
 
 
@@ -169,12 +169,12 @@ function filterRangePriceValues() {
   console.log(this.renderTemplate.templateArray);
 
   let resultFilterArray = this.renderTemplate.templateArray.filter( item => {
-    return item.price > startInput.value && item.price < endInput.value;
+    return parseInt(item.price) > parseInt(startInput.value) && parseInt(item.price) < parseInt(endInput.value);
   });
 
   this.renderTemplate.templateArray = resultFilterArray;
   console.log(this.renderTemplate.templateArray);
-  
+
   this.renderTemplate.render();
   this.renderTemplate.templateArray = null;
   this.renderTemplate.init();
