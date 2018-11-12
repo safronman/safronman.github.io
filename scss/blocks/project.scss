@@ -1,18 +1,9 @@
 .project {
-  display: flex;
-  justify-content: space-between;
-}
+  width: 45%;
+  margin-bottom: 30px;
+  padding: 20px 20px 0;
 
-.project__content {
-  width: 50%;
-}
-
-.project__video {
-  display: block;
-  width: 380px;
-  margin: 0 auto 25px;
-
-  border: 6px solid #3333ff;
+  border: 1px solid lightgray;
 }
 
 .project__title {
@@ -25,8 +16,17 @@
   text-transform: uppercase;
 }
 
+.project__img {
+  display: block;
+  width: 300px;
+  margin: 0 auto 25px;
+
+  border: 4px solid $blue;
+  border-radius: 50%;
+}
+
 .project__list {
-  margin: 0 0 25px;
+  margin: 0 0 40px;
   padding: 0;
 
   list-style: none;
