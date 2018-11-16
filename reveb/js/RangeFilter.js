@@ -53,16 +53,35 @@ class RangeFilter {
       )
     })
 
+    // --------- Управление фильтром при помощи правого ползунка ---------
+    this.endPin.addEventListener('mousedown', (e) => {
+      this.onStartEndPinMousedown(e, this.endPin, this.endInput,
+        (pin) => {
+          this.initialScale.style.marginRight = `${this.scaleLength - parseInt(pin.style.left)}px`;
+        },
+        (pin, input, onMouseUpCallback) => {
+          if ((this.endPin.offsetLeft - this.pinWidth) < this.startPin.offsetLeft) {
+            onMouseUpCallback();
+            pin.style.left = `${(this.startPin.offsetLeft + this.pinWidth)}px`;
+            input.value = parseInt(pin.style.left) * this.pinStep;
+          }
+        }
+      );
+    });
+
   }
 
 
-  onStartEndPinMousedown (event, pin, input, redrawLineColor, stopPinWhenOverlay) {
+  onStartEndPinMousedown(event, pin, input, redrawLineColor, stopPinWhenOverlay) {
     event.preventDefault();
 
     let startX = event.clientX;
 
-    this.pinArea.addEventListener('mousemove', onMouseMove);
-    this.pinArea.addEventListener('mouseup', onMouseUp);
+    let bindedOnMouseMove = onMouseMove.bind(this);
+    let bindedOnMouseUp = onMouseUp.bind(this);
+
+    this.pinArea.addEventListener('mousemove', bindedOnMouseMove);
+    this.pinArea.addEventListener('mouseup', bindedOnMouseUp);
 
     // смещение ползунка mousemove
     function onMouseMove(event) {
@@ -77,17 +96,17 @@ class RangeFilter {
 
       // записываем текущее значение в инпут
       input.value = parseInt(pin.style.left) * this.pinStep;
-      // input.value = parseInt(pin.style.left) * 41;
+
 
 
       // задаем границы движения ползунков
       if (pin.offsetLeft < 0) {
-        onMouseUp();
+        bindedOnMouseUp();
         pin.style.left = '0px';
         input.value = 0;
       } else if (pin.offsetLeft > this.scaleLength) {
-        onMouseUp();
-        pin.style.left = `${scaleLength}px`;
+        bindedOnMouseUp();
+        pin.style.left = `${this.scaleLength}px`;
         input.value = this.maxInputValue;
       }
 
@@ -95,13 +114,14 @@ class RangeFilter {
       redrawLineColor(pin);
 
       // останавливаем ползунки если они начинают перекрывать друг друга
-      stopPinWhenOverlay(pin, input, onMouseUp);
+      stopPinWhenOverlay(pin, input, bindedOnMouseUp);
     }
 
     // отписываемся от событий при поднятии мыши
     function onMouseUp() {
-      this.pinArea.removeEventListener('mousemove', onMouseMove);
-      this.pinArea.removeEventListener('mouseup', onMouseUp);
+
+      this.pinArea.removeEventListener('mousemove', bindedOnMouseMove);
+      this.pinArea.removeEventListener('mouseup', bindedOnMouseUp);
 
       console.log(`startInput.value при перетягивании ползунков: ${this.startInput.value}`);
       console.log(`endInput.value при перетягивании ползунков: ${this.endInput.value}`);
