@@ -4,6 +4,13 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
 /* Чтобы картинки не вылазили за родительский блок */
 img {
   max-width: 100%;

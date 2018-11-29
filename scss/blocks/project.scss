@@ -6,8 +6,15 @@
   border: 1px solid lightgray;
 }
 
+.project__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 630px;
+}
+
 .project__title {
-  margin: 0 0 25px;
+  margin: 0 0 15px;
 
   font-weight: 300;
   font-size: 24px;
@@ -17,15 +24,12 @@
 
 .project__img {
   display: block;
-  height: 300px;
-  margin: 0 auto 25px;
-
-  border: 4px solid $blue;
-  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .project__list {
-  margin: 0 0 40px;
+  margin: 0 0 30px;
   padding: 0;
 
   list-style: none;
@@ -47,5 +51,26 @@
     height: 1px;
 
     background-color: #000000;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .project {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .project__content {
+    min-height: 430px;
+  }
+
+  .project__title {
+    font-size: 18px;
+    line-height: 24px;
   }
 }

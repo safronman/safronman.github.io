@@ -61,3 +61,22 @@
     margin-bottom: 30px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .skills__heading {
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    &::after {
+      top: 30px;
+      left: 50%;
+
+      width: 90px;
+      height: 14px;
+      margin-left: -45px;
+    }
+  }
+}
