@@ -16,11 +16,11 @@ gulp.task('serve', ['sass'], function() {
 
 
 gulp.task('sass', function() {
-  return gulp.src("scss/style.scss")                                              // take style.scss
-    .pipe(sass({                                                                  // make style.css
-        includePaths: require('node-normalize-scss').includePaths                 // add normalize.css
-    }))                                                                           //
-    .pipe(csscomb())                                                              // add csscomb
-    .pipe(gulp.dest('css'))                                                       // put into css
+  return gulp.src("scss/style.scss")
+    .pipe(sass({
+        includePaths: require('node-normalize-scss').includePaths
+    }))
+    .pipe(csscomb())
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.stream());
 });
