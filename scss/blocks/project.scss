@@ -28,6 +28,28 @@
   margin-bottom: 20px;
 }
 
+.project__page-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.project__page-item {
+  margin: 0;
+  padding: 0;
+}
+
+.project__page-link {
+  color: black;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
 .project__list {
   margin: 0 0 30px;
   padding: 0;
