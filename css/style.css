@@ -698,7 +698,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 630px;
+  min-height: 770px;
 }
 
 .project__title {

@@ -14,14 +14,14 @@ class Calculator {
 
   init (elId) {
     var el = document.querySelector('#' + elId);
-
+  
     this.numberButtons = el.querySelectorAll('.calculator__button--number');
     this.operationButtons = el.querySelectorAll('.calculator__button--operation');
     this.resultButton = el.querySelector('.calculator__button--result');
     this.clearButton = el.querySelector('.calculator__button--clear');
     this.changeSignButton = el.querySelector('.calculator__button--change-sign');
     this.input = el.querySelector('.calculator__input');
-
+  
     this.numberButtons.forEach(item => {
       item.addEventListener('click', this.numberButtonClickListener.bind(this));
     });
@@ -34,8 +34,8 @@ class Calculator {
   }
 
   numberButtonClickListener (event) {
-    var buttonNumber = event.currentTarget.innerHTML;
-
+    var buttonNumber = parseInt(event.currentTarget.innerHTML);
+  
     if (this.input.value === '0') {
       this.input.value = buttonNumber;
     } else {
@@ -44,9 +44,10 @@ class Calculator {
   }
 
   operationButtonClickListener (event) {
+    // последовательное выполнение нескольких арифметических операций
     if (this.operation === '') {
       this.operation = event.currentTarget.innerHTML;
-      this.firstNumber = this.input.value;
+      this.firstNumber = parseInt(this.input.value);
       this.input.placeholder = this.firstNumber;
     } else {
       this.resultButtonClickListener();
@@ -59,7 +60,7 @@ class Calculator {
   }
 
   resultButtonClickListener () {
-    this.secondNumber = this.input.value;
+    this.secondNumber = parseInt(this.input.value);
 
     switch (this.operation) {
       case '+':
@@ -88,6 +89,7 @@ class Calculator {
     }
 
     this.input.value = this.result;
+    this.operation = '';
   }
 
   clearValues () {
