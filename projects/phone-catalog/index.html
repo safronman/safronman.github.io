@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Мобильные телефоны</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Мобильные телефоны</h1>
+  </header>
+
+  <main class="main  clearfix">
+    <!-- Рендерим в этом блоке фильтр FilterComponent -->
+    <section class="filter"></section>
+
+    <!-- Рендерим в этом блоке сортировку SortComponent-->
+    <section class="sort"></section>
+
+    <section class="template">
+      <!-- Рендерим в этом блоке список товаров ProductComponent-->
+      <div class="template__items clearfix"></div>
+    </section>
+  </main>
+
+  <!-- BLL -->
+  <script src="js/ShopManager.js"></script>
+
+  <!-- UI -->
+  <script src="js/ProductComponent.js"></script>
+  <script src="js/FilterComponent.js"></script>
+  <script src="js/SortComponent.js"></script>
+
+  <!-- MAIN -->
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
