@@ -10,13 +10,13 @@ class SortComponent {
     let sortContainer = document.querySelector('.sort');
     sortContainer.innerHTML = `
     <b class="sort__title">Сортировать:</b>
-      <select class="sort__select-templates" name="sort">
-        <option class="sort-random" value="random">В случайном порядке</option>
-        <option class="sort-price-from-min" value="price-from-min">По цене: начать с меньшей</option>
-        <option class="sort-price-from-max" value="price-from-max">По цене: начать с большей</option>
-        <option class="sort-name-from-min" value="name-from-min">По названию: от A до Z</option>
-        <option class="sort-name-from-max" value="name-from-max">По названию: от Z до A</option>
-      </select>`
+    <select class="sort__select-templates" name="sort">
+      <option class="sort-random" value="random">В случайном порядке</option>
+      <option class="sort-price-from-min" value="price-from-min">По цене: начать с меньшей</option>
+      <option class="sort-price-from-max" value="price-from-max">По цене: начать с большей</option>
+      <option class="sort-name-from-min" value="name-from-min">По названию: от A до Z</option>
+      <option class="sort-name-from-max" value="name-from-max">По названию: от Z до A</option>
+    </select>`
   }
 
   init() {
