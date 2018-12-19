@@ -1,34 +1,37 @@
+body {
+  background-color: lightgoldenrodyellow;
+}
+
 .basket {
   box-sizing: border-box;
-  width: 600px;
-  margin: 0 auto;
+  width: 60%;
+  margin: 50px auto 0;
   padding: 20px;
 
-  border: 2px solid grey;
-  border-bottom: none;
+  background-color: white;
+  border: 5px solid black;
 }
 
 .basket__products-wrapper {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 10px;
   padding: 10px 0 20px;
 
   border-bottom: 2px solid grey;
 }
 
-.basket__products {
-  box-sizing: border-box;
-  width: 200px;
-  padding: 5px;
-
-  border: 2px solid grey;
+.basket__heading {
+  margin: 0 0 10px;
 }
 
-.basket__button {
-  display: inline-block;
+.basket__products {
   box-sizing: border-box;
-  width: 100px;
+  width: 100%;
+  padding: 5px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  border: 2px solid grey;
 }
 
 .first-property {
@@ -36,34 +39,87 @@
   padding: 10px 0;
 }
 
+.text-label {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .text-input {
   box-sizing: border-box;
-  width: 200px;
+  width: 280px;
   padding: 5px;
+
+  font-size: 16px;
+  line-height: 24px;
 
   border: 2px solid grey;
 }
 
 .second-property {
-  padding: 10px 0;
+  margin-bottom: 20px;
+  padding: 0 0 20px 0;
+
+  border-bottom: 2px solid grey;
 }
 
-.basket__info {
+.checkbox-label {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+/* BUTTONS */
+.butons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+  border-bottom: 2px solid grey;
+}
+
+.basket__button {
+  display: block;
   box-sizing: border-box;
-  width: 600px;
-  margin: 0 auto;
+  width: 300px;
+  padding: 10px;
 
+  font-size: 16px;
+  line-height: 24px;
+
+  background-color: lightblue;
   border: 2px solid grey;
-  border-top: none;
 }
 
+.basket__button:hover {
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+
+
+/* BASKET CONTENT */
 .basket__status {
-  border-top: 2px solid grey;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .basket__product-title {
-  text-align: center;
-  font-weight: bold;
   display: block;
+  padding-top: 25px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* INPUT ERROR */
+.error {
+  border: 2px solid red;
+}
+
+.error::placeholder {
+  color: red;
 }

@@ -1,11 +1,10 @@
-// BLL
-class Basket {
-  constructor() {
+class BasketBll {
+  constructor(basketDal) {
     this._apples = [];
     this._pears = [];
     this._oranges = [];
-    this._basketDal = new LocalStorageService();
-  }
+    this._basketDal = basketDal;
+  };
 
   addProducts(product) {
     switch (product.constructor.name) {
@@ -20,17 +19,18 @@ class Basket {
       case 'Orange':
         this._oranges.push(product);
         break;
-    }
-  }
+    };
+  };
 
-  clearBasket() {
+  clearBasketBll() {
     this._apples = [];
     this._pears = [];
     this._oranges = [];
-  }
+    this._basketDal.clearBasketLocalStorage();
+  };
 
   saveProducts(callback) {
     // callback от BasketView передаем BasketDal
     this._basketDal.save(this._apples, this._pears, this._oranges, callback);
-  }
+  };
 }
