@@ -716,6 +716,17 @@ img {
   margin-bottom: 20px;
 }
 
+.project__icon {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.project__icons {
+  margin-bottom: 5px; 
+
+  text-align: center;
+}
+
 .project__page-list {
   display: flex;
   justify-content: space-around;
