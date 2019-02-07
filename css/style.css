@@ -601,6 +601,10 @@ img {
   margin-bottom: 30px;
 }
 
+.skills__submenu {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 768px) {
   .skills__heading {
     margin-bottom: 40px;
