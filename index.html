@@ -57,14 +57,16 @@
     <section class="skills">
       <h2 class="skills__heading">Ключевые навыки</h2>
       <ul class="skills__list">
-        <li class="skills__item  ">Базовые знания React, Redux:</li>
+        <li class="skills__item">React, Redux:</li>
         <ul class="skills__submenu">
-          <li>Использоваие принципов функционального программирования</li>
-          <li>functional (presentational, dumb, stateless) component</li>
-          <li>props</li>
-          <li>css modules</li>
-          <li>Route, NavLink</li>
-          <li>action, dispatch, reducer</li>
+          <li>Работа с функциональными и классовыми компонентами</li>
+          <li>Работа с библиотекой Redux: store, reducer, action, action creator, thunk, thunk creator</li>
+          <li>Работа с библиотекой React-Redux: connect, mapStateToProps, mapDispatchToProps</li>
+          <li>Работа с библиотекой Redux form</li>
+          <li>Работа с Route, NavLink, hoc withRouter</li>
+          <li>Взаимодействие с Rest API</li>
+          <li>Внедрение CSS модулей</li>
+          <li>Использование propTypes для валидации типов</li>
         </ul>
         <li class="skills__item">Нативный JavaScript</li>
         <li class="skills__item">Стандарт ES6</li>
@@ -90,6 +92,33 @@
       <h2 class="projects__heading">Проекты</h2>
 
       <div class="projects__wrapper">
+
+        <article class="project">
+          <div class="project__content">
+            <div class="project__inner">
+              <h3 class="project__title">Social network</h3>
+              <div class="project__icons">
+                <img src="img/icons/react.png" width="64" height="64">
+                <img src="img/icons/redux.png" width="64" height="64">
+              </div>
+              <img class="project__img" src="img/social-network.png" alt="Социальная сеть">
+              <div class="project__description">
+                <ul class="project__list"> Реализовано:
+                  <li class="project__item">авторизация в приложении</li>
+                  <li class="project__item">переписка с другими пользователями</li>
+                  <li class="project__item">редактирование профиля</li>
+                  <li class="project__item">добавление постов</li>
+                  <li class="project__item">подписка и отписка от пользователей</li>
+                  <li class="project__item">взаимодействие с сервером (Axios)</li>
+              </div>
+            </div>
+            <div class="project__button">
+              <a class="btn" href="https://safronman.github.io/projects/social-network" target="_blank">Смотреть проект</a>
+              <a class="btn  btn--last" href="https://github.com/safronman/social-network" target="_blank">Смотреть
+                исходный код</a>
+            </div>
+          </div>
+        </article>
 
         <article class="project">
           <div class="project__content">
@@ -266,32 +295,6 @@
             </div>
           </div>
         </article>
-
-        <!-- <article class="project">
-          <div class="project__content">
-            <div class="project__inner">
-              <h3 class="project__title">Social network</h3>
-              <div class="project__icons">
-                <img src="img/icons/react.png" width="64" height="64">
-                <img src="img/icons/redux.png" width="64" height="64">
-              </div>
-              <img class="project__img" src="img/social-network.png" alt="Социальная сеть">
-              <div class="project__description">
-                <ul class="project__list"> Реализовано:
-                  <li class="project__item">добавление постов</li>
-                  <li class="project__item">удаление сообщений</li>
-                <ul class="project__list">
-                  <li class="project__item">Работа с сервером</li>
-                </ul>
-              </div>
-            </div>
-            <div class="project__button">
-              <a class="btn" href="https://safronman.github.io/projects/social-network" target="_blank">Смотреть проект</a>
-              <a class="btn  btn--last" href="https://github.com/safronman/social-network" target="_blank">Смотреть исходный код</a>
-            </div>
-          </div>
-        </article> -->
-
       </div>
 
     </section>
