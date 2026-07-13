@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 
 const projects = [
@@ -107,55 +108,40 @@ export default function Home() {
         </nav>
         <div className={styles.heroGrid}>
           <div className={styles.heroText}>
-            <p className={styles.eyebrow}>
-              Technical Educator · Руководитель frontend-направления
-            </p>
-            <h1>Сложные frontend-темы — в понятное и практическое обучение.</h1>
+            <p className={styles.eyebrow}>Technical Educator</p>
+            <h1>
+              Сложные технические темы — в понятное практическое обучение.
+            </h1>
             <p className={styles.lead}>
-              Проектирую программы, создаю видео и материалы, разрабатываю
-              практику и помогаю студентам с разным уровнем подготовки уверенно
-              применять знания.
+              Исследую предмет, проектирую программу и практику, создаю видео и
+              материалы, с которыми знания переходят в работу.
             </p>
             <div className={styles.heroActions}>
-              <a className={styles.primaryButton} href="#projects">
-                Посмотреть проекты <span>↓</span>
+              <a
+                className={styles.primaryButton}
+                href="https://t.me/your_telegram"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Написать в Telegram <span aria-hidden="true">↗</span>
               </a>
-              <a className={styles.textButton} href="#contacts">
-                Предложить роль <span>↗</span>
+              <a className={styles.textButton} href="#projects">
+                Смотреть проекты <span aria-hidden="true">↓</span>
               </a>
             </div>
           </div>
-          <aside className={styles.heroCard}>
-            <div className={styles.avatar} aria-hidden="true">
-              A
-            </div>
-            <p className={styles.placeholder}>Здесь будет ваше фото</p>
-            <div className={styles.roleLine}>
-              IT-Incubator · frontend-направление
-            </div>
-            <p>
-              Создаю обучение полного цикла — от исследования темы до проверки
-              результата.
-            </p>
-          </aside>
-        </div>
-        <div className={styles.stats}>
-          <div>
-            <strong>7 лет</strong>
-            <span>в техническом обучении</span>
-          </div>
-          <div>
-            <strong>1500+</strong>
-            <span>студентов направления</span>
-          </div>
-          <div>
-            <strong>70+</strong>
-            <span>учебных групп</span>
-          </div>
-          <div>
-            <strong>≈100</strong>
-            <span>технических видео</span>
-          </div>
+          <figure className={styles.heroPortrait}>
+            <Image
+              src="/hero-portrait.png"
+              alt="Technical Educator за рабочим столом в студии с книгами и техническим оборудованием"
+              fill
+              priority
+              sizes="(max-width: 820px) 100vw, 38vw"
+            />
+            <figcaption>
+              Программы · практика · видео · методические материалы
+            </figcaption>
+          </figure>
         </div>
       </section>
 

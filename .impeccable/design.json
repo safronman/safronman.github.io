@@ -4,21 +4,59 @@
   "title": "Design System: Technical Educator Portfolio",
   "extensions": {
     "colorMeta": {
-      "ink": { "role": "primary", "displayName": "Studio Ink", "canonical": "#17141D", "tonalRamp": ["#F1EFF4", "#625D69", "#17141D"] },
-      "surface": { "role": "neutral", "displayName": "Clear Surface", "canonical": "#F7F7FA", "tonalRamp": ["#FFFFFF", "#F7F7FA", "#D8D5DE"] },
-      "violet-accent": { "role": "secondary", "displayName": "Photo Violet", "canonical": "#6847E8", "tonalRamp": ["#EAE5FF", "#A998F4", "#6847E8"] },
-      "blue-signal": { "role": "primary", "displayName": "Signal Blue", "canonical": "#2D63E5", "tonalRamp": ["#DBE5FF", "#79A0FF", "#2D63E5"] },
-      "muted": { "role": "neutral", "displayName": "Measured Muted", "canonical": "#625D69", "tonalRamp": ["#D8D5DE", "#948E99", "#625D69"] }
+      "ink": {
+        "role": "primary",
+        "displayName": "Studio Ink",
+        "canonical": "#17141D",
+        "tonalRamp": ["#F1EFF4", "#625D69", "#17141D"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Clear Surface",
+        "canonical": "#F7F7FA",
+        "tonalRamp": ["#FFFFFF", "#F7F7FA", "#D8D5DE"]
+      },
+      "violet-accent": {
+        "role": "secondary",
+        "displayName": "Photo Violet",
+        "canonical": "#6847E8",
+        "tonalRamp": ["#EAE5FF", "#A998F4", "#6847E8"]
+      },
+      "blue-signal": {
+        "role": "primary",
+        "displayName": "Signal Blue",
+        "canonical": "#2D63E5",
+        "tonalRamp": ["#DBE5FF", "#79A0FF", "#2D63E5"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Measured Muted",
+        "canonical": "#625D69",
+        "tonalRamp": ["#D8D5DE", "#948E99", "#625D69"]
+      }
     },
     "typographyMeta": {
       "display": { "displayName": "Display", "purpose": "Hero claim only." },
-      "headline": { "displayName": "Headline", "purpose": "Major section claims." },
-      "body": { "displayName": "Body", "purpose": "Readable proof and context." },
-      "label": { "displayName": "Technical Label", "purpose": "Compact metadata only." }
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Major section claims."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Readable proof and context."
+      },
+      "label": {
+        "displayName": "Technical Label",
+        "purpose": "Compact metadata only."
+      }
     },
     "shadows": [],
     "motion": [
-      { "name": "state-transition", "value": "200ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Hover and focus feedback; content is visible without motion." }
+      {
+        "name": "state-transition",
+        "value": "200ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Hover and focus feedback; content is visible without motion."
+      }
     ],
     "breakpoints": [
       { "name": "compact", "value": "520px" },
@@ -70,13 +108,38 @@
   "narrative": {
     "northStar": "Практическая рабочая среда",
     "overview": "A proof-led technical educator portfolio built around a single dark-studio Hero photograph. Blue handles primary action, violet provides limited orientation, and case materials do the persuasive work.",
-    "keyCharacteristics": ["Evidence before contact", "Flat structural surfaces", "One photo only", "Blue for action, violet for orientation"],
-    "rules": [
-      { "name": "The Single-Signal Rule", "body": "Blue invites action; violet provides orientation. Never combine them in a gradient, glow, or competing pair of buttons.", "section": "colors" },
-      { "name": "The Evidence-First Rule", "body": "Every headline claim should sit near inspectable proof.", "section": "typography" },
-      { "name": "The Flat-by-Default Rule", "body": "Depth comes from surface changes and dividers, not decorative shadows.", "section": "elevation" }
+    "keyCharacteristics": [
+      "Evidence before contact",
+      "Flat structural surfaces",
+      "One photo only",
+      "Blue for action, violet for orientation"
     ],
-    "dos": ["Use #2D63E5 for the single primary CTA.", "Keep #6847E8 below roughly 5% of a viewport.", "Make project material links easy to inspect."],
-    "donts": ["Don't use purple gradients, neon glows, or glass surfaces.", "Don't use childlike classroom styling or collage layouts.", "Don't add a second portrait outside the Hero."]
+    "rules": [
+      {
+        "name": "The Single-Signal Rule",
+        "body": "Blue invites action; violet provides orientation. Never combine them in a gradient, glow, or competing pair of buttons.",
+        "section": "colors"
+      },
+      {
+        "name": "The Evidence-First Rule",
+        "body": "Every headline claim should sit near inspectable proof.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-by-Default Rule",
+        "body": "Depth comes from surface changes and dividers, not decorative shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Use #2D63E5 for the single primary CTA.",
+      "Keep #6847E8 below roughly 5% of a viewport.",
+      "Make project material links easy to inspect."
+    ],
+    "donts": [
+      "Don't use purple gradients, neon glows, or glass surfaces.",
+      "Don't use childlike classroom styling or collage layouts.",
+      "Don't add a second portrait outside the Hero."
+    ]
   }
 }
