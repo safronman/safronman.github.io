@@ -11,24 +11,24 @@ colors:
   ink-on-dark: "#F1EFF4"
 typography:
   display:
-    fontFamily: "Geist, Arial, sans-serif"
-    fontSize: "clamp(3rem, 7vw, 6rem)"
+    fontFamily: "Golos Text, Arial, sans-serif"
+    fontSize: "clamp(2.75rem, 5.2vw, 5rem)"
     fontWeight: 650
     lineHeight: 0.96
     letterSpacing: "-0.035em"
   headline:
-    fontFamily: "Geist, Arial, sans-serif"
+    fontFamily: "Golos Text, Arial, sans-serif"
     fontSize: "clamp(2.375rem, 5.1vw, 4.5rem)"
     fontWeight: 650
     lineHeight: 1
     letterSpacing: "-0.03em"
   body:
-    fontFamily: "Geist, Arial, sans-serif"
+    fontFamily: "Golos Text, Arial, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.5
   label:
-    fontFamily: "Geist Mono, monospace"
+    fontFamily: "Golos Text, Arial, sans-serif"
     fontSize: "0.75rem"
     fontWeight: 600
     lineHeight: 1.2
@@ -98,17 +98,17 @@ The palette is a night-studio system: near-black ink and neutral light surfaces 
 
 ## 3. Typography
 
-**Display Font:** Geist, Arial, sans-serif
+**Display Font:** Golos Text, Arial, sans-serif
 
-**Body Font:** Geist, Arial, sans-serif
+**Body Font:** Golos Text, Arial, sans-serif
 
-**Label/Mono Font:** Geist Mono, monospace, used only for compact technical metadata and ordered material references.
+**Label Font:** Golos Text, Arial, sans-serif, with restrained tracking for compact metadata and ordered material references.
 
 **Character:** The system is compact and engineering-led, with a weighty grotesk hierarchy rather than a decorative display face. Long-form copy remains comfortable to scan and should not exceed 75ch.
 
 ### Hierarchy
 
-- **Display** (650, `clamp(3rem, 7vw, 6rem)`, 0.96): Hero claim only; use balanced wrapping and never tighten below `-0.04em`.
+- **Display** (650, `clamp(2.75rem, 5.2vw, 5rem)`, 0.98): Hero claim only; use balanced wrapping and never tighten below `-0.04em`.
 - **Headline** (650, `clamp(2.375rem, 5.1vw, 4.5rem)`, 1): Major section claims.
 - **Title** (650, 1.5–1.875rem, 1.1): Project and capability titles.
 - **Body** (400, 1rem, 1.5): Descriptions, teaching context, and contact copy.
