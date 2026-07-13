@@ -108,7 +108,6 @@ export default function Home() {
         </nav>
         <div className={styles.heroGrid}>
           <div className={styles.heroText}>
-            <p className={styles.eyebrow}>Technical Educator</p>
             <h1>
               Сложные технические темы — в понятное практическое обучение.
             </h1>
@@ -138,9 +137,6 @@ export default function Home() {
               priority
               sizes="(max-width: 820px) 100vw, 38vw"
             />
-            <figcaption>
-              Программы · практика · видео · методические материалы
-            </figcaption>
           </figure>
         </div>
       </section>
