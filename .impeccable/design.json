@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-13T00:00:00.000Z",
+  "title": "Design System: Technical Educator Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "primary", "displayName": "Studio Ink", "canonical": "#17141D", "tonalRamp": ["#F1EFF4", "#625D69", "#17141D"] },
+      "surface": { "role": "neutral", "displayName": "Clear Surface", "canonical": "#F7F7FA", "tonalRamp": ["#FFFFFF", "#F7F7FA", "#D8D5DE"] },
+      "violet-accent": { "role": "secondary", "displayName": "Photo Violet", "canonical": "#6847E8", "tonalRamp": ["#EAE5FF", "#A998F4", "#6847E8"] },
+      "blue-signal": { "role": "primary", "displayName": "Signal Blue", "canonical": "#2D63E5", "tonalRamp": ["#DBE5FF", "#79A0FF", "#2D63E5"] },
+      "muted": { "role": "neutral", "displayName": "Measured Muted", "canonical": "#625D69", "tonalRamp": ["#D8D5DE", "#948E99", "#625D69"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero claim only." },
+      "headline": { "displayName": "Headline", "purpose": "Major section claims." },
+      "body": { "displayName": "Body", "purpose": "Readable proof and context." },
+      "label": { "displayName": "Technical Label", "purpose": "Compact metadata only." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "state-transition", "value": "200ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Hover and focus feedback; content is visible without motion." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "520px" },
+      { "name": "stacked", "value": "820px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Contact Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The singular action for starting a Telegram conversation.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#contacts\">Написать в Telegram <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-btn-primary { display:inline-flex; gap:18px; align-items:center; background:#2D63E5; color:#fff; padding:16px 21px; border-radius:6px; font:650 15px/1 Geist,Arial,sans-serif; text-decoration:none; transition:background 200ms cubic-bezier(.16,1,.3,1),transform 200ms cubic-bezier(.16,1,.3,1); } .ds-btn-primary:hover { background:#17141D; transform:translateY(-1px); } .ds-btn-primary:focus-visible { outline:2px solid #2D63E5; outline-offset:3px; }"
+    },
+    {
+      "name": "Proof Link",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Secondary link that leads to cases and their materials.",
+      "html": "<a class=\"ds-proof-link\" href=\"#projects\">Смотреть проекты <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-proof-link { color:#17141D; border-bottom:1px solid currentColor; padding-bottom:5px; font:650 15px/1 Geist,Arial,sans-serif; text-decoration:none; } .ds-proof-link:hover { color:#6847E8; } .ds-proof-link:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
+    },
+    {
+      "name": "Project Metadata Tag",
+      "kind": "chip",
+      "refersTo": "project-tag",
+      "description": "Compact technology or material metadata.",
+      "html": "<span class=\"ds-tag\">Видео-курс</span>",
+      "css": ".ds-tag { display:inline-block; border:1px solid #D8D5DE; color:#625D69; padding:4px 7px; border-radius:0; font:600 11px/1.2 Geist Mono,monospace; }"
+    },
+    {
+      "name": "Project Proof Row",
+      "kind": "card",
+      "refersTo": "project-list",
+      "description": "A ruled, evidence-first project row without card elevation.",
+      "html": "<article class=\"ds-project-row\"><p class=\"ds-project-kind\">Курс</p><h3>RTK Query: полный курс</h3><p>Программа, практика и видео для перехода от основ к production-сценариям.</p><a href=\"#\">Открыть материалы ↗</a></article>",
+      "css": ".ds-project-row { padding:32px 0; border-top:1px solid #D8D5DE; color:#17141D; font-family:Geist,Arial,sans-serif; transition:background 200ms cubic-bezier(.16,1,.3,1); } .ds-project-row:hover { background:#F1EFFF; } .ds-project-row h3 { margin:8px 0 12px; font-size:28px; line-height:1.05; letter-spacing:-.03em; } .ds-project-row p { max-width:60ch; color:#625D69; line-height:1.5; } .ds-project-kind { color:#6847E8 !important; font:600 11px/1.2 Geist Mono,monospace !important; letter-spacing:.08em; text-transform:uppercase; } .ds-project-row a { display:inline-block; margin-top:16px; color:#2D63E5; font-weight:650; text-decoration:none; } .ds-project-row a:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
+    },
+    {
+      "name": "Hero Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Quiet text navigation on a dark Hero surface.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Основная навигация\"><a href=\"#projects\">Проекты</a><a href=\"#contacts\">Контакты</a></nav>",
+      "css": ".ds-nav { display:flex; gap:24px; font:600 14px/1 Geist,Arial,sans-serif; } .ds-nav a { color:#F1EFF4; text-decoration:none; text-underline-offset:5px; } .ds-nav a:hover { text-decoration:underline; } .ds-nav a:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Практическая рабочая среда",
+    "overview": "A proof-led technical educator portfolio built around a single dark-studio Hero photograph. Blue handles primary action, violet provides limited orientation, and case materials do the persuasive work.",
+    "keyCharacteristics": ["Evidence before contact", "Flat structural surfaces", "One photo only", "Blue for action, violet for orientation"],
+    "rules": [
+      { "name": "The Single-Signal Rule", "body": "Blue invites action; violet provides orientation. Never combine them in a gradient, glow, or competing pair of buttons.", "section": "colors" },
+      { "name": "The Evidence-First Rule", "body": "Every headline claim should sit near inspectable proof.", "section": "typography" },
+      { "name": "The Flat-by-Default Rule", "body": "Depth comes from surface changes and dividers, not decorative shadows.", "section": "elevation" }
+    ],
+    "dos": ["Use #2D63E5 for the single primary CTA.", "Keep #6847E8 below roughly 5% of a viewport.", "Make project material links easy to inspect."],
+    "donts": ["Don't use purple gradients, neon glows, or glass surfaces.", "Don't use childlike classroom styling or collage layouts.", "Don't add a second portrait outside the Hero."]
+  }
+}
