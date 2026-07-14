@@ -5,6 +5,7 @@ import {
   Workflow,
 } from "lucide-react";
 import Image from "next/image";
+import CourseCatalog from "./course-catalog";
 import styles from "./page.module.css";
 import TeachingVideo from "./teaching-video";
 
@@ -221,6 +222,8 @@ export default function Home() {
         </div>
         <TeachingVideo />
       </section>
+
+      <CourseCatalog />
 
       <section className={`${styles.section} ${styles.services}`}>
         <div className={styles.sectionIntro}>
