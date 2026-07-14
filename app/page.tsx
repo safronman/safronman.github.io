@@ -246,11 +246,10 @@ export default function Home() {
 
       <section className={`${styles.section} ${styles.approach}`} id="approach">
         <div className={styles.sectionIntro}>
-          <p className={styles.kicker}>03 / Мой подход</p>
-          <h2>Камера включается не первой</h2>
+          <h2>Как я проектирую обучение</h2>
           <p>
-            Ценность начинается с исследования, отбора и структуры — только
-            затем появляются видео, занятия и материалы.
+            Исследую тему, отбираю главное и проектирую практику. Только затем
+            появляются программа, видео, занятия и материалы.
           </p>
         </div>
         <ol className={styles.stepList}>
