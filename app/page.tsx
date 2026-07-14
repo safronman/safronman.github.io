@@ -162,6 +162,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={`${styles.section} ${styles.approach}`} id="approach">
+        <div className={styles.sectionIntro}>
+          <h2>Как я проектирую обучение</h2>
+          <p>
+            Исследую тему, отбираю главное и проектирую практику. Только затем
+            появляются программа, видео, занятия и материалы.
+          </p>
+        </div>
+        <ol className={styles.stepList}>
+          {steps.map(([number, title, text]) => (
+            <li key={number}>
+              <span>{number}</span>
+              <div>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
       <section className={`${styles.section} ${styles.services}`}>
         <div className={styles.sectionIntro}>
           <p className={styles.kicker}>01 / Возможности</p>
@@ -242,27 +263,6 @@ export default function Home() {
             </article>
           ))}
         </div>
-      </section>
-
-      <section className={`${styles.section} ${styles.approach}`} id="approach">
-        <div className={styles.sectionIntro}>
-          <h2>Как я проектирую обучение</h2>
-          <p>
-            Исследую тему, отбираю главное и проектирую практику. Только затем
-            появляются программа, видео, занятия и материалы.
-          </p>
-        </div>
-        <ol className={styles.stepList}>
-          {steps.map(([number, title, text]) => (
-            <li key={number}>
-              <span>{number}</span>
-              <div>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
       </section>
 
       <section className={`${styles.section} ${styles.materials}`}>
