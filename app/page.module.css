@@ -301,35 +301,38 @@
   max-width: 430px;
 }
 .proof {
-  background: var(--lime);
-  color: var(--ink);
+  max-width: none;
+  margin: 0;
+  padding: clamp(88px, 11vw, 156px) clamp(22px, 5vw, 82px);
+  background: var(--violet);
+  color: var(--ink-on-dark);
 }
 .proofGrid {
   display: grid;
-  grid-template-columns: 1.2fr 0.75fr;
-  gap: 10vw;
-  margin-top: 34px;
+  grid-template-columns: minmax(0, 1.16fr) minmax(300px, 0.64fr);
+  gap: clamp(48px, 9vw, 150px);
+  max-width: 1400px;
+  margin: auto;
 }
 .proofGrid h2 {
-  max-width: 800px;
+  max-width: 14ch;
+  font-size: clamp(43px, 5.25vw, 76px);
+  letter-spacing: -0.035em;
+  line-height: 0.98;
 }
 .proofGrid p,
 .proofGrid li {
-  font-size: 17px;
-  line-height: 1.46;
+  font-size: clamp(16px, 1.25vw, 19px);
+  line-height: 1.5;
 }
 .proofGrid ul {
   list-style: none;
-  margin-top: 32px;
-  border-top: 1px solid rgba(21, 38, 31, 0.3);
+  margin-top: clamp(28px, 3vw, 46px);
+  border-top: 1px solid rgba(247, 247, 250, 0.48);
 }
 .proofGrid li {
-  border-bottom: 1px solid rgba(21, 38, 31, 0.3);
-  padding: 12px 0;
-}
-.proofGrid li::before {
-  content: "✓";
-  margin-right: 11px;
+  border-bottom: 1px solid rgba(247, 247, 250, 0.48);
+  padding: 16px 0 17px;
 }
 .materials {
   background: #fafaf7;
@@ -448,6 +451,12 @@
   .contact,
   .proofGrid {
     grid-template-columns: 1fr;
+  }
+  .proofGrid {
+    gap: 42px;
+  }
+  .proofGrid h2 {
+    max-width: 18ch;
   }
   .heroGrid {
     padding: 72px 0 0;

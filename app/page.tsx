@@ -141,6 +141,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={`${styles.section} ${styles.proof}`}>
+        <div className={styles.proofGrid}>
+          <h2>
+            Руководитель направления, который остаётся в контакте с учебным
+            процессом.
+          </h2>
+          <div>
+            <p>
+              Управляю преподавателями, утверждаю программы и стандарты, провожу
+              code review и создаю ключевые учебные артефакты.
+            </p>
+            <ul>
+              <li>Программы, домашние задания и экзамены</li>
+              <li>Обучающие видео и вебинары</li>
+              <li>Презентации и методические материалы</li>
+              <li>Стандарты качества и code review</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className={`${styles.section} ${styles.services}`}>
         <div className={styles.sectionIntro}>
           <p className={styles.kicker}>01 / Возможности</p>
@@ -243,29 +264,6 @@ export default function Home() {
             </li>
           ))}
         </ol>
-      </section>
-
-      <section className={`${styles.section} ${styles.proof}`}>
-        <p className={styles.kicker}>04 / Масштаб и ответственность</p>
-        <div className={styles.proofGrid}>
-          <h2>
-            Руководитель направления, который остаётся в контакте с учебным
-            процессом.
-          </h2>
-          <div>
-            <p>
-              В IT-Incubator я управляю преподавателями, утверждаю программы и
-              стандарты, провожу code review и создаю ключевые учебные
-              артефакты.
-            </p>
-            <ul>
-              <li>Программы, домашние задания и экзамены</li>
-              <li>Обучающие видео и вебинары</li>
-              <li>Презентации и методические материалы</li>
-              <li>Стандарты качества и code review</li>
-            </ul>
-          </div>
-        </div>
       </section>
 
       <section className={`${styles.section} ${styles.materials}`}>
