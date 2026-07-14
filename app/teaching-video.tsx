@@ -34,7 +34,7 @@ export default function TeachingVideo() {
               fill
               priority={false}
               sizes="(max-width: 820px) 100vw, 50vw"
-              src="/teaching-video-cover.png"
+              src="/teaching-video-cover-v2.png"
             />
             <span aria-hidden="true" className={styles.play}>
               ▶
