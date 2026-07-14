@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import TeachingVideo from "./teaching-video";
 
 const projects = [
   {
@@ -181,6 +182,26 @@ export default function Home() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section className={`${styles.section} ${styles.teaching}`}>
+        <div className={styles.teachingContent}>
+          <div>
+            <h2>Преподавание, которое вовлекает</h2>
+            <p>
+              На занятии важно не только объяснить тему, но и дать человеку
+              возможность проверить своё понимание, задать вопрос и применить
+              идею в реальной ситуации.
+            </p>
+          </div>
+          <ul className={styles.teachingPractices}>
+            <li>Вопросы вместо монолога</li>
+            <li>Реальные сценарии</li>
+            <li>Живая обратная связь</li>
+            <li>Комфортная коммуникация</li>
+          </ul>
+        </div>
+        <TeachingVideo />
       </section>
 
       <section className={`${styles.section} ${styles.services}`}>
