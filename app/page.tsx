@@ -1,3 +1,9 @@
+import {
+  CircleQuestionMark,
+  Handshake,
+  MessageCircleMore,
+  Workflow,
+} from "lucide-react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import TeachingVideo from "./teaching-video";
@@ -195,10 +201,22 @@ export default function Home() {
             </p>
           </div>
           <ul className={styles.teachingPractices}>
-            <li>Вопросы вместо монолога</li>
-            <li>Реальные сценарии</li>
-            <li>Живая обратная связь</li>
-            <li>Комфортная коммуникация</li>
+            <li>
+              <CircleQuestionMark aria-hidden="true" strokeWidth={1.7} />
+              <span>Вопросы вместо монолога</span>
+            </li>
+            <li>
+              <Workflow aria-hidden="true" strokeWidth={1.7} />
+              <span>Реальные сценарии</span>
+            </li>
+            <li>
+              <MessageCircleMore aria-hidden="true" strokeWidth={1.7} />
+              <span>Живая обратная связь</span>
+            </li>
+            <li>
+              <Handshake aria-hidden="true" strokeWidth={1.7} />
+              <span>Комфортная коммуникация</span>
+            </li>
           </ul>
         </div>
         <TeachingVideo />
