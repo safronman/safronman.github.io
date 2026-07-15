@@ -12,6 +12,7 @@ import Presentations from "./presentations";
 import StyleGuide from "./style-guide";
 import TeachingVideo from "./teaching-video";
 import TechnicalFoundation from "./technical-foundation";
+import TechnicalMarketingVoice from "./technical-marketing-voice";
 
 const projects = [
   {
@@ -236,6 +237,8 @@ export default function Home() {
       <FormatsAndAssessment />
 
       <TechnicalFoundation />
+
+      <TechnicalMarketingVoice />
 
       <section className={`${styles.section} ${styles.services}`}>
         <div className={styles.sectionIntro}>
