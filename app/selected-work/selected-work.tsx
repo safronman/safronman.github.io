@@ -1,38 +1,81 @@
 import Image from "next/image";
 import s from "./selected-work.module.css";
 
-const selectedWork = [
+type Resource = {
+  label: string;
+  note?: string;
+  url: string;
+};
+
+type SelectedWorkItem = {
+  description: string;
+  evidence: string;
+  image: string;
+  resources?: readonly Resource[];
+  role: string;
+  title: string;
+  type: string;
+  url: string;
+};
+
+const selectedWork: readonly SelectedWorkItem[] = [
   {
     description:
       "Запросы и мутации, кеширование, пагинация, авторизация и обновления в реальном времени — в формате полного видеокурса.",
     evidence:
       "Сложную инженерную тему можно собрать в связный учебный маршрут с практическими сценариями.",
     image: "/rtk-query-course-cover.png",
-    role: "Исследование темы, проектирование программы и создание видеокурса.",
+    resources: [
+      {
+        label: "Смотреть курс на YouTube",
+        url: "https://youtu.be/5qtCsfMytuk?si=YXT7klLij9eOLKyJ",
+      },
+      {
+        label: "Открыть методические материалы",
+        note: "Примеры экзаменов доступны после регистрации на платформе.",
+        url: "https://it-incubator.io/react/ru/react-middle-senior-tutorials/rtk-query-musicfun-free-course/1-application-setup-queries-mutations?s=C248EC",
+      },
+    ],
+    role: "Исследование темы, проектирование программы, создание видеокурса и методических пособий.",
     title: "RTK Query: полный курс",
     type: "Видеокурс",
     url: "https://youtu.be/5qtCsfMytuk?si=YXT7klLij9eOLKyJ",
   },
   {
     description:
-      "Кейс-видео о различиях HTTP, short polling, long polling, SSE и WebSocket.",
+      "Фрагмент занятия об Auth flow with protected routes: объяснение темы, вопросы к аудитории и разбор практического сценария.",
     evidence:
-      "Архитектурные альтернативы можно объяснить на одном понятном сценарии — без упрощения сути.",
-    image: "/presentation/presentation-realtime-cover.png",
-    role: "Сценарий, техническая систематизация, motion design и работа с HyperFrames.",
-    title: "Real-Time: HTTP, Polling, SSE и WebSocket",
-    type: "Видео-презентация",
-    url: "https://youtu.be/pO7CYYoHO6o",
+      "Техническая глубина сочетается с диалогом, реальными сценариями, практикой и обратной связью.",
+    image: "/teaching-video-cover-v2.png",
+    role: "Веду занятия более шести лет: выстраиваю объяснение через вопросы, практику и живую обратную связь.",
+    title: "Преподавание: фрагмент занятия",
+    type: "Занятие с группой",
+    url: "https://youtu.be/4YF06mvcJ4k",
   },
   {
     description:
-      "React Style Guide фиксирует правила декомпозиции, структуры компонентов, типов, форматирования и code review.",
+      "Открытые материалы и пример экзамена показывают, как тема получает объяснение, визуальную опору и проверку понимания.",
     evidence:
-      "Методический материал помогает превратить договорённости команды в повторяемую инженерную практику.",
+      "Обучение — это не только урок: учебный маршрут складывается из пособия, презентации и проверочных заданий.",
     image: "/manual/manual-react-style-guide.png",
-    role: "Автор методического руководства по единому стилю кода.",
-    title: "React Style Guide",
-    type: "Методическое руководство",
+    resources: [
+      {
+        label: "Открыть методическое пособие",
+        url: "https://code-style.it-incubator.io/react",
+      },
+      {
+        label: "Открыть презентацию Front-end roadmap",
+        url: "https://presentation-frontend-roadmap.vercel.app/",
+      },
+      {
+        label: "Открыть пример экзамена",
+        note: "Для просмотра нужна регистрация на учебной платформе.",
+        url: "https://it-incubator.io/react/ru/react-samurai-way/exams/free-course/exam?level=1&s=C248EC",
+      },
+    ],
+    role: "Создание методических пособий, презентаций и проверочных материалов.",
+    title: "Учебный комплект: пособие, презентация и экзамен",
+    type: "Учебные материалы",
     url: "https://code-style.it-incubator.io/react",
   },
 ] as const;
@@ -84,14 +127,27 @@ export default function SelectedWork() {
                   <dd>{item.evidence}</dd>
                 </div>
               </dl>
-              <a
-                className={s.textLink}
-                href={item.url}
-                rel="noreferrer"
-                target="_blank"
-              >
-                Открыть работу <span aria-hidden="true">↗</span>
-              </a>
+              {item.resources ? (
+                <ul className={s.resources}>
+                  {item.resources.map((resource) => (
+                    <li key={resource.url}>
+                      <a href={resource.url} rel="noreferrer" target="_blank">
+                        {resource.label} <span aria-hidden="true">↗</span>
+                      </a>
+                      {resource.note ? <p>{resource.note}</p> : null}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <a
+                  className={s.textLink}
+                  href={item.url}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Смотреть фрагмент занятия <span aria-hidden="true">↗</span>
+                </a>
+              )}
             </div>
           </article>
         ))}
