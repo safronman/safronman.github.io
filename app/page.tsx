@@ -1,3 +1,4 @@
+import Contact from "./contact/contact";
 import CourseCatalog from "./course-catalog/course-catalog";
 import FormatsAndAssessment from "./formats-and-assessment/formats-and-assessment";
 import Hero from "./hero/hero";
@@ -22,6 +23,7 @@ export default function Home() {
       <FormatsAndAssessment />
       <TechnicalFoundation />
       <TechnicalMarketingVoice />
+      <Contact />
     </main>
   );
 }
