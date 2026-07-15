@@ -6,6 +6,7 @@ import Hero from "./hero/hero";
 import LeadershipProof from "./leadership-proof/leadership-proof";
 import LearningApproach from "./learning-approach/learning-approach";
 import Presentations from "./presentations/presentations";
+import SelectedWork from "./selected-work/selected-work";
 import StyleGuide from "./style-guide/style-guide";
 import TeachingPractices from "./teaching-practices/teaching-practices";
 import TechnicalFoundation from "./technical-foundation/technical-foundation";
@@ -16,6 +17,7 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
+      <SelectedWork />
       <LeadershipProof />
       <LearningApproach />
       <TeachingPractices />
