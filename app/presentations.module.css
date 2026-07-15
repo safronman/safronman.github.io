@@ -84,7 +84,7 @@
 }
 
 .type {
-  color: var(--violet);
+  color: var(--accent);
   font-size: 0.75rem;
   font-weight: 650;
   letter-spacing: 0.08em;

@@ -1,8 +1,9 @@
 :root {
   --ink: #17141d;
   --paper: #f7f7fa;
-  --violet: #6847e8;
-  --lime: #6847e8;
+  --accent: #2b6a61;
+  --accent-surface: #245950;
+  --lime: var(--accent);
   --signal: #2d63e5;
   --line: #d8d5de;
   --ink-on-dark: #f1eff4;
@@ -36,7 +37,7 @@
   font-weight: 700;
 }
 .brand span {
-  color: var(--violet);
+  color: var(--accent);
 }
 .navLinks {
   display: flex;
@@ -66,7 +67,7 @@
 }
 .eyebrow,
 .kicker {
-  color: var(--violet);
+  color: var(--accent);
   margin-bottom: 21px;
 }
 .hero h1 {
@@ -380,7 +381,7 @@
   max-width: none;
   margin: 0;
   padding: clamp(88px, 11vw, 156px) clamp(22px, 5vw, 82px);
-  background: var(--violet);
+  background: var(--accent-surface);
   color: var(--ink-on-dark);
 }
 .proofGrid {
