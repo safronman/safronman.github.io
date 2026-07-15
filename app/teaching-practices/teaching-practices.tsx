@@ -1,24 +1,15 @@
-import {
-  CircleQuestionMark,
-  Handshake,
-  MessageCircleMore,
-  Workflow,
-} from "lucide-react";
-import type { ReactNode } from "react";
-import styles from "./teaching-practices.module.css";
-
-type TeachingPracticesProps = { children: ReactNode };
+import {CircleQuestionMark, Handshake, MessageCircleMore, Workflow,} from 'lucide-react';
+import styles from './teaching-practices.module.css';
+import TeachingVideo from '@/app/teaching-practices/teaching-video/teaching-video';
 
 const practices = [
-  [CircleQuestionMark, "Вопросы вместо монолога"],
-  [Workflow, "Реальные сценарии"],
-  [MessageCircleMore, "Живая обратная связь"],
-  [Handshake, "Комфортная коммуникация"],
+  [CircleQuestionMark, 'Вопросы вместо монолога'],
+  [Workflow, 'Реальные сценарии'],
+  [MessageCircleMore, 'Живая обратная связь'],
+  [Handshake, 'Комфортная коммуникация'],
 ] as const;
 
-export default function TeachingPractices({
-  children,
-}: TeachingPracticesProps) {
+export default function TeachingPractices() {
   return (
     <section className={styles.teaching}>
       <div className={styles.content}>
@@ -33,13 +24,13 @@ export default function TeachingPractices({
         <ul className={styles.practices}>
           {practices.map(([Icon, label]) => (
             <li key={label}>
-              <Icon aria-hidden="true" strokeWidth={1.7} />
+              <Icon aria-hidden="true" strokeWidth={1.7}/>
               <span>{label}</span>
             </li>
           ))}
         </ul>
       </div>
-      {children}
+      <TeachingVideo/>
     </section>
   );
 }
