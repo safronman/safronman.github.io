@@ -8,6 +8,7 @@ import Image from "next/image";
 import CourseCatalog from "./course-catalog";
 import styles from "./page.module.css";
 import Presentations from "./presentations";
+import StyleGuide from "./style-guide";
 import TeachingVideo from "./teaching-video";
 
 const projects = [
@@ -227,6 +228,8 @@ export default function Home() {
       <CourseCatalog />
 
       <Presentations />
+
+      <StyleGuide />
 
       <section className={`${styles.section} ${styles.services}`}>
         <div className={styles.sectionIntro}>
