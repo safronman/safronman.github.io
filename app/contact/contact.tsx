@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, CodeXml, Mail, Send } from "lucide-react";
 import s from "./contact.module.css";
 
 export default function Contact() {
@@ -15,7 +15,10 @@ export default function Contact() {
 
         <address className={s.links}>
           <div className={s.telegram}>
-            <span>Telegram</span>
+            <span className={s.channel}>
+              <Send aria-hidden="true" strokeWidth={1.7} />
+              Telegram
+            </span>
             <a href="https://t.me/safronman" target="_blank" rel="noreferrer">
               Написать в Telegram
               <ArrowUpRight aria-hidden="true" strokeWidth={1.8} />
@@ -23,12 +26,18 @@ export default function Contact() {
           </div>
 
           <div className={s.linkRow}>
-            <span>Email</span>
+            <span className={s.channel}>
+              <Mail aria-hidden="true" strokeWidth={1.7} />
+              Email
+            </span>
             <a href="mailto:safronmanbox@gmail.com">safronmanbox@gmail.com</a>
           </div>
 
           <div className={s.linkRow}>
-            <span>GitHub</span>
+            <span className={s.channel}>
+              <CodeXml aria-hidden="true" strokeWidth={1.7} />
+              GitHub
+            </span>
             <a
               href="https://github.com/safronman"
               target="_blank"
