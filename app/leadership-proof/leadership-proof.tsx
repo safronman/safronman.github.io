@@ -2,7 +2,7 @@ import s from "./leadership-proof.module.css";
 
 export default function LeadershipProof() {
   return (
-    <section className={s.proof}>
+    <section className={s.proof} id="leadership">
       <div className={s.grid}>
         <h2>
           Руководитель направления, который остаётся в контакте с учебным

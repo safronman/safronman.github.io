@@ -16,7 +16,7 @@ const practices = [
 
 export default function TeachingPractices() {
   return (
-    <section className={s.teaching}>
+    <section className={s.teaching} id="teaching">
       <div className={s.content}>
         <div>
           <h2>Преподавание, которое вовлекает</h2>

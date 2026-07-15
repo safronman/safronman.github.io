@@ -4,15 +4,6 @@ import s from "./hero.module.css";
 export default function Hero() {
   return (
     <section className={s.hero} id="top">
-      <nav aria-label="Основная навигация" className={s.nav}>
-        <a className={s.brand} href="#top">
-          Алексей <span>·</span> Technical Educator
-        </a>
-        <div className={s.navLinks}>
-          <a href="#courses">Видеокурсы</a>
-          <a href="#approach">Подход</a>
-        </div>
-      </nav>
       <div className={s.heroGrid}>
         <div>
           <h1>Сложные технические темы — в понятное практическое обучение.</h1>
@@ -23,7 +14,7 @@ export default function Hero() {
           <div className={s.actions}>
             <a
               className={s.primaryButton}
-              href="https://t.me/your_telegram"
+              href="https://t.me/safronman"
               rel="noreferrer"
               target="_blank"
             >
