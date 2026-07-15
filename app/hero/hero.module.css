@@ -1,6 +1,6 @@
 .hero {
   min-height: 100vh;
-  padding: 0 clamp(22px, 5vw, 82px);
+  padding: 67px clamp(22px, 5vw, 82px) 0;
   background: var(--ink);
   color: var(--ink-on-dark);
 }
