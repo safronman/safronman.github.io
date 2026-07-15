@@ -14,7 +14,7 @@ type Course = {
 const courses: readonly Course[] = [
   {
     description:
-      "Запросы и мутации, кэширование, пагинация, обработка ошибок, авторизация и обновления в реальном времени. Публичное видео показывает формат полного курса.",
+      "Запросы и мутации, кеширование, пагинация, обработка ошибок, авторизация и обновления в реальном времени. Публичное видео показывает формат полного курса.",
     image: "/rtk-query-course-cover.png",
     materialStatus: "Материалы курса — ссылка появится позже",
     title: "RTK Query: полный курс",
@@ -45,7 +45,6 @@ export default function CourseCatalog() {
       <div className={styles.header}>
         <h2>Видео-курсы</h2>
       </div>
-
       <div className={styles.courseList}>
         {courses.map((course) => (
           <article className={styles.course} key={course.title}>
@@ -77,7 +76,6 @@ export default function CourseCatalog() {
                 />
               </div>
             )}
-
             <div className={styles.courseContent}>
               <p className={styles.courseType}>{course.type}</p>
               <h3>{course.title}</h3>

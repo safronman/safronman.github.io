@@ -29,3 +29,14 @@ a {
   color: inherit;
   text-decoration: none;
 }
+:root {
+  --ink: #17141d;
+  --paper: #f7f7fa;
+  --accent: #2b6a61;
+  --accent-surface: #245950;
+  --signal: #2d63e5;
+  --line: #d8d5de;
+  --ink-on-dark: #f1eff4;
+  --muted: #625d69;
+  --muted-on-dark: #c9c3d0;
+}
