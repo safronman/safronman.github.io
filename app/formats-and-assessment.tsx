@@ -3,7 +3,6 @@ import {
   BadgeCheck,
   BookOpenCheck,
   GitPullRequest,
-  MessageSquareMore,
   NotebookPen,
   Presentation,
   Timer,
@@ -19,27 +18,32 @@ type AssessmentItemProps = {
 
 const formats: AssessmentItemProps[] = [
   {
-    description: "Сфокусированная работа над темой за короткий период.",
+    description:
+      "Погружение в конкретную тему с теорией, практикой и разбором результатов.",
     icon: Timer,
     title: "Интенсивы",
   },
   {
-    description: "Разборы, вопросы и работа с аудиторией в реальном времени.",
+    description:
+      "Объяснение материала, практика и ответы на вопросы в реальном времени.",
     icon: Video,
-    title: "Live-уроки и вебинары",
+    title: "Онлайн-уроки и вебинары",
   },
   {
-    description: "Практика, закрепляющая тему в коде.",
+    description:
+      "Практические задания, которые помогают применить материал в реальном коде.",
     icon: NotebookPen,
     title: "Домашние задания",
   },
   {
-    description: "Ориентиры, к которым можно возвращаться в работе.",
+    description:
+      "Конспекты, инструкции и примеры, к которым можно возвращаться после обучения.",
     icon: BookOpenCheck,
     title: "Методические пособия",
   },
   {
-    description: "Визуальное объяснение технических тем.",
+    description:
+      "Визуальные материалы, которые упрощают понимание сложных технических тем.",
     icon: Presentation,
     title: "Презентации",
   },
@@ -47,19 +51,16 @@ const formats: AssessmentItemProps[] = [
 
 const assessment: AssessmentItemProps[] = [
   {
-    description: "Проверка понимания и самостоятельного решения задач.",
+    description:
+      "Проверка понимания материала и способности самостоятельно решать практические задачи.",
     icon: BadgeCheck,
     title: "Экзамены",
   },
   {
-    description: "Обратная связь по инженерным решениям и качеству кода.",
+    description:
+      "Разбор инженерных решений, структуры кода, читаемости и типичных ошибок.",
     icon: GitPullRequest,
     title: "Code review",
-  },
-  {
-    description: "Помощь студенту увидеть следующий шаг.",
-    icon: MessageSquareMore,
-    title: "Индивидуальная обратная связь",
   },
 ];
 
@@ -103,10 +104,10 @@ export default function FormatsAndAssessment() {
     <section className={styles.assessment} id="formats-and-assessment">
       <div className={styles.inner}>
         <header className={styles.intro}>
-          <h2>Форматы и оценка</h2>
+          <h2>Как проходит обучение</h2>
           <p>
-            Создаю не отдельные уроки, а систему обучения — от формата до
-            проверки результата.
+            Выстраиваю полный процесс обучения: от выбора формата и практики до
+            проверки знаний и персональной обратной связи.
           </p>
         </header>
 
