@@ -1,3 +1,4 @@
+import { Braces, MessageSquareCheck, UsersRound } from "lucide-react";
 import Image from "next/image";
 import styles from "./style-guide.module.css";
 
@@ -7,7 +8,7 @@ export default function StyleGuide() {
   return (
     <section className={styles.styleGuide} id="style-guide">
       <div className={styles.inner}>
-        <h2>React Style Guide</h2>
+        <h2>Методическое пособие</h2>
 
         <div className={styles.content}>
           <a
@@ -36,9 +37,18 @@ export default function StyleGuide() {
             </p>
 
             <ul>
-              <li>Единый стиль кода</li>
-              <li>Понятный ориентир для команды</li>
-              <li>Основание для code review</li>
+              <li>
+                <Braces aria-hidden="true" strokeWidth={1.7} />
+                <span>Единый стиль кода</span>
+              </li>
+              <li>
+                <UsersRound aria-hidden="true" strokeWidth={1.7} />
+                <span>Понятный ориентир для команды</span>
+              </li>
+              <li>
+                <MessageSquareCheck aria-hidden="true" strokeWidth={1.7} />
+                <span>Основание для code review</span>
+              </li>
             </ul>
 
             <a
