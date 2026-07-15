@@ -11,14 +11,10 @@
 }
 
 .header {
-  display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(280px, 0.5fr);
-  gap: clamp(32px, 9vw, 150px);
-  align-items: end;
+  display: flex;
 }
 
 .header h2 {
-  max-width: 12ch;
   font-size: clamp(2.375rem, 4.8vw, 4.5rem);
   font-weight: 650;
   letter-spacing: -0.035em;
@@ -26,24 +22,11 @@
   text-wrap: balance;
 }
 
-.header p {
-  max-width: 37ch;
-  color: var(--muted-on-dark);
-  line-height: 1.5;
-  text-wrap: pretty;
-}
-
 .presentationGrid {
   display: grid;
-  grid-template-columns: minmax(0, 1.22fr) minmax(320px, 0.78fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(34px, 5vw, 72px);
   margin-top: clamp(48px, 7vw, 92px);
-}
-
-.featured {
-  grid-row: 1 / span 2;
-  align-self: center;
 }
 
 .presentation {
@@ -140,18 +123,35 @@
   color: var(--paper);
 }
 
+.motionCase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.7fr);
+  gap: clamp(32px, 7vw, 112px);
+  align-items: center;
+  max-width: 1400px;
+  margin: clamp(56px, 8vw, 112px) auto 0;
+  padding-top: clamp(40px, 6vw, 80px);
+  border-top: 1px solid rgba(247, 247, 250, 0.24);
+}
+
+.motionContent {
+  max-width: 48ch;
+}
+
+.motionContent h3 {
+  margin-top: 10px;
+  font-size: clamp(1.875rem, 3vw, 3rem);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
 @media (max-width: 900px) {
   .header,
-  .presentationGrid {
+  .presentationGrid,
+  .motionCase {
     grid-template-columns: 1fr;
-  }
-
-  .header p {
-    max-width: 48ch;
-  }
-
-  .featured {
-    grid-row: auto;
   }
 }
 

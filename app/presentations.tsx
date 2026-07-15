@@ -25,23 +25,24 @@ const presentations = [
   },
 ] as const;
 
+const motionCase = {
+  description:
+    "Кейс-видео о различиях HTTP, short polling, long polling, SSE и WebSocket. Демонстрирует техническую систематизацию, motion design и работу с HyperFrames.",
+  image: "/presentation/presentation-realtime-cover.png",
+  title: "Real-Time: HTTP, Polling, SSE и WebSocket",
+  url: "https://youtu.be/pO7CYYoHO6o",
+};
+
 export default function Presentations() {
   return (
     <section className={styles.presentations} id="presentations">
       <div className={styles.header}>
-        <h2>Презентации, которые выстраивают тему в систему</h2>
-        <p>
-          Самостоятельные интерактивные материалы, которые можно открыть и
-          оценить без регистрации.
-        </p>
+        <h2>Презентации</h2>
       </div>
 
       <div className={styles.presentationGrid}>
-        {presentations.map((presentation, index) => (
-          <article
-            className={index === 0 ? styles.featured : styles.presentation}
-            key={presentation.title}
-          >
+        {presentations.map((presentation) => (
+          <article className={styles.presentation} key={presentation.title}>
             <a
               aria-label={`Открыть презентацию «${presentation.title}»`}
               className={styles.coverLink}
@@ -52,11 +53,7 @@ export default function Presentations() {
               <Image
                 alt={`Обложка презентации «${presentation.title}»`}
                 fill
-                sizes={
-                  index === 0
-                    ? "(max-width: 900px) 100vw, 58vw"
-                    : "(max-width: 900px) 100vw, 34vw"
-                }
+                sizes="(max-width: 900px) 100vw, 33vw"
                 src={presentation.image}
               />
               <span aria-hidden="true" className={styles.coverAction}>
@@ -79,6 +76,39 @@ export default function Presentations() {
           </article>
         ))}
       </div>
+
+      <article className={styles.motionCase}>
+        <a
+          aria-label={`Смотреть видео-презентацию «${motionCase.title}» на YouTube`}
+          className={styles.coverLink}
+          href={motionCase.url}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <Image
+            alt={`Обложка видео-презентации «${motionCase.title}»`}
+            fill
+            sizes="(max-width: 900px) 100vw, 58vw"
+            src={motionCase.image}
+          />
+          <span aria-hidden="true" className={styles.coverAction}>
+            Смотреть на YouTube ↗
+          </span>
+        </a>
+        <div className={styles.motionContent}>
+          <p className={styles.type}>Видео-презентация · Motion case</p>
+          <h3>{motionCase.title}</h3>
+          <p className={styles.description}>{motionCase.description}</p>
+          <a
+            className={styles.textLink}
+            href={motionCase.url}
+            rel="noreferrer"
+            target="_blank"
+          >
+            Смотреть на YouTube <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
     </section>
   );
 }
