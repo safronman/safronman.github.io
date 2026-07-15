@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
 import styles from "./course-catalog.module.css";
 
 type Course = {
@@ -42,42 +39,11 @@ const courses: readonly Course[] = [
   },
 ];
 
-type Layout = "showcase" | "details";
-
 export default function CourseCatalog() {
-  const [layout, setLayout] = useState<Layout>("showcase");
-
   return (
-    <section className={styles.courses} data-layout={layout} id="courses">
+    <section className={styles.courses} id="courses">
       <div className={styles.header}>
-        <div>
-          <h2>Видео-курсы, в которых теория становится практикой</h2>
-          <p>
-            Три образовательных продукта, которые можно открыть и оценить до
-            первого разговора.
-          </p>
-        </div>
-        <fieldset className={styles.switcher}>
-          <legend className={styles.visuallyHidden}>
-            Вариант представления видео-курсов
-          </legend>
-          <button
-            aria-pressed={layout === "showcase"}
-            className={layout === "showcase" ? styles.active : undefined}
-            onClick={() => setLayout("showcase")}
-            type="button"
-          >
-            Витрина
-          </button>
-          <button
-            aria-pressed={layout === "details"}
-            className={layout === "details" ? styles.active : undefined}
-            onClick={() => setLayout("details")}
-            type="button"
-          >
-            Подробно
-          </button>
-        </fieldset>
+        <h2>Видео-курсы</h2>
       </div>
 
       <div className={styles.courseList}>
