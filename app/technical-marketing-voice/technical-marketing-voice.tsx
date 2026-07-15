@@ -1,6 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import { MessagesSquare, PenLine, Presentation, Video } from "lucide-react";
-import styles from "./technical-marketing-voice.module.css";
+import s from "./technical-marketing-voice.module.css";
 
 type CommunicationFormat = {
   description: string;
@@ -37,9 +37,9 @@ const communicationFormats: CommunicationFormat[] = [
 
 export default function TechnicalMarketingVoice() {
   return (
-    <section className={styles.voice} id="technical-marketing-voice">
-      <div className={styles.inner}>
-        <header className={styles.intro}>
+    <section className={s.voice} id="technical-marketing-voice">
+      <div className={s.inner}>
+        <header className={s.intro}>
           <h2>Технический голос для маркетинга</h2>
           <p>
             Помогаю говорить о техническом продукте точно и понятно: от вебинара
@@ -47,9 +47,9 @@ export default function TechnicalMarketingVoice() {
           </p>
         </header>
 
-        <ul className={styles.list}>
+        <ul className={s.list}>
           {communicationFormats.map(({ description, icon: Icon, title }) => (
-            <li className={styles.item} key={title}>
+            <li className={s.item} key={title}>
               <Icon aria-hidden="true" strokeWidth={1.65} />
               <div>
                 <h3>{title}</h3>

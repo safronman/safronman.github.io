@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./presentations.module.css";
+import s from "./presentations.module.css";
 
 const presentations = [
   {
@@ -35,17 +35,17 @@ const motionCase = {
 
 export default function Presentations() {
   return (
-    <section className={styles.presentations} id="presentations">
-      <div className={styles.header}>
+    <section className={s.presentations} id="presentations">
+      <div className={s.header}>
         <h2>Презентации</h2>
       </div>
 
-      <div className={styles.presentationGrid}>
+      <div className={s.presentationGrid}>
         {presentations.map((presentation) => (
-          <article className={styles.presentation} key={presentation.title}>
+          <article className={s.presentation} key={presentation.title}>
             <a
               aria-label={`Открыть презентацию «${presentation.title}»`}
-              className={styles.coverLink}
+              className={s.coverLink}
               href={presentation.url}
               rel="noreferrer"
               target="_blank"
@@ -56,16 +56,16 @@ export default function Presentations() {
                 sizes="(max-width: 900px) 100vw, 33vw"
                 src={presentation.image}
               />
-              <span aria-hidden="true" className={styles.coverAction}>
+              <span aria-hidden="true" className={s.coverAction}>
                 Открыть презентацию ↗
               </span>
             </a>
-            <div className={styles.content}>
-              <p className={styles.type}>Интерактивная презентация</p>
+            <div className={s.content}>
+              <p className={s.type}>Интерактивная презентация</p>
               <h3>{presentation.title}</h3>
-              <p className={styles.description}>{presentation.description}</p>
+              <p className={s.description}>{presentation.description}</p>
               <a
-                className={styles.textLink}
+                className={s.textLink}
                 href={presentation.url}
                 rel="noreferrer"
                 target="_blank"
@@ -77,10 +77,10 @@ export default function Presentations() {
         ))}
       </div>
 
-      <article className={styles.motionCase}>
+      <article className={s.motionCase}>
         <a
           aria-label={`Смотреть видео-презентацию «${motionCase.title}» на YouTube`}
-          className={styles.coverLink}
+          className={s.coverLink}
           href={motionCase.url}
           rel="noreferrer"
           target="_blank"
@@ -91,16 +91,16 @@ export default function Presentations() {
             sizes="(max-width: 900px) 100vw, 58vw"
             src={motionCase.image}
           />
-          <span aria-hidden="true" className={styles.coverAction}>
+          <span aria-hidden="true" className={s.coverAction}>
             Смотреть на YouTube ↗
           </span>
         </a>
-        <div className={styles.motionContent}>
-          <p className={styles.type}>Видео-презентация · Motion case</p>
+        <div className={s.motionContent}>
+          <p className={s.type}>Видео-презентация · Motion case</p>
           <h3>{motionCase.title}</h3>
-          <p className={styles.description}>{motionCase.description}</p>
+          <p className={s.description}>{motionCase.description}</p>
           <a
-            className={styles.textLink}
+            className={s.textLink}
             href={motionCase.url}
             rel="noreferrer"
             target="_blank"

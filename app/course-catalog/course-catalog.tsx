@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./course-catalog.module.css";
+import s from "./course-catalog.module.css";
 
 type Course = {
   description: string;
@@ -41,17 +41,17 @@ const courses: readonly Course[] = [
 
 export default function CourseCatalog() {
   return (
-    <section className={styles.courses} id="courses">
-      <div className={styles.header}>
+    <section className={s.courses} id="courses">
+      <div className={s.header}>
         <h2>Видео-курсы</h2>
       </div>
-      <div className={styles.courseList}>
+      <div className={s.courseList}>
         {courses.map((course) => (
-          <article className={styles.course} key={course.title}>
+          <article className={s.course} key={course.title}>
             {course.youtubeUrl ? (
               <a
                 aria-label={`Смотреть «${course.title}» на YouTube`}
-                className={styles.coverLink}
+                className={s.coverLink}
                 href={course.youtubeUrl}
                 rel="noreferrer"
                 target="_blank"
@@ -62,12 +62,12 @@ export default function CourseCatalog() {
                   sizes="(max-width: 820px) 100vw, (max-width: 1100px) 50vw, 33vw"
                   src={course.image}
                 />
-                <span aria-hidden="true" className={styles.coverAction}>
+                <span aria-hidden="true" className={s.coverAction}>
                   Смотреть на YouTube ↗
                 </span>
               </a>
             ) : (
-              <div className={styles.cover}>
+              <div className={s.cover}>
                 <Image
                   alt={`Обложка курса «${course.title}»`}
                   fill
@@ -76,22 +76,20 @@ export default function CourseCatalog() {
                 />
               </div>
             )}
-            <div className={styles.courseContent}>
-              <p className={styles.courseType}>{course.type}</p>
+            <div className={s.courseContent}>
+              <p className={s.courseType}>{course.type}</p>
               <h3>{course.title}</h3>
-              <p className={styles.description}>{course.description}</p>
-              <div className={styles.actions}>
+              <p className={s.description}>{course.description}</p>
+              <div className={s.actions}>
                 {course.youtubeUrl ? (
                   <a href={course.youtubeUrl} rel="noreferrer" target="_blank">
                     Смотреть на YouTube <span aria-hidden="true">↗</span>
                   </a>
                 ) : (
-                  <p className={styles.status}>{course.status}</p>
+                  <p className={s.status}>{course.status}</p>
                 )}
                 {course.materialStatus ? (
-                  <p className={styles.materialPending}>
-                    {course.materialStatus}
-                  </p>
+                  <p className={s.materialPending}>{course.materialStatus}</p>
                 ) : null}
               </div>
             </div>

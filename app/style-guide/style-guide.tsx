@@ -1,19 +1,19 @@
 import { Braces, MessageSquareCheck, UsersRound } from "lucide-react";
 import Image from "next/image";
-import styles from "./style-guide.module.css";
+import s from "./style-guide.module.css";
 
 const styleGuideUrl = "https://code-style.it-incubator.io/react";
 
 export default function StyleGuide() {
   return (
-    <section className={styles.styleGuide} id="style-guide">
-      <div className={styles.inner}>
+    <section className={s.styleGuide} id="style-guide">
+      <div className={s.inner}>
         <h2>Методическое пособие</h2>
 
-        <div className={styles.content}>
+        <div className={s.content}>
           <a
             aria-label="Открыть React Style Guide"
-            className={styles.coverLink}
+            className={s.coverLink}
             href={styleGuideUrl}
             rel="noreferrer"
             target="_blank"
@@ -24,12 +24,12 @@ export default function StyleGuide() {
               sizes="(max-width: 820px) 100vw, 56vw"
               src="/manual/manual-react-style-guide.png"
             />
-            <span aria-hidden="true" className={styles.coverAction}>
+            <span aria-hidden="true" className={s.coverAction}>
               Открыть руководство ↗
             </span>
           </a>
 
-          <div className={styles.description}>
+          <div className={s.description}>
             <p>
               Руководство фиксирует общие правила написания кода, чтобы нейминг,
               структура компонентов, типы, форматирование и коммиты не
@@ -52,7 +52,7 @@ export default function StyleGuide() {
             </ul>
 
             <a
-              className={styles.textLink}
+              className={s.textLink}
               href={styleGuideUrl}
               rel="noreferrer"
               target="_blank"

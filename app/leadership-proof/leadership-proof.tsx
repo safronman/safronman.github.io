@@ -1,9 +1,9 @@
-import styles from "./leadership-proof.module.css";
+import s from "./leadership-proof.module.css";
 
 export default function LeadershipProof() {
   return (
-    <section className={styles.proof}>
-      <div className={styles.grid}>
+    <section className={s.proof}>
+      <div className={s.grid}>
         <h2>
           Руководитель направления, который остаётся в контакте с учебным
           процессом.

@@ -1,40 +1,40 @@
 import Image from "next/image";
-import styles from "./hero.module.css";
+import s from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.hero} id="top">
-      <nav aria-label="Основная навигация" className={styles.nav}>
-        <a className={styles.brand} href="#top">
+    <section className={s.hero} id="top">
+      <nav aria-label="Основная навигация" className={s.nav}>
+        <a className={s.brand} href="#top">
           Алексей <span>·</span> Technical Educator
         </a>
-        <div className={styles.navLinks}>
+        <div className={s.navLinks}>
           <a href="#courses">Видеокурсы</a>
           <a href="#approach">Подход</a>
         </div>
       </nav>
-      <div className={styles.heroGrid}>
+      <div className={s.heroGrid}>
         <div>
           <h1>Сложные технические темы — в понятное практическое обучение.</h1>
-          <p className={styles.lead}>
+          <p className={s.lead}>
             Исследую предмет, проектирую программу и практику, создаю видео и
             материалы, с которыми знания переходят в работу.
           </p>
-          <div className={styles.actions}>
+          <div className={s.actions}>
             <a
-              className={styles.primaryButton}
+              className={s.primaryButton}
               href="https://t.me/your_telegram"
               rel="noreferrer"
               target="_blank"
             >
               Написать в Telegram <span aria-hidden="true">↗</span>
             </a>
-            <a className={styles.textButton} href="#courses">
+            <a className={s.textButton} href="#courses">
               Смотреть видеокурсы <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>
-        <figure className={styles.portrait}>
+        <figure className={s.portrait}>
           <Image
             alt="Technical Educator за рабочим столом в студии с книгами и техническим оборудованием"
             fill

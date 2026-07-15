@@ -1,4 +1,4 @@
-import styles from "./learning-approach.module.css";
+import s from "./learning-approach.module.css";
 
 const steps = [
   [
@@ -30,15 +30,15 @@ const steps = [
 
 export default function LearningApproach() {
   return (
-    <section className={styles.approach} id="approach">
-      <div className={styles.intro}>
+    <section className={s.approach} id="approach">
+      <div className={s.intro}>
         <h2>Как я проектирую обучение</h2>
         <p>
           Исследую тему, отбираю главное и проектирую практику. Только затем
           появляются программа, видео, занятия и материалы.
         </p>
       </div>
-      <ol className={styles.steps}>
+      <ol className={s.steps}>
         {steps.map(([number, title, text]) => (
           <li key={number}>
             <span>{number}</span>

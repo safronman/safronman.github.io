@@ -1,18 +1,23 @@
-import {CircleQuestionMark, Handshake, MessageCircleMore, Workflow,} from 'lucide-react';
-import styles from './teaching-practices.module.css';
-import TeachingVideo from '@/app/teaching-practices/teaching-video/teaching-video';
+import {
+  CircleQuestionMark,
+  Handshake,
+  MessageCircleMore,
+  Workflow,
+} from "lucide-react";
+import TeachingVideo from "@/app/teaching-practices/teaching-video/teaching-video";
+import s from "./teaching-practices.module.css";
 
 const practices = [
-  [CircleQuestionMark, 'Вопросы вместо монолога'],
-  [Workflow, 'Реальные сценарии'],
-  [MessageCircleMore, 'Живая обратная связь'],
-  [Handshake, 'Комфортная коммуникация'],
+  [CircleQuestionMark, "Вопросы вместо монолога"],
+  [Workflow, "Реальные сценарии"],
+  [MessageCircleMore, "Живая обратная связь"],
+  [Handshake, "Комфортная коммуникация"],
 ] as const;
 
 export default function TeachingPractices() {
   return (
-    <section className={styles.teaching}>
-      <div className={styles.content}>
+    <section className={s.teaching}>
+      <div className={s.content}>
         <div>
           <h2>Преподавание, которое вовлекает</h2>
           <p>
@@ -21,16 +26,16 @@ export default function TeachingPractices() {
             в реальной ситуации.
           </p>
         </div>
-        <ul className={styles.practices}>
+        <ul className={s.practices}>
           {practices.map(([Icon, label]) => (
             <li key={label}>
-              <Icon aria-hidden="true" strokeWidth={1.7}/>
+              <Icon aria-hidden="true" strokeWidth={1.7} />
               <span>{label}</span>
             </li>
           ))}
         </ul>
       </div>
-      <TeachingVideo/>
+      <TeachingVideo />
     </section>
   );
 }

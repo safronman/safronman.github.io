@@ -8,7 +8,7 @@ import {
   Timer,
   Video,
 } from "lucide-react";
-import styles from "./formats-and-assessment.module.css";
+import s from "./formats-and-assessment.module.css";
 
 type AssessmentItemProps = {
   description: string;
@@ -70,7 +70,7 @@ function AssessmentItem({
   title,
 }: AssessmentItemProps) {
   return (
-    <li className={styles.item}>
+    <li className={s.item}>
       <Icon aria-hidden="true" strokeWidth={1.7} />
       <div>
         <h3>{title}</h3>
@@ -88,8 +88,8 @@ function AssessmentGroup({
   title: string;
 }) {
   return (
-    <section className={styles.group}>
-      <h3 className={styles.groupTitle}>{title}</h3>
+    <section className={s.group}>
+      <h3 className={s.groupTitle}>{title}</h3>
       <ul>
         {items.map((item) => (
           <AssessmentItem key={item.title} {...item} />
@@ -101,9 +101,9 @@ function AssessmentGroup({
 
 export default function FormatsAndAssessment() {
   return (
-    <section className={styles.assessment} id="formats-and-assessment">
-      <div className={styles.inner}>
-        <header className={styles.intro}>
+    <section className={s.assessment} id="formats-and-assessment">
+      <div className={s.inner}>
+        <header className={s.intro}>
           <h2>Как проходит обучение</h2>
           <p>
             Выстраиваю полный процесс обучения: от выбора формата и практики до
@@ -111,7 +111,7 @@ export default function FormatsAndAssessment() {
           </p>
         </header>
 
-        <div className={styles.groups}>
+        <div className={s.groups}>
           <AssessmentGroup items={formats} title="Форматы" />
           <AssessmentGroup items={assessment} title="Оценка и обратная связь" />
         </div>

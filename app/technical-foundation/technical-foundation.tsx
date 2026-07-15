@@ -1,6 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import { Bot, Braces, GitBranch, PanelsTopLeft } from "lucide-react";
-import styles from "./technical-foundation.module.css";
+import s from "./technical-foundation.module.css";
 
 type FoundationArea = {
   description: string;
@@ -37,9 +37,9 @@ const foundationAreas: FoundationArea[] = [
 
 export default function TechnicalFoundation() {
   return (
-    <section className={styles.foundation} id="technical-foundation">
-      <div className={styles.inner}>
-        <header className={styles.intro}>
+    <section className={s.foundation} id="technical-foundation">
+      <div className={s.inner}>
+        <header className={s.intro}>
           <h2>Техническая основа</h2>
           <p>
             Глубоко работаю с frontend-разработкой и связываю её с качеством
@@ -47,9 +47,9 @@ export default function TechnicalFoundation() {
           </p>
         </header>
 
-        <ul className={styles.list}>
+        <ul className={s.list}>
           {foundationAreas.map(({ description, icon: Icon, title }) => (
-            <li className={styles.area} key={title}>
+            <li className={s.area} key={title}>
               <Icon aria-hidden="true" strokeWidth={1.65} />
               <div>
                 <h3>{title}</h3>
