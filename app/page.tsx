@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import CourseCatalog from "./course-catalog";
+import FormatsAndAssessment from "./formats-and-assessment";
 import styles from "./page.module.css";
 import Presentations from "./presentations";
 import StyleGuide from "./style-guide";
@@ -230,6 +231,8 @@ export default function Home() {
       <Presentations />
 
       <StyleGuide />
+
+      <FormatsAndAssessment />
 
       <section className={`${styles.section} ${styles.services}`}>
         <div className={styles.sectionIntro}>
