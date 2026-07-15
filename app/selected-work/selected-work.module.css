@@ -1,12 +1,11 @@
 .work {
   padding: clamp(80px, 12vw, 160px) clamp(22px, 5vw, 82px);
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--proof-surface);
+  color: var(--ink-on-dark);
 }
 
 .intro,
-.grid,
-.platformNote {
+.grid {
   max-width: 1400px;
   margin: auto;
 }
@@ -23,7 +22,7 @@
 .intro p {
   max-width: 54ch;
   margin-top: 24px;
-  color: var(--muted);
+  color: var(--muted-on-dark);
   line-height: 1.5;
   text-wrap: pretty;
 }
@@ -37,11 +36,11 @@
 
 .item {
   padding: clamp(28px, 4vw, 48px) 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--proof-line);
 }
 
 .item:nth-child(n + 3) {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--proof-line);
 }
 
 .coverLink {
@@ -49,6 +48,7 @@
   display: block;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  border: 1px solid var(--proof-line);
   background: var(--ink);
 }
 
@@ -90,7 +90,7 @@
 }
 
 .type {
-  color: var(--accent);
+  color: var(--muted-on-dark);
   font-size: 0.75rem;
   font-weight: 650;
   letter-spacing: 0.08em;
@@ -108,7 +108,7 @@
 
 .description {
   margin-top: 14px;
-  color: var(--muted);
+  color: var(--muted-on-dark);
   line-height: 1.5;
   text-wrap: pretty;
 }
@@ -121,46 +121,22 @@
   list-style: none;
 }
 
-.links a,
-.platformNote a {
+.links a {
   display: inline-flex;
   min-height: 44px;
   align-items: center;
   gap: 14px;
   border-bottom: 1px solid currentColor;
+  color: var(--ink-on-dark);
   font-weight: 650;
 }
 
-.links a:hover,
-.platformNote a:hover {
+.links a:hover {
   color: var(--signal);
 }
 
-.platformNote {
-  margin-top: clamp(48px, 7vw, 88px);
-  padding-top: 24px;
-  border-top: 1px solid var(--line);
-}
-
-.platformNote p {
-  max-width: 72ch;
-  color: var(--muted);
-  line-height: 1.5;
-  text-wrap: pretty;
-}
-
-.platformNote strong {
-  color: var(--ink);
-  font-weight: 650;
-}
-
-.platformNote a {
-  margin-top: 8px;
-}
-
 .coverLink:focus-visible,
-.links a:focus-visible,
-.platformNote a:focus-visible {
+.links a:focus-visible {
   outline: 2px solid var(--signal);
   outline-offset: 4px;
 }
@@ -175,7 +151,7 @@
   }
 
   .item:last-child {
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--proof-line);
   }
 }
 

@@ -80,10 +80,10 @@ export default function SelectedWork() {
   return (
     <section className={s.work} id="work">
       <div className={s.intro}>
-        <h2>Работы, с которых стоит начать</h2>
+        <h2>Примеры моей работы</h2>
         <p>
-          Четыре открытых артефакта, по которым можно быстро оценить мой подход
-          к техническому обучению.
+          Курс, фрагмент занятия, методическое пособие и презентация — чтобы
+          быстро увидеть, как я объясняю сложные технические темы.
         </p>
       </div>
 
@@ -125,21 +125,6 @@ export default function SelectedWork() {
           </article>
         ))}
       </div>
-
-      <aside className={s.platformNote}>
-        <p>
-          <strong>Экзамены и домашние задания.</strong> Проходят на учебной
-          платформе. Для просмотра и прохождения нужна регистрация; домашние
-          задания доступны в платных программах.
-        </p>
-        <a
-          href="https://it-incubator.io/react/ru/react-samurai-way/exams/free-course/exam?level=1&s=C248EC"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Открыть пример экзамена <span aria-hidden="true">↗</span>
-        </a>
-      </aside>
     </section>
   );
 }
