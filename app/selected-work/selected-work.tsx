@@ -1,84 +1,80 @@
 import Image from "next/image";
 import s from "./selected-work.module.css";
 
-type Resource = {
-  label: string;
-  note?: string;
-  url: string;
-};
-
-type SelectedWorkItem = {
+type Work = {
   description: string;
-  evidence: string;
   image: string;
-  resources?: readonly Resource[];
-  role: string;
+  links: readonly {
+    label: string;
+    url: string;
+  }[];
   title: string;
   type: string;
   url: string;
 };
 
-const selectedWork: readonly SelectedWorkItem[] = [
+const selectedWork: readonly Work[] = [
   {
     description:
-      "Запросы и мутации, кеширование, пагинация, авторизация и обновления в реальном времени — в формате полного видеокурса.",
-    evidence:
-      "Сложную инженерную тему можно собрать в связный учебный маршрут с практическими сценариями.",
+      "Исследую тему, проектирую программу, записываю курс и создаю методические материалы.",
     image: "/rtk-query-course-cover.png",
-    resources: [
+    links: [
       {
-        label: "Смотреть курс на YouTube",
+        label: "Смотреть курс",
         url: "https://youtu.be/5qtCsfMytuk?si=YXT7klLij9eOLKyJ",
       },
       {
-        label: "Открыть методические материалы",
-        note: "Примеры экзаменов доступны после регистрации на платформе.",
+        label: "Методические материалы",
         url: "https://it-incubator.io/react/ru/react-middle-senior-tutorials/rtk-query-musicfun-free-course/1-application-setup-queries-mutations?s=C248EC",
       },
     ],
-    role: "Исследование темы, проектирование программы, создание видеокурса и методических пособий.",
     title: "RTK Query: полный курс",
     type: "Видеокурс",
     url: "https://youtu.be/5qtCsfMytuk?si=YXT7klLij9eOLKyJ",
   },
   {
     description:
-      "Фрагмент занятия об Auth flow with protected routes: объяснение темы, вопросы к аудитории и разбор практического сценария.",
-    evidence:
-      "Техническая глубина сочетается с диалогом, реальными сценариями, практикой и обратной связью.",
+      "Более шести лет веду занятия через вопросы, реальные сценарии, практику и живую обратную связь.",
     image: "/teaching-video-cover-v2.png",
-    role: "Веду занятия более шести лет: выстраиваю объяснение через вопросы, практику и живую обратную связь.",
+    links: [
+      {
+        label: "Смотреть фрагмент занятия",
+        url: "https://youtu.be/4YF06mvcJ4k",
+      },
+    ],
     title: "Преподавание: фрагмент занятия",
     type: "Занятие с группой",
     url: "https://youtu.be/4YF06mvcJ4k",
   },
   {
     description:
-      "Открытые материалы и пример экзамена показывают, как тема получает объяснение, визуальную опору и проверку понимания.",
-    evidence:
-      "Обучение — это не только урок: учебный маршрут складывается из пособия, презентации и проверочных заданий.",
+      "Автор руководства по декомпозиции, структуре компонентов, типам, форматированию и code review.",
     image: "/manual/manual-react-style-guide.png",
-    resources: [
+    links: [
       {
-        label: "Открыть методическое пособие",
+        label: "Открыть руководство",
         url: "https://code-style.it-incubator.io/react",
       },
-      {
-        label: "Открыть презентацию Front-end roadmap",
-        url: "https://presentation-frontend-roadmap.vercel.app/",
-      },
-      {
-        label: "Открыть пример экзамена",
-        note: "Для просмотра нужна регистрация на учебной платформе.",
-        url: "https://it-incubator.io/react/ru/react-samurai-way/exams/free-course/exam?level=1&s=C248EC",
-      },
     ],
-    role: "Создание методических пособий, презентаций и проверочных материалов.",
-    title: "Учебный комплект: пособие, презентация и экзамен",
-    type: "Учебные материалы",
+    title: "React Style Guide",
+    type: "Методическое пособие",
     url: "https://code-style.it-incubator.io/react",
   },
-] as const;
+  {
+    description:
+      "Собираю визуальные материалы, которые помогают увидеть связи между технологиями и удержать структуру темы.",
+    image: "/presentation/presentation-front-roadmap-cover.png",
+    links: [
+      {
+        label: "Открыть презентацию",
+        url: "https://presentation-frontend-roadmap.vercel.app/",
+      },
+    ],
+    title: "Front-end roadmap",
+    type: "Интерактивная презентация",
+    url: "https://presentation-frontend-roadmap.vercel.app/",
+  },
+];
 
 export default function SelectedWork() {
   return (
@@ -86,13 +82,12 @@ export default function SelectedWork() {
       <div className={s.intro}>
         <h2>Работы, с которых стоит начать</h2>
         <p>
-          Три артефакта, по которым можно быстро оценить мой подход к
-          техническому обучению: от исследования темы до материала, с которым
-          работает аудитория.
+          Четыре открытых артефакта, по которым можно быстро оценить мой подход
+          к техническому обучению.
         </p>
       </div>
 
-      <div className={s.list}>
+      <div className={s.grid}>
         {selectedWork.map((item) => (
           <article className={s.item} key={item.title}>
             <a
@@ -105,11 +100,11 @@ export default function SelectedWork() {
               <Image
                 alt={`Обложка работы «${item.title}»`}
                 fill
-                sizes="(max-width: 820px) 100vw, 38vw"
+                sizes="(max-width: 760px) 100vw, 50vw"
                 src={item.image}
               />
               <span aria-hidden="true" className={s.coverAction}>
-                Открыть работу ↗
+                Открыть ↗
               </span>
             </a>
 
@@ -117,41 +112,34 @@ export default function SelectedWork() {
               <p className={s.type}>{item.type}</p>
               <h3>{item.title}</h3>
               <p className={s.description}>{item.description}</p>
-              <dl className={s.details}>
-                <div>
-                  <dt>Моя роль</dt>
-                  <dd>{item.role}</dd>
-                </div>
-                <div>
-                  <dt>Что доказывает</dt>
-                  <dd>{item.evidence}</dd>
-                </div>
-              </dl>
-              {item.resources ? (
-                <ul className={s.resources}>
-                  {item.resources.map((resource) => (
-                    <li key={resource.url}>
-                      <a href={resource.url} rel="noreferrer" target="_blank">
-                        {resource.label} <span aria-hidden="true">↗</span>
-                      </a>
-                      {resource.note ? <p>{resource.note}</p> : null}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <a
-                  className={s.textLink}
-                  href={item.url}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Смотреть фрагмент занятия <span aria-hidden="true">↗</span>
-                </a>
-              )}
+              <ul className={s.links}>
+                {item.links.map((link) => (
+                  <li key={link.url}>
+                    <a href={link.url} rel="noreferrer" target="_blank">
+                      {link.label} <span aria-hidden="true">↗</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </article>
         ))}
       </div>
+
+      <aside className={s.platformNote}>
+        <p>
+          <strong>Экзамены и домашние задания.</strong> Проходят на учебной
+          платформе. Для просмотра и прохождения нужна регистрация; домашние
+          задания доступны в платных программах.
+        </p>
+        <a
+          href="https://it-incubator.io/react/ru/react-samurai-way/exams/free-course/exam?level=1&s=C248EC"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Открыть пример экзамена <span aria-hidden="true">↗</span>
+        </a>
+      </aside>
     </section>
   );
 }
