@@ -5,7 +5,7 @@ const navigationItems = [
   ["Преподавание", "#teaching"],
   ["Подход", "#approach"],
   ["Экспертиза", "#expertise"],
-  ["Контакт", "#contacts"],
+  ["Контакты", "#contacts"],
 ] as const;
 
 export default function Header() {

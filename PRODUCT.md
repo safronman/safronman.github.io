@@ -18,7 +18,7 @@ This portfolio helps education companies evaluate a Technical Educator whose str
 
 ## Positioning
 
-Teach, create programmes, and lead technical education—from researching a subject to setting a consistent standard for materials and teaching teams.
+Teach, record videos, create programmes, and lead technical education—from researching a subject to setting a consistent standard for materials and teaching teams.
 
 ## Conversion & proof
 

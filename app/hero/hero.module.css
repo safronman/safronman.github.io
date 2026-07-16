@@ -16,20 +16,12 @@
 }
 
 .hero h1 {
-  max-width: 780px;
-  font-size: clamp(44px, 5.2vw, 80px);
+  max-width: 13ch;
+  font-size: clamp(2.75rem, 4.65vw, 4.5rem);
   font-weight: 650;
   letter-spacing: -0.025em;
   line-height: 0.98;
   text-wrap: balance;
-}
-
-.lead {
-  max-width: 60ch;
-  margin-top: 32px;
-  color: var(--muted-on-dark);
-  font-size: clamp(17px, 1.5vw, 21px);
-  line-height: 1.5;
 }
 
 .actions {
@@ -54,6 +46,10 @@
 .primaryButton span,
 .textButton span {
   margin-left: 20px;
+}
+
+.hero h1 span {
+  display: block;
 }
 
 .textButton {

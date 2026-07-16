@@ -15,9 +15,9 @@ type Work = {
 
 type AdditionalMaterial = {
   description: string;
-  status?: string;
+  image: string;
   title: string;
-  url?: string;
+  url: string;
 };
 
 const selectedWork: readonly Work[] = [
@@ -92,14 +92,16 @@ const additionalMaterialGroups: readonly {
       {
         description:
           "Плейлист о настройке Git, SSH-ключах и практиках, с которых начинается уверенная работа разработчика в команде.",
+        image: "/git-course-cover.jpg",
         title: "Git: введение и базовый рабочий процесс",
         url: "https://youtu.be/BMo29Gkx8K0?si=6yh2OJcZP3vrtkw7",
       },
       {
         description:
           "Курс о переиспользуемых компонентах, Portal, Radix UI и Storybook — от API до изолированной разработки.",
-        status: "Открытый фрагмент появится позже",
+        image: "/modal-createportal-radix-ui-storybook-cover.png",
         title: "Современная разработка компонентов",
+        url: "https://it-incubator.io/react/ru/react-middle-senior-tutorials/modal-createportal-radix-ui-storybook?s=C248EC",
       },
     ],
     title: "Видеокурсы",
@@ -109,18 +111,21 @@ const additionalMaterialGroups: readonly {
       {
         description:
           "Ключевые изменения Zod 4, их практический смысл и примеры кода после перехода на новую версию.",
+        image: "/presentation/presentation-zod4-cover.png",
         title: "Что нового в Zod 4",
         url: "https://presentation-zod-4.vercel.app/",
       },
       {
         description:
           "Практический разбор использования AI для обучения, исследования тем и ежедневной технической работы.",
+        image: "/presentation/presentation-ai-for study-cover.png",
         title: "Как использовать AI для обучения и работы",
         url: "https://presentation-ai-for-study-and-work.vercel.app/",
       },
       {
         description:
           "Видео-кейс о различиях HTTP, polling, SSE и WebSocket: техническая систематизация и motion design.",
+        image: "/presentation/presentation-realtime-cover.png",
         title: "Real-Time: HTTP, Polling, SSE и WebSocket",
         url: "https://youtu.be/pO7CYYoHO6o",
       },
@@ -133,16 +138,9 @@ export default function SelectedWork() {
   return (
     <section className={s.work} id="work">
       <div className={s.intro}>
-        <h2>Работы и материалы, которые можно проверить</h2>
-        <p>
-          Реальные курсы, занятие, пособия и презентации — чтобы быстро увидеть,
-          как я работаю с техническими темами.
-        </p>
+        <h2>Работы и материалы</h2>
       </div>
 
-      <div className={s.selectedHeading}>
-        <h3>Примеры моей работы</h3>
-      </div>
       <div className={s.grid}>
         {selectedWork.map((item) => (
           <article className={s.item} key={item.title}>
@@ -191,22 +189,27 @@ export default function SelectedWork() {
               <ul>
                 {group.items.map((item) => (
                   <li key={item.title}>
+                    <a
+                      aria-label={`Открыть «${item.title}»`}
+                      className={s.materialCover}
+                      href={item.url}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        alt={`Обложка материала «${item.title}»`}
+                        fill
+                        sizes="(max-width: 520px) 112px, 136px"
+                        src={item.image}
+                      />
+                    </a>
                     <div>
                       <h5>{item.title}</h5>
                       <p>{item.description}</p>
                     </div>
-                    {item.url ? (
-                      <a
-                        aria-label={`Открыть «${item.title}»`}
-                        href={item.url}
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        Открыть <span aria-hidden="true">↗</span>
-                      </a>
-                    ) : (
-                      <p className={s.status}>{item.status}</p>
-                    )}
+                    <a href={item.url} rel="noreferrer" target="_blank">
+                      Открыть <span aria-hidden="true">↗</span>
+                    </a>
                   </li>
                 ))}
               </ul>

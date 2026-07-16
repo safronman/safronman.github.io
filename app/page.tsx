@@ -12,8 +12,8 @@ export default function Home() {
       <Header />
       <Hero />
       <SelectedWork />
-      <TeachingPractices />
       <LearningApproach />
+      <TeachingPractices />
       <TechnicalFoundation />
       <Contact />
     </main>
