@@ -2,9 +2,9 @@ import s from "./header.module.css";
 
 const navigationItems = [
   ["Работы", "#work"],
+  ["Преподавание", "#teaching"],
   ["Подход", "#approach"],
-  ["Материалы", "#courses"],
-  ["Экспертиза", "#technical-foundation"],
+  ["Экспертиза", "#expertise"],
   ["Контакт", "#contacts"],
 ] as const;
 

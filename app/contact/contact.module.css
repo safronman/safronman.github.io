@@ -62,7 +62,7 @@
 .channel svg {
   width: 20px;
   height: 20px;
-  color: var(--accent);
+  color: currentcolor;
 }
 
 .telegram a,

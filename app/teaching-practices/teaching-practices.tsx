@@ -19,7 +19,7 @@ export default function TeachingPractices() {
     <section className={s.teaching} id="teaching">
       <div className={s.content}>
         <div>
-          <h2>Преподавание, которое вовлекает</h2>
+          <h2>Как я веду занятия</h2>
           <p>
             На занятии важно не только объяснить тему, но и дать человеку
             возможность проверить своё понимание, задать вопрос и применить идею

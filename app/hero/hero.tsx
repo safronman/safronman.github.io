@@ -6,10 +6,10 @@ export default function Hero() {
     <section className={s.hero} id="top">
       <div className={s.heroGrid}>
         <div>
-          <h1>Сложные технические темы — в понятное практическое обучение.</h1>
+          <h1>Преподаю, создаю программы и руковожу техническим обучением.</h1>
           <p className={s.lead}>
-            Исследую предмет, проектирую программу и практику, создаю видео и
-            материалы, с которыми знания переходят в работу.
+            Исследую тему, превращаю её в программу, видео, пособия и
+            презентации — и помогаю команде держать единый стандарт обучения.
           </p>
           <div className={s.actions}>
             <a
@@ -20,8 +20,8 @@ export default function Hero() {
             >
               Написать в Telegram <span aria-hidden="true">↗</span>
             </a>
-            <a className={s.textButton} href="#courses">
-              Смотреть видеокурсы <span aria-hidden="true">↓</span>
+            <a className={s.textButton} href="#work">
+              Смотреть работы <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>

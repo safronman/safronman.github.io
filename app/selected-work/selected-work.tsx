@@ -13,6 +13,13 @@ type Work = {
   url: string;
 };
 
+type AdditionalMaterial = {
+  description: string;
+  status?: string;
+  title: string;
+  url?: string;
+};
+
 const selectedWork: readonly Work[] = [
   {
     description:
@@ -76,17 +83,66 @@ const selectedWork: readonly Work[] = [
   },
 ];
 
+const additionalMaterialGroups: readonly {
+  items: readonly AdditionalMaterial[];
+  title: string;
+}[] = [
+  {
+    items: [
+      {
+        description:
+          "Плейлист о настройке Git, SSH-ключах и практиках, с которых начинается уверенная работа разработчика в команде.",
+        title: "Git: введение и базовый рабочий процесс",
+        url: "https://youtu.be/BMo29Gkx8K0?si=6yh2OJcZP3vrtkw7",
+      },
+      {
+        description:
+          "Курс о переиспользуемых компонентах, Portal, Radix UI и Storybook — от API до изолированной разработки.",
+        status: "Открытый фрагмент появится позже",
+        title: "Современная разработка компонентов",
+      },
+    ],
+    title: "Видеокурсы",
+  },
+  {
+    items: [
+      {
+        description:
+          "Ключевые изменения Zod 4, их практический смысл и примеры кода после перехода на новую версию.",
+        title: "Что нового в Zod 4",
+        url: "https://presentation-zod-4.vercel.app/",
+      },
+      {
+        description:
+          "Практический разбор использования AI для обучения, исследования тем и ежедневной технической работы.",
+        title: "Как использовать AI для обучения и работы",
+        url: "https://presentation-ai-for-study-and-work.vercel.app/",
+      },
+      {
+        description:
+          "Видео-кейс о различиях HTTP, polling, SSE и WebSocket: техническая систематизация и motion design.",
+        title: "Real-Time: HTTP, Polling, SSE и WebSocket",
+        url: "https://youtu.be/pO7CYYoHO6o",
+      },
+    ],
+    title: "Презентации и видео-кейсы",
+  },
+];
+
 export default function SelectedWork() {
   return (
     <section className={s.work} id="work">
       <div className={s.intro}>
-        <h2>Примеры моей работы</h2>
+        <h2>Работы и материалы, которые можно проверить</h2>
         <p>
-          Курс, фрагмент занятия, методическое пособие и презентация — чтобы
-          быстро увидеть, как я объясняю сложные технические темы.
+          Реальные курсы, занятие, пособия и презентации — чтобы быстро увидеть,
+          как я работаю с техническими темами.
         </p>
       </div>
 
+      <div className={s.selectedHeading}>
+        <h3>Примеры моей работы</h3>
+      </div>
       <div className={s.grid}>
         {selectedWork.map((item) => (
           <article className={s.item} key={item.title}>
@@ -124,6 +180,39 @@ export default function SelectedWork() {
             </div>
           </article>
         ))}
+      </div>
+
+      <div className={s.additional}>
+        <h3>Ещё материалы</h3>
+        <div className={s.materialGroups}>
+          {additionalMaterialGroups.map((group) => (
+            <section className={s.materialGroup} key={group.title}>
+              <h4>{group.title}</h4>
+              <ul>
+                {group.items.map((item) => (
+                  <li key={item.title}>
+                    <div>
+                      <h5>{item.title}</h5>
+                      <p>{item.description}</p>
+                    </div>
+                    {item.url ? (
+                      <a
+                        aria-label={`Открыть «${item.title}»`}
+                        href={item.url}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        Открыть <span aria-hidden="true">↗</span>
+                      </a>
+                    ) : (
+                      <p className={s.status}>{item.status}</p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
       </div>
     </section>
   );

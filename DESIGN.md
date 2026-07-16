@@ -4,7 +4,6 @@ description: A proof-led portfolio for a technical educator who turns complex su
 colors:
   ink: "#17141D"
   surface: "#F7F7FA"
-  mineral-teal: "#2B6A61"
   blue-signal: "#2D63E5"
   muted: "#625D69"
   line: "#D8D5DE"
@@ -65,27 +64,24 @@ components:
 
 This portfolio should feel like a technically mature workspace in which evidence is ready to inspect: selected programmes, source material, videos, and presentations lead the conversation. The interface is direct, calm, and purposeful—never a school template or a decorative personal-brand collage.
 
-The visual system begins with one editorially placed Hero photograph in a dark studio setting. A mineral teal accent keeps the interface grounded and calm; the photo remains the only image on the page. Most content is carried by typography, measured spacing, and proof-oriented project lists.
+The visual system begins with one editorially placed Hero photograph in a dark studio setting. A single blue action colour keeps the interface focused; the photo remains the only portrait on the page. Most content is carried by typography, measured spacing, and proof-oriented project lists.
 
 **Key Characteristics:**
 
 - Dark Hero, light reading surfaces, and high-contrast technical structure.
-- Blue is for actions; mineral teal is a calm orienting signal.
+- Blue is reserved for actions and keyboard focus.
 - Flat surfaces and precise dividers replace decorative depth.
 - Case studies and material links are the central proof mechanism.
 
 ## 2. Colors
 
-The palette is a night-studio system: near-black ink and neutral light surfaces frame a controlled pair of cool signals.
+The palette is a night-studio system: near-black ink and neutral light surfaces frame one controlled action signal.
 
 ### Primary
 
 - **Studio Ink** (`#17141D`): Hero background, dark sections, primary text, and high-confidence structural moments.
 - **Signal Blue** (`#2D63E5`): Primary CTA, keyboard-focus rings, and the most important interactive state. This is the action color.
 
-### Secondary
-
-- **Mineral Teal** (`#2B6A61`): Icons, linked-project emphasis, hover states, and selected micro-details. It gives supporting orientation without competing with actions.
 ### Neutral
 
 - **Clear Surface** (`#F7F7FA`): Main content background; a neutral off-white with no beige cast.
@@ -93,7 +89,7 @@ The palette is a night-studio system: near-black ink and neutral light surfaces 
 - **Fine Divider** (`#D8D5DE`): Borders, separators, and quiet structural lines.
 - **Ink on Dark** (`#F1EFF4`): Readable text on Studio Ink.
 
-**The Single-Signal Rule.** A component has one chromatic job: blue invites action; teal provides orientation. Never combine them in a gradient, glow, or competing pair of buttons.
+**The Single-Signal Rule.** Blue invites action and keyboard focus. Links use the surrounding ink colour with an underline; never add a second accent colour, gradients, or glows.
 
 ## 3. Typography
 
@@ -159,13 +155,13 @@ This is a flat system. Depth comes from switching between Studio Ink and Clear S
 
 - **Do** use Studio Ink (`#17141D`) for the Hero and major confidence-building sections.
 - **Do** reserve Signal Blue (`#2D63E5`) for the primary CTA and keyboard focus.
-- **Do** use Mineral Teal (`#2B6A61`) as a sparse orienting detail for links, icons, and metadata.
+- **Do** use the surrounding ink colour and underlines for links, icons, and metadata.
 - **Do** make videos, presentations, and project links easy to inspect before asking for contact.
 - **Do** preserve readable contrast, balanced headings, and reduced-motion alternatives.
 
 ### Don't:
 
-- **Don't** use gradients, neon glows, glass surfaces, or competing blue-and-teal decoration; this palette must not read as generic AI-tech styling.
+- **Don't** use gradients, neon glows, glass surfaces, or competing accent colours; this palette must not read as generic AI-tech styling.
 - **Don't** use childlike palettes, playful classroom typography, scrapbook/CV collages, oversized decorative illustration, or visual noise.
 - **Don't** turn project proof into a grid of identical icon cards.
 - **Don't** use large rounded cards, coloured side stripes, or border-plus-soft-shadow treatments.

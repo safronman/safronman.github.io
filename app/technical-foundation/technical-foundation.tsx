@@ -1,5 +1,14 @@
 import type { LucideIcon } from "lucide-react";
-import { Bot, Braces, GitBranch, PanelsTopLeft } from "lucide-react";
+import {
+  Bot,
+  Braces,
+  GitBranch,
+  MessagesSquare,
+  PanelsTopLeft,
+  PenLine,
+  Presentation,
+  Video,
+} from "lucide-react";
 import s from "./technical-foundation.module.css";
 
 type FoundationArea = {
@@ -35,29 +44,76 @@ const foundationAreas: FoundationArea[] = [
   },
 ];
 
+const communicationAreas: FoundationArea[] = [
+  {
+    description:
+      "Провожу содержательные эфиры и презентации, где сложная тема становится ясной для аудитории.",
+    icon: Presentation,
+    title: "Вебинары",
+  },
+  {
+    description:
+      "Записываю короткие объяснения, которые быстро раскрывают техническую ценность темы.",
+    icon: Video,
+    title: "Короткие видео",
+  },
+  {
+    description:
+      "Отвечаю на вопросы один на один и помогаю выбрать подходящий формат обучения.",
+    icon: MessagesSquare,
+    title: "Диалог с аудиторией",
+  },
+  {
+    description:
+      "Помогаю точнее формулировать технический контент: смыслы, примеры и объяснения.",
+    icon: PenLine,
+    title: "Поддержка контента",
+  },
+];
+
+function ExpertiseGroup({
+  items,
+  title,
+}: {
+  items: FoundationArea[];
+  title: string;
+}) {
+  return (
+    <section className={s.group}>
+      <h3>{title}</h3>
+      <ul className={s.list}>
+        {items.map(({ description, icon: Icon, title: itemTitle }) => (
+          <li className={s.area} key={itemTitle}>
+            <Icon aria-hidden="true" strokeWidth={1.65} />
+            <div>
+              <h4>{itemTitle}</h4>
+              <p>{description}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 export default function TechnicalFoundation() {
   return (
-    <section className={s.foundation} id="technical-foundation">
+    <section className={s.foundation} id="expertise">
       <div className={s.inner}>
         <header className={s.intro}>
-          <h2>Техническая основа</h2>
+          <h2>Техническая экспертиза и коммуникация</h2>
           <p>
-            Глубоко работаю с frontend-разработкой и связываю её с качеством
-            интерфейсов, инженерными практиками и AI-инструментами.
+            Разбираюсь в техническом предмете и выбираю форму, в которой он
+            станет полезным для студентов, команды или клиентов.
           </p>
         </header>
-
-        <ul className={s.list}>
-          {foundationAreas.map(({ description, icon: Icon, title }) => (
-            <li className={s.area} key={title}>
-              <Icon aria-hidden="true" strokeWidth={1.65} />
-              <div>
-                <h3>{title}</h3>
-                <p>{description}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <div className={s.groups}>
+          <ExpertiseGroup items={foundationAreas} title="Что глубоко знаю" />
+          <ExpertiseGroup
+            items={communicationAreas}
+            title="Как превращаю это в понятный материал"
+          />
+        </div>
       </div>
     </section>
   );

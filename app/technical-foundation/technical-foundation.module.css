@@ -26,11 +26,26 @@
   text-wrap: pretty;
 }
 
+.groups {
+  display: grid;
+  gap: clamp(52px, 7vw, 88px);
+  margin-top: clamp(52px, 7vw, 88px);
+}
+
+.group h3 {
+  max-width: 24ch;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
 .list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: clamp(40px, 7vw, 112px);
-  margin-top: clamp(52px, 7vw, 88px);
+  margin-top: 24px;
   list-style: none;
 }
 
@@ -46,10 +61,10 @@
   width: 22px;
   height: 22px;
   margin-top: 2px;
-  color: var(--accent);
+  color: currentcolor;
 }
 
-.area h3 {
+.area h4 {
   font-size: clamp(1.125rem, 1.45vw, 1.25rem);
   font-weight: 650;
   letter-spacing: -0.02em;
@@ -72,7 +87,6 @@
 @media (max-width: 820px) {
   .list {
     grid-template-columns: 1fr;
-    margin-top: 48px;
   }
 
   .intro h2 {

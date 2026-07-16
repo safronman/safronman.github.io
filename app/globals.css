@@ -36,8 +36,6 @@ section[id] {
 :root {
   --ink: #17141d;
   --paper: #f7f7fa;
-  --accent: #2b6a61;
-  --accent-surface: #245950;
   --proof-surface: oklch(0.18 0.018 275);
   --proof-line: oklch(0.42 0.018 275);
   --signal: #2d63e5;
