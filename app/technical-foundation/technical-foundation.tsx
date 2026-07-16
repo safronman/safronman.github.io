@@ -1,12 +1,15 @@
 import type { LucideIcon } from "lucide-react";
 import {
+  BadgeCheck,
   Bot,
   Braces,
+  ClipboardCheck,
+  FilePenLine,
   GitBranch,
-  MessagesSquare,
   PanelsTopLeft,
   PenLine,
   Presentation,
+  TimerReset,
   Video,
 } from "lucide-react";
 import s from "./technical-foundation.module.css";
@@ -44,30 +47,51 @@ const foundationAreas: FoundationArea[] = [
   },
 ];
 
-const communicationAreas: FoundationArea[] = [
+const formatAreas: FoundationArea[] = [
   {
     description:
-      "Провожу содержательные эфиры и презентации, где сложная тема становится ясной для аудитории.",
-    icon: Presentation,
-    title: "Вебинары",
+      "Погружение в конкретную тему с теорией, практикой и разбором результатов.",
+    icon: TimerReset,
+    title: "Интенсивы",
   },
   {
     description:
-      "Записываю короткие объяснения, которые быстро раскрывают техническую ценность темы.",
+      "Объяснение материала, практика и ответы на вопросы в реальном времени.",
     icon: Video,
-    title: "Короткие видео",
+    title: "Онлайн-уроки и вебинары",
   },
   {
     description:
-      "Отвечаю на вопросы один на один и помогаю выбрать подходящий формат обучения.",
-    icon: MessagesSquare,
-    title: "Диалог с аудиторией",
+      "Практические задания, которые помогают применить материал в реальном коде.",
+    icon: FilePenLine,
+    title: "Домашние задания",
   },
   {
     description:
-      "Помогаю точнее формулировать технический контент: смыслы, примеры и объяснения.",
+      "Конспекты, инструкции и примеры, к которым можно возвращаться после обучения.",
+    icon: ClipboardCheck,
+    title: "Методические пособия",
+  },
+  {
+    description:
+      "Визуальные материалы, которые упрощают понимание сложных технических тем.",
+    icon: Presentation,
+    title: "Презентации",
+  },
+];
+
+const assessmentAreas: FoundationArea[] = [
+  {
+    description:
+      "Проверка понимания материала и способности самостоятельно решать практические задачи.",
+    icon: BadgeCheck,
+    title: "Экзамены",
+  },
+  {
+    description:
+      "Разбор инженерных решений, структуры кода, читаемости и типичных ошибок.",
     icon: PenLine,
-    title: "Поддержка контента",
+    title: "Code review",
   },
 ];
 
@@ -109,10 +133,14 @@ export default function TechnicalFoundation() {
         </header>
         <div className={s.groups}>
           <ExpertiseGroup items={foundationAreas} title="Что глубоко знаю" />
-          <ExpertiseGroup
-            items={communicationAreas}
-            title="Как превращаю это в понятный материал"
-          />
+          <section className={s.group}>
+            <h3>На основе технической экспертизы делаю обучение практичным</h3>
+            <ExpertiseGroup items={formatAreas} title="Форматы" />
+            <ExpertiseGroup
+              items={assessmentAreas}
+              title="Оценка и обратная связь"
+            />
+          </section>
         </div>
       </div>
     </section>

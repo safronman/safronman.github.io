@@ -7,10 +7,6 @@ export default function Contact() {
       <div className={s.inner}>
         <header className={s.intro}>
           <h2>Открыт к новым задачам и командам</h2>
-          <p>
-            Если вам нужен специалист, который совмещает frontend-экспертизу,
-            обучение и техническую коммуникацию — буду рад обсудить задачу.
-          </p>
         </header>
 
         <address className={s.links}>

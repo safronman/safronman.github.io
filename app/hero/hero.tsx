@@ -6,12 +6,12 @@ export default function Hero() {
     <section className={s.hero} id="top">
       <div className={s.heroGrid}>
         <div>
-          <h1>
-            <span>Преподаю.</span>
-            <span>Записываю видео.</span>
-            <span>Создаю программы.</span>
-            <span>Руковожу техническим обучением.</span>
-          </h1>
+          <h1>Технический преподаватель и руководитель обучения</h1>
+          <p className={s.proof}>
+            7+ лет в преподавании frontend-разработки и методической работе:
+            провёл 70+ учебных групп, обучил 1&nbsp;000+ студентов и записал
+            100+ технических видеоуроков.
+          </p>
           <div className={s.actions}>
             <a
               className={s.primaryButton}

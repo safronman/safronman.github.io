@@ -55,20 +55,6 @@ const selectedWork: readonly Work[] = [
   },
   {
     description:
-      "Автор руководства по декомпозиции, структуре компонентов, типам, форматированию и code review.",
-    image: "/manual/manual-react-style-guide.png",
-    links: [
-      {
-        label: "Открыть руководство",
-        url: "https://code-style.it-incubator.io/react",
-      },
-    ],
-    title: "React Style Guide",
-    type: "Методическое пособие",
-    url: "https://code-style.it-incubator.io/react",
-  },
-  {
-    description:
       "Собираю визуальные материалы, которые помогают увидеть связи между технологиями и удержать структуру темы.",
     image: "/presentation/presentation-front-roadmap-cover.png",
     links: [
@@ -80,6 +66,20 @@ const selectedWork: readonly Work[] = [
     title: "Front-end roadmap",
     type: "Интерактивная презентация",
     url: "https://presentation-frontend-roadmap.vercel.app/",
+  },
+  {
+    description:
+      "Автор руководства по декомпозиции, структуре компонентов, типам, форматированию и code review.",
+    image: "/manual/manual-react-style-guide.png",
+    links: [
+      {
+        label: "Открыть руководство",
+        url: "https://code-style.it-incubator.io/react",
+      },
+    ],
+    title: "React Style Guide",
+    type: "Методическое пособие",
+    url: "https://code-style.it-incubator.io/react",
   },
 ];
 
@@ -103,11 +103,25 @@ const additionalMaterialGroups: readonly {
         title: "Современная разработка компонентов",
         url: "https://it-incubator.io/react/ru/react-middle-senior-tutorials/modal-createportal-radix-ui-storybook?s=C248EC",
       },
+      {
+        description:
+          "Практический пятидневный интенсив по React: от структуры приложения и роутинга до запросов к серверу, хуков и динамических страниц.",
+        image: "/video/video-rick-morty-cover.jpg",
+        title: "Пятидневный интенсив по React JS",
+        url: "https://it-incubator.io/react/ru/reactjs-crash-course?s=C248EC",
+      },
     ],
     title: "Видеокурсы",
   },
   {
     items: [
+      {
+        description:
+          "Видео-кейс о различиях HTTP, polling, SSE и WebSocket: техническая систематизация и motion design.",
+        image: "/presentation/presentation-realtime-cover.png",
+        title: "Real-Time: HTTP, Polling, SSE и WebSocket",
+        url: "https://youtu.be/pO7CYYoHO6o",
+      },
       {
         description:
           "Ключевые изменения Zod 4, их практический смысл и примеры кода после перехода на новую версию.",
@@ -121,13 +135,6 @@ const additionalMaterialGroups: readonly {
         image: "/presentation/presentation-ai-for study-cover.png",
         title: "Как использовать AI для обучения и работы",
         url: "https://presentation-ai-for-study-and-work.vercel.app/",
-      },
-      {
-        description:
-          "Видео-кейс о различиях HTTP, polling, SSE и WebSocket: техническая систематизация и motion design.",
-        image: "/presentation/presentation-realtime-cover.png",
-        title: "Real-Time: HTTP, Polling, SSE и WebSocket",
-        url: "https://youtu.be/pO7CYYoHO6o",
       },
     ],
     title: "Презентации и видео-кейсы",
