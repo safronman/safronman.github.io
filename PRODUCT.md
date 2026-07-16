@@ -18,7 +18,7 @@ This portfolio helps education companies evaluate a Technical Educator whose str
 
 ## Positioning
 
-Quickly master complex technical subjects and turn them into clear, practical learning experiences—from frontend development to AI tools and emerging technologies.
+Teach, create programmes, and lead technical education—from researching a subject to setting a consistent standard for materials and teaching teams.
 
 ## Conversion & proof
 

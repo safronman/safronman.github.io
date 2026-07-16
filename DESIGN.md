@@ -5,7 +5,6 @@ colors:
   ink: "#17141D"
   surface: "#F7F7FA"
   mineral-teal: "#2B6A61"
-  teal-surface: "#245950"
   blue-signal: "#2D63E5"
   muted: "#625D69"
   line: "#D8D5DE"
@@ -87,8 +86,6 @@ The palette is a night-studio system: near-black ink and neutral light surfaces 
 ### Secondary
 
 - **Mineral Teal** (`#2B6A61`): Icons, linked-project emphasis, hover states, and selected micro-details. It gives supporting orientation without competing with actions.
-- **Teal Surface** (`#245950`): The single full-width leadership section, with Ink on Dark for readable text.
-
 ### Neutral
 
 - **Clear Surface** (`#F7F7FA`): Main content background; a neutral off-white with no beige cast.
