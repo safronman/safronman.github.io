@@ -21,16 +21,19 @@
   text-wrap: balance;
 }
 
-.intro p {
-  max-width: 42ch;
-  margin-top: 24px;
-  color: var(--muted-on-dark);
-  line-height: 1.5;
-  text-wrap: pretty;
+.name {
+  font-size: clamp(1.125rem, 1.45vw, 1.25rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.contactDetails {
+  align-self: start;
 }
 
 .links {
-  align-self: end;
+  margin-top: 20px;
   font-style: normal;
 }
 

@@ -50,6 +50,12 @@ const foundationAreas: FoundationArea[] = [
 const formatAreas: FoundationArea[] = [
   {
     description:
+      "Последовательное обучение теме: объяснения, практика и материалы, к которым можно возвращаться в своём темпе.",
+    icon: Video,
+    title: "Видеокурсы",
+  },
+  {
+    description:
       "Погружение в конкретную тему с теорией, практикой и разбором результатов.",
     icon: TimerReset,
     title: "Интенсивы",
