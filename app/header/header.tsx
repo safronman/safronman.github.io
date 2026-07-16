@@ -1,12 +1,13 @@
 "use client";
 
+import { House } from "lucide-react";
 import { useEffect, useState } from "react";
 import s from "./header.module.css";
 
 const navigationItems = [
   ["Работы", "work"],
-  ["Преподавание", "teaching"],
   ["Подход", "approach"],
+  ["Преподавание", "teaching"],
   ["Экспертиза", "expertise"],
   ["Контакты", "contacts"],
 ] as const;
@@ -19,44 +20,70 @@ export default function Header() {
       .map(([, id]) => document.getElementById(id))
       .filter((section): section is HTMLElement => section !== null);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const activeEntry = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort(
-            (first, second) =>
-              Math.abs(first.boundingClientRect.top) -
-              Math.abs(second.boundingClientRect.top),
-          )[0];
+    const updateActiveSection = () => {
+      const viewportCenter = window.innerHeight / 2;
+      const currentSection =
+        sections.find((section) => {
+          const { bottom, top } = section.getBoundingClientRect();
+          return top <= viewportCenter && bottom > viewportCenter;
+        }) ??
+        sections
+          .toReversed()
+          .find(
+            (section) => section.getBoundingClientRect().top <= viewportCenter,
+          );
 
-        if (activeEntry) {
-          setActiveSection(activeEntry.target.id);
-        }
-      },
-      { rootMargin: "-20% 0px -65%", threshold: 0 },
-    );
+      setActiveSection(currentSection?.id ?? null);
+    };
 
-    for (const section of sections) {
-      observer.observe(section);
-    }
+    let animationFrame: number | null = null;
+    const handleScroll = () => {
+      if (animationFrame !== null) {
+        return;
+      }
 
-    return () => observer.disconnect();
+      animationFrame = window.requestAnimationFrame(() => {
+        updateActiveSection();
+        animationFrame = null;
+      });
+    };
+
+    updateActiveSection();
+    window.addEventListener("hashchange", updateActiveSection);
+    window.addEventListener("resize", updateActiveSection);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      if (animationFrame !== null) {
+        window.cancelAnimationFrame(animationFrame);
+      }
+
+      window.removeEventListener("hashchange", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <header className={s.header}>
-      <nav aria-label="Основная навигация" className={s.nav}>
-        {navigationItems.map(([label, id]) => (
-          <a
-            aria-current={activeSection === id ? "location" : undefined}
-            className={activeSection === id ? s.active : undefined}
-            href={`#${id}`}
-            key={id}
-          >
-            {label}
-          </a>
-        ))}
-      </nav>
+      <div className={s.inner}>
+        <a aria-label="Главная" className={s.home} href="#top" title="Главная">
+          <House aria-hidden="true" strokeWidth={1.8} />
+        </a>
+        <nav aria-label="Основная навигация" className={s.nav}>
+          {navigationItems.map(([label, id]) => (
+            <a
+              aria-current={activeSection === id ? "location" : undefined}
+              className={activeSection === id ? s.active : undefined}
+              href={`#${id}`}
+              key={id}
+              onClick={() => setActiveSection(id)}
+            >
+              {label}
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }
