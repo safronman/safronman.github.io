@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 import s from "./teaching-video.module.css";
 
-const videoUrl = "https://youtu.be/4YF06mvcJ4k";
+const videoUrl = "https://youtu.be/enwgDI-we_U";
 const embedUrl =
-  "https://www.youtube-nocookie.com/embed/4YF06mvcJ4k?autoplay=1&rel=0";
+  "https://www.youtube-nocookie.com/embed/enwgDI-we_U?autoplay=1&rel=0";
 
 export default function TeachingVideo() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -30,16 +30,15 @@ export default function TeachingVideo() {
             type="button"
           >
             <Image
-              alt="Временная обложка фрагмента занятия"
+              alt="Обложка фрагмента занятия"
               fill
               priority={false}
               sizes="(max-width: 820px) 100vw, 50vw"
-              src="/teaching-video-cover-v2.png"
+              src="/video/video-auth-cover.png"
             />
             <span aria-hidden="true" className={s.play}>
               ▶
             </span>
-            <span className={s.previewLabel}>Фрагмент занятия</span>
           </button>
         )}
       </div>

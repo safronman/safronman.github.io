@@ -138,12 +138,14 @@ https://www.gitbook.com/
 
 4.1. Создание slice и thunk, работа с reducers и extraReducers, селекторами и reselect, рефакторинг
 configureStore, а также разбор роли Thunk, Middleware, архитектуры UI- BLL-DAL и createAsyncThunk.
-https://youtu.be/gqGA-NJffCE
+https://youtu.be/ld4MvXFSKj4?si=SlSgNBfsS80b4BWr
+🔘 - 41:53 - 57:30 - генерация id в редьюсере
 
 4.2. createAsyncThunk и Loader - изучение buildCreateSlice и нового синтаксиса создания thunk,
 жизненного цикла thunk (pending, fulfilled, rejected, settled), написание thunk для работы с тасками
 и показ Loader во время серверных запросов с его скрытием после получения ответа.
-https://youtu.be/L6WOxiryUNU
+https://youtu.be/yBbg2IrTu0U?si=0JiE-n1O4LYpZZNl
+✅ - 1:05:47 - 1:18:00 - React / Redux / Thunk - Пишу код вместе со студенткой, задаю утоняющие вопросы
 
 4.3. Обработка ошибок и их отображение на UI, включая отключение кнопок и полей во время запросов,
 создание универсального компонента и функций для обработки ошибок, проверку resultCode, работу с
@@ -155,7 +157,8 @@ https://youtu.be/ArIJK5A4fc4
 
 5.1. Реализация auth flow (login, logout, authMe), инициализации приложения, работа с useNavigate,
 Navigate, localStorage и axios interceptors, а также создание Protected Routes.
-https://youtu.be/4YF06mvcJ4k
+https://youtu.be/kEM12GG0vu4?si=kkA5dFIpMEoHL9cn
+✅ -2:10:05  - 2:45:05  - useEffect отрисовки
 
 5.2. изучение RTK Query, работа с query и mutation, включая варианты условного получения и
 обновления данных, а также уменьшение начального размера бандла с помощью injectEndpoints.

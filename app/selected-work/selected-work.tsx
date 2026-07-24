@@ -42,7 +42,7 @@ const selectedWork: readonly Work[] = [
   {
     description:
       "Более шести лет веду занятия через вопросы, реальные сценарии, практику и живую обратную связь.",
-    image: "/teaching-video-cover-v2.png",
+    image: "/video/video-thunk-cover.png",
     links: [
       {
         label: "Смотреть фрагмент занятия",
@@ -51,12 +51,12 @@ const selectedWork: readonly Work[] = [
     ],
     title: "Преподавание: фрагмент занятия",
     type: "Занятие с группой",
-    url: "https://youtu.be/4YF06mvcJ4k",
+    url: "https://youtu.be/Rf3OgZd4trk",
   },
   {
     description:
       "Собираю визуальные материалы, которые помогают увидеть связи между технологиями и удержать структуру темы.",
-    image: "/presentation/presentation-front-roadmap-cover.png",
+    image: "/presentation/presentation-frontend-roadmap-cover.png",
     links: [
       {
         label: "Открыть презентацию",
