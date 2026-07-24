@@ -49,7 +49,7 @@ export default function TeachingVideo() {
         rel="noreferrer"
         target="_blank"
       >
-        Открыть на YouTube <span aria-hidden="true">↗</span>
+        Смотреть фрагмент занятия <span aria-hidden="true">↗</span>
       </a>
     </div>
   );

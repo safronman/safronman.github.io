@@ -8,10 +8,10 @@ import TeachingVideo from "@/app/teaching-practices/teaching-video/teaching-vide
 import s from "./teaching-practices.module.css";
 
 const practices = [
-  [CircleQuestionMark, "Вопросы вместо монолога"],
-  [Workflow, "Реальные сценарии"],
-  [MessageCircleMore, "Живая обратная связь"],
-  [Handshake, "Комфортная коммуникация"],
+  [CircleQuestionMark, "Вовлекаю каждого в работу"],
+  [Workflow, "Проверяю понимание через практику"],
+  [MessageCircleMore, "Даю обратную связь по ходу занятия"],
+  [Handshake, "Превращаю ошибки в часть обучения"],
 ] as const;
 
 export default function TeachingPractices() {
@@ -19,11 +19,9 @@ export default function TeachingPractices() {
     <section className={s.teaching} id="teaching">
       <div className={s.content}>
         <div>
-          <h2>Как я веду занятия</h2>
+          <h2>Как проходят мои занятия</h2>
           <p>
-            На занятии важно не только объяснить тему, но и дать человеку
-            возможность проверить своё понимание, задать вопрос и применить идею
-            в реальной ситуации.
+            Учу понимать и мыслить, вместо сухой выдачи материала. Студенты на занятиях задают вопросы, рассуждают, пробуют решать самостоятельно и получают обратную связь.
           </p>
         </div>
         <ul className={s.practices}>

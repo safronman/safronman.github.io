@@ -26,7 +26,7 @@ type AdditionalMaterial = {
 const selectedWork: readonly Work[] = [
   {
     description:
-      "Исследую тему, проектирую программу, записываю курс и создаю методические материалы.",
+      "Превращаю сложную техническую тему в цельный учебный продукт: от программы и практики до видеоуроков и методических материалов.",
     image: "/rtk-query-course-cover.png",
     links: [
       {
@@ -45,7 +45,7 @@ const selectedWork: readonly Work[] = [
   },
   {
     description:
-      "Более шести лет веду занятия через вопросы, реальные сценарии, практику и живую обратную связь.",
+      "Помогаю студентам не просто слушать, а разбираться и применять знания — через вопросы, практические задачи и подробную обратную связь.",
     image: "/video/video-thunk-cover.png",
     links: [
       {
@@ -60,7 +60,7 @@ const selectedWork: readonly Work[] = [
   },
   {
     description:
-      "Собираю визуальные материалы, которые помогают увидеть связи между технологиями и удержать структуру темы.",
+      "Систематизирую сложные темы в понятные визуальные схемы, чтобы показать связи между технологиями и выстроить последовательный маршрут обучения.",
     image: "/presentation/presentation-frontend-roadmap-cover.png",
     links: [
       {
@@ -74,7 +74,7 @@ const selectedWork: readonly Work[] = [
   },
   {
     description:
-      "Автор руководства по декомпозиции, структуре компонентов, типам, форматированию и code review.",
+      "Формирую единые стандарты разработки, которые помогают команде писать понятный код, быстрее проводить ревью и проще развивать проект.",
     image: "/manual/manual-style-guide.png",
     links: [
       {
@@ -111,7 +111,7 @@ const additionalMaterialGroups: readonly {
       },
       {
         description:
-          "Практический пятидневный интенсив по React: от структуры приложения и роутинга до запросов к серверу, хуков и динамических страниц.",
+          "Практический интенсив по React: от структуры приложения и роутинга до запросов к серверу, хуков и динамических страниц.",
         image: "/video/video-rick-morty-cover.jpg",
         title: "Пятидневный интенсив по React JS",
         url: "https://it-incubator.io/react/ru/reactjs-crash-course?s=C248EC",
@@ -123,7 +123,7 @@ const additionalMaterialGroups: readonly {
     items: [
       {
         description:
-          "Видео-кейс о различиях HTTP, polling, SSE и WebSocket: техническая систематизация и motion design.",
+          "Видео-презентация с motion эффектами о различиях HTTP, Short pooling, Long pooling, Server sent events и WebSocket.",
         image: "/presentation/presentation-realtime-cover.png",
         isVideo: true,
         title: "Real-Time: HTTP, Polling, SSE и WebSocket",
@@ -131,14 +131,14 @@ const additionalMaterialGroups: readonly {
       },
       {
         description:
-          "Ключевые изменения Zod 4, их практический смысл и примеры кода после перехода на новую версию.",
+          "Презентация на тему: ключевые изменения Zod 4, их практический смысл и примеры кода после перехода на новую версию.",
         image: "/presentation/presentation-zod4-cover.png",
         title: "Что нового в Zod 4",
         url: "https://presentation-zod-4.vercel.app/",
       },
       {
         description:
-          "Практический разбор использования AI для обучения, исследования тем и ежедневной технической работы.",
+          "Презентация на тему: практический разбор использования AI для обучения, исследования тем и ежедневной технической работы.",
         image: "/presentation/presentation-ai-for study-cover.png",
         title: "Как использовать AI для обучения и работы",
         url: "https://presentation-ai-for-study-and-work.vercel.app/",
