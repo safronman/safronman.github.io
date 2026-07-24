@@ -21,7 +21,7 @@ export default function TeachingVideo() {
             allowFullScreen
             className={s.player}
             src={embedUrl}
-            title="Фрагмент занятия: Auth flow with protected routes"
+            title="Фрагмент практического занятия по теме:Auth. Работа useEffect"
           />
         ) : (
           <button
@@ -35,7 +35,7 @@ export default function TeachingVideo() {
               fill
               priority={false}
               sizes="(max-width: 820px) 100vw, 50vw"
-              src="/video/video-auth-cover.png"
+              src="/video/video-auth-use-cover.png"
             />
             <span aria-hidden="true" className={s.play}>
               <PlayIcon />

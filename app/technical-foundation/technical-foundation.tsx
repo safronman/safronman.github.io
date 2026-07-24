@@ -23,25 +23,25 @@ type FoundationArea = {
 const foundationAreas: FoundationArea[] = [
   {
     description:
-      "JavaScript, TypeScript, React, Redux Toolkit, RTK Query, React Router, React Hook Form и Zod.",
+      "JavaScript, TypeScript и React: архитектура интерфейсов, управление состоянием, работа с данными, формами и маршрутизацией.",
     icon: Braces,
-    title: "Frontend",
+    title: "Frontend-разработка",
   },
   {
     description:
-      "Storybook, Radix UI, UI-kit, accessibility, CSS-архитектура и компонентный подход.",
+      "Компонентный подход, Storybook, доступность, UI-киты и организация масштабируемых стилей.",
     icon: PanelsTopLeft,
     title: "UI и дизайн-системы",
   },
   {
     description:
-      "Git и GitHub, REST и WebSocket, тестирование, code review и архитектура приложений.",
+      "Git и GitHub, интеграция с API, тестирование, code review и проектирование поддерживаемой архитектуры.",
     icon: GitBranch,
     title: "Инженерные практики",
   },
   {
     description:
-      "Codex, MCP, Context7, Playwright, RAG и Agent Skills — в материалах и ежедневной разработке.",
+      "Работа с AI-агентами, MCP и RAG, автоматизация исследований, разработки, тестирования и подготовки материалов.",
     icon: Bot,
     title: "AI в разработке",
   },
@@ -50,39 +50,39 @@ const foundationAreas: FoundationArea[] = [
 const formatAreas: FoundationArea[] = [
   {
     description:
-      "Последовательное обучение теме: объяснения, практика и материалы, к которым можно возвращаться в своём темпе.",
+      "Последовательная программа с объяснениями, практикой и материалами для самостоятельной работы.",
     icon: Video,
     title: "Видеокурсы",
   },
   {
     description:
-      "Погружение в конкретную тему с теорией, практикой и разбором результатов.",
+      "Погружение в конкретную тему с теорией, практическими задачами и разбором результатов.",
     icon: TimerReset,
     title: "Интенсивы",
   },
   {
     description:
-      "Объяснение материала, практика и ответы на вопросы в реальном времени.",
+      "Живое объяснение материала, совместная практика, обсуждение решений и ответы на вопросы.",
     icon: Video,
-    title: "Онлайн-уроки и вебинары",
+    title: "Онлайн-занятия и вебинары",
   },
   {
     description:
-      "Практические задания, которые помогают применить материал в реальном коде.",
+      "Задачи, приближённые к реальной разработке, которые помогают самостоятельно применить изученный материал.",
     icon: FilePenLine,
     title: "Домашние задания",
   },
   {
     description:
-      "Конспекты, инструкции и примеры, к которым можно возвращаться после обучения.",
+      "Конспекты, инструкции и примеры, к которым удобно возвращаться во время и после обучения.",
     icon: ClipboardCheck,
-    title: "Методические пособия",
+    title: "Методические материалы",
   },
   {
     description:
-      "Визуальные материалы, которые упрощают понимание сложных технических тем.",
+      "Визуальные материалы, которые помогают увидеть структуру темы и связи между сложными понятиями.",
     icon: Presentation,
-    title: "Презентации",
+    title: "Презентации и схемы",
   },
 ];
 
@@ -131,20 +131,20 @@ export default function TechnicalFoundation() {
     <section className={s.foundation} id="expertise">
       <div className={s.inner}>
         <header className={s.intro}>
-          <h2>Техническая экспертиза и коммуникация</h2>
+          <h2>Техническая экспертиза, которую умею передавать</h2>
           <p>
             Разбираюсь в техническом предмете и выбираю форму, в которой он
             станет полезным для студентов, команды или клиентов.
           </p>
         </header>
         <div className={s.groups}>
-          <ExpertiseGroup items={foundationAreas} title="Что глубоко знаю" />
+          <ExpertiseGroup items={foundationAreas} title="Ключевые области экспертизы" />
           <section className={s.group}>
-            <h3>На основе технической экспертизы делаю обучение практичным</h3>
+            <h3>Превращаю экспертизу в практическое обучение</h3>
             <ExpertiseGroup items={formatAreas} title="Форматы" />
             <ExpertiseGroup
               items={assessmentAreas}
-              title="Оценка и обратная связь"
+              title="Проверка и обратная связь"
             />
           </section>
         </div>
