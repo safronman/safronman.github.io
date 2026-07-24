@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Портфолио Technical Educator
 
-## Getting Started
+Персональное портфолио Валерия Сафронова — технического преподавателя и автора образовательных программ по frontend-разработке. Сайт показывает учебные материалы, видеокурсы, презентации и подход к проектированию обучения.
 
-First, run the development server:
+Сайт опубликован на [safronman.github.io](https://safronman.github.io/).
+
+## Технологии
+
+- Next.js 16 и React 19
+- TypeScript
+- CSS Modules
+- Lucide для иконок
+- Biome для форматирования и проверок
+- GitHub Pages и GitHub Actions для публикации
+
+## Локальный запуск
+
+Требуются Node.js 22+ и pnpm 11.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Команды
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev      # запустить режим разработки
+pnpm build    # собрать статическую production-версию в out/
+pnpm start    # запустить production-сервер Next.js
+pnpm lint     # проверить код с помощью Biome
+pnpm format   # отформатировать файлы
+```
 
-## Learn More
+## Публикация
 
-To learn more about Next.js, take a look at the following resources:
+Сайт использует статический экспорт Next.js. Workflow [deploy-pages.yml](.github/workflows/deploy-pages.yml) запускается после каждого пуша в `master`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Устанавливает зависимости через pnpm.
+2. Собирает сайт в папку `out/`.
+3. Публикует результат в GitHub Pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Перед первым деплоем в настройках репозитория выберите **Settings → Pages → Source: GitHub Actions**. После этого достаточно отправить изменения в `master`:
 
-## Deploy on Vercel
+```bash
+git push origin master
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Структура проекта
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+app/                    страницы, компоненты и metadata Next.js
+app/icon.svg            иконка сайта и устанавливаемого приложения
+public/                 статические изображения и обложки материалов
+.github/workflows/      автоматическая сборка и деплой
+```
+
+## Лицензия
+
+Код и материалы предназначены для личного портфолио Валерия Сафронова.
