@@ -75,7 +75,7 @@ const selectedWork: readonly Work[] = [
   {
     description:
       "Автор руководства по декомпозиции, структуре компонентов, типам, форматированию и code review.",
-    image: "/manual/manual-react-style-guide.png",
+    image: "/manual/manual-style-guide.png",
     links: [
       {
         label: "Открыть руководство",
@@ -98,6 +98,7 @@ const additionalMaterialGroups: readonly {
         description:
           "Плейлист о настройке Git, SSH-ключах и практиках, с которых начинается уверенная работа разработчика в команде.",
         image: "/git-course-cover.jpg",
+        isVideo: true,
         title: "Git: введение и базовый рабочий процесс",
         url: "https://youtu.be/BMo29Gkx8K0?si=6yh2OJcZP3vrtkw7",
       },
@@ -106,7 +107,7 @@ const additionalMaterialGroups: readonly {
           "Курс о переиспользуемых компонентах, Portal, Radix UI и Storybook — от API до изолированной разработки.",
         image: "/modal-createportal-radix-ui-storybook-cover.png",
         title: "Современная разработка компонентов",
-        url: "https://it-incubator.io/react/ru/react-middle-senior-tutorials/modal-createportal-radix-ui-storybook?s=C248EC",
+        url: "https://it-incubator.io/react/ru/react-middle-senior-tutorials/modal-createportal-radix-ui-storybook/modal?s=C248EC",
       },
       {
         description:
