@@ -9,14 +9,29 @@ const golosText = localFont({
   display: "swap",
 });
 
-const title = "Technical Educator — Frontend-направление";
-const description = "Портфолио технического эксперта по обучению.";
+const name = "Валерий Сафронов";
+const title = "Валерий Сафронов — Technical Educator по frontend-разработке";
+const description =
+  "Портфолио Валерия Сафронова — технического эксперта по обучению frontend-разработке.";
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name,
+  jobTitle: "Technical Educator",
+  description,
+  url: siteUrl.toString(),
+  image: new URL("/hero-portrait.png", siteUrl).toString(),
+  sameAs: ["https://github.com/safronman", "https://t.me/safronman"],
+};
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
   title,
   description,
-  applicationName: "Technical Educator",
+  applicationName: "Валерий Сафронов — Technical Educator",
+  authors: [{ name, url: siteUrl }],
+  creator: name,
   keywords: [
     "технический преподаватель",
     "frontend",
@@ -36,7 +51,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ru_RU",
     url: "/",
-    siteName: "Technical Educator",
+    siteName: "Валерий Сафронов — Technical Educator",
     title,
     description,
     images: [
@@ -66,7 +81,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={golosText.variable}>
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          /* biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD is static and escapes angle brackets. */
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

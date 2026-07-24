@@ -6,6 +6,7 @@ export default function Hero() {
     <section className={s.hero} id="top">
       <div className={s.heroGrid}>
         <div>
+          <p className={s.name}>Валерий Сафронов</p>
           <h1>Технический преподаватель и руководитель обучения</h1>
           <p className={s.proof}>
             6+ лет в преподавании frontend-разработки и методической работе:
