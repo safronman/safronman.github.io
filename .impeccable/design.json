@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-15T00:00:00.000Z",
+  "generatedAt": "2026-07-24T00:00:00.000Z",
   "title": "Design System: Technical Educator Portfolio",
   "extensions": {
     "colorMeta": {
@@ -8,51 +8,54 @@
         "role": "primary",
         "displayName": "Studio Ink",
         "canonical": "#17141D",
-        "tonalRamp": ["#F1EFF4", "#625D69", "#17141D"]
+        "tonalRamp": ["#17141D", "#292631", "#3C3843", "#504B57", "#66606E", "#817A89", "#AAA4B1", "#F1EFF4"]
       },
       "surface": {
         "role": "neutral",
         "displayName": "Clear Surface",
         "canonical": "#F7F7FA",
-        "tonalRamp": ["#FFFFFF", "#F7F7FA", "#D8D5DE"]
-      },
-      "mineral-teal": {
-        "role": "secondary",
-        "displayName": "Mineral Teal",
-        "canonical": "#2B6A61",
-        "tonalRamp": ["#E4F1EE", "#78A79D", "#2B6A61"]
-      },
-      "teal-surface": {
-        "role": "secondary",
-        "displayName": "Teal Surface",
-        "canonical": "#245950",
-        "tonalRamp": ["#D8E9E4", "#5E9389", "#245950"]
+        "tonalRamp": ["#29282D", "#45434A", "#625F68", "#807D87", "#A09DA7", "#C1BFC7", "#DFDEE5", "#F7F7FA"]
       },
       "blue-signal": {
         "role": "primary",
         "displayName": "Signal Blue",
         "canonical": "#2D63E5",
-        "tonalRamp": ["#DBE5FF", "#79A0FF", "#2D63E5"]
+        "tonalRamp": ["#172651", "#1D3475", "#24439A", "#2D63E5", "#527EEA", "#7E9FF0", "#ADBEF6", "#DBE5FF"]
       },
       "muted": {
         "role": "neutral",
         "displayName": "Measured Muted",
         "canonical": "#625D69",
-        "tonalRamp": ["#D8D5DE", "#948E99", "#625D69"]
+        "tonalRamp": ["#29262D", "#39343E", "#4A4551", "#625D69", "#7D7785", "#9993A0", "#B8B3BD", "#D8D5DE"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Fine Divider",
+        "canonical": "#D8D5DE",
+        "tonalRamp": ["#36333B", "#55515A", "#746F79", "#928D98", "#AEAAB4", "#C7C4CC", "#D8D5DE", "#F1EFF4"]
+      },
+      "ink-on-dark": {
+        "role": "neutral",
+        "displayName": "Ink on Dark",
+        "canonical": "#F1EFF4",
+        "tonalRamp": ["#403D47", "#5B5663", "#77717F", "#948D9D", "#B0AAB9", "#CBC6D0", "#DFDCE4", "#F1EFF4"]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Hero claim only." },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero claim only."
+      },
       "headline": {
         "displayName": "Headline",
         "purpose": "Major section claims."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Readable proof and context."
+        "purpose": "Descriptions, teaching context, and contact copy."
       },
       "label": {
-        "displayName": "Technical Label",
+        "displayName": "Label",
         "purpose": "Compact metadata only."
       }
     },
@@ -61,12 +64,13 @@
       {
         "name": "state-transition",
         "value": "200ms cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Hover and focus feedback; content is visible without motion."
+        "purpose": "Hover and focus feedback; content stays visible without motion."
       }
     ],
     "breakpoints": [
       { "name": "compact", "value": "520px" },
-      { "name": "stacked", "value": "820px" }
+      { "name": "stacked", "value": "820px" },
+      { "name": "wide-navigation", "value": "960px" }
     ]
   },
   "components": [
@@ -74,25 +78,25 @@
       "name": "Primary Contact Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The singular action for starting a Telegram conversation.",
+      "description": "The single action for starting a Telegram conversation.",
       "html": "<a class=\"ds-btn-primary\" href=\"#contacts\">Написать в Telegram <span aria-hidden=\"true\">↗</span></a>",
-      "css": ".ds-btn-primary { display:inline-flex; gap:18px; align-items:center; background:#2D63E5; color:#fff; padding:16px 21px; border-radius:6px; font:650 15px/1 'Golos Text',Arial,sans-serif; text-decoration:none; transition:background 200ms cubic-bezier(.16,1,.3,1),transform 200ms cubic-bezier(.16,1,.3,1); } .ds-btn-primary:hover { background:#17141D; transform:translateY(-1px); } .ds-btn-primary:focus-visible { outline:2px solid #2D63E5; outline-offset:3px; }"
+      "css": ".ds-btn-primary { display:inline-flex; align-items:center; gap:20px; background:#2D63E5; color:#fff; padding:16px 21px; border-radius:6px; font:700 16px/1 'Golos Text',Arial,sans-serif; text-decoration:none; transition:background-color .2s cubic-bezier(.16,1,.3,1),transform .2s cubic-bezier(.16,1,.3,1); } .ds-btn-primary:hover { background:#F1EFF4; color:#17141D; transform:translateY(-1px); } .ds-btn-primary:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
     },
     {
       "name": "Proof Link",
       "kind": "button",
       "refersTo": "button-text",
-      "description": "Secondary link that leads to cases and their materials.",
-      "html": "<a class=\"ds-proof-link\" href=\"#projects\">Смотреть проекты <span aria-hidden=\"true\">↗</span></a>",
-      "css": ".ds-proof-link { color:#17141D; border-bottom:1px solid currentColor; padding-bottom:5px; font:650 15px/1 'Golos Text',Arial,sans-serif; text-decoration:none; } .ds-proof-link:hover { color:#2B6A61; } .ds-proof-link:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
+      "description": "A secondary route to inspect selected work and source materials.",
+      "html": "<a class=\"ds-proof-link\" href=\"#work\">Смотреть работы <span aria-hidden=\"true\">↓</span></a>",
+      "css": ".ds-proof-link { color:#17141D; padding-bottom:5px; border-bottom:1px solid currentColor; font:700 16px/1 'Golos Text',Arial,sans-serif; text-decoration:none; } .ds-proof-link:hover { color:#625D69; } .ds-proof-link:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
     },
     {
       "name": "Project Metadata Tag",
       "kind": "chip",
       "refersTo": "project-tag",
-      "description": "Compact technology or material metadata.",
-      "html": "<span class=\"ds-tag\">Видео-курс</span>",
-      "css": ".ds-tag { display:inline-block; border:1px solid #D8D5DE; color:#625D69; padding:4px 7px; border-radius:0; font:600 11px/1.2 'Golos Text',Arial,sans-serif; }"
+      "description": "Compact technology or material metadata with no decorative rounding.",
+      "html": "<span class=\"ds-tag\">Видеокурс</span>",
+      "css": ".ds-tag { display:inline-block; color:#625D69; border:1px solid #D8D5DE; padding:4px 7px; border-radius:0; font:600 12px/1.2 'Golos Text',Arial,sans-serif; letter-spacing:.08em; }"
     },
     {
       "name": "Project Proof Row",
@@ -100,52 +104,56 @@
       "refersTo": "project-list",
       "description": "A ruled, evidence-first project row without card elevation.",
       "html": "<article class=\"ds-project-row\"><p class=\"ds-project-kind\">Курс</p><h3>RTK Query: полный курс</h3><p>Программа, практика и видео для перехода от основ к production-сценариям.</p><a href=\"#\">Открыть материалы ↗</a></article>",
-      "css": ".ds-project-row { padding:32px 0; border-top:1px solid #D8D5DE; color:#17141D; font-family:'Golos Text',Arial,sans-serif; transition:background 200ms cubic-bezier(.16,1,.3,1); } .ds-project-row:hover { background:#E4F1EE; } .ds-project-row h3 { margin:8px 0 12px; font-size:28px; line-height:1.05; letter-spacing:-.03em; } .ds-project-row p { max-width:60ch; color:#625D69; line-height:1.5; } .ds-project-kind { color:#2B6A61 !important; font:600 11px/1.2 'Golos Text',Arial,sans-serif !important; letter-spacing:.08em; text-transform:uppercase; } .ds-project-row a { display:inline-block; margin-top:16px; color:#2D63E5; font-weight:650; text-decoration:none; } .ds-project-row a:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
+      "css": ".ds-project-row { padding:32px 0; border-top:1px solid #D8D5DE; color:#17141D; font-family:'Golos Text',Arial,sans-serif; } .ds-project-row h3 { margin:8px 0 12px; font-size:28px; line-height:1.05; letter-spacing:-.03em; } .ds-project-row p { max-width:60ch; color:#625D69; line-height:1.5; } .ds-project-kind { color:#625D69 !important; font:600 12px/1.2 'Golos Text',Arial,sans-serif !important; letter-spacing:.08em; text-transform:uppercase; } .ds-project-row a { display:inline-block; margin-top:16px; color:#17141D; border-bottom:1px solid currentColor; font-weight:650; text-decoration:none; } .ds-project-row a:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
     },
     {
       "name": "Hero Navigation",
       "kind": "nav",
       "refersTo": "navigation",
-      "description": "Quiet text navigation on a dark Hero surface.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Основная навигация\"><a href=\"#projects\">Проекты</a><a href=\"#contacts\">Контакты</a></nav>",
-      "css": ".ds-nav { display:flex; gap:24px; font:600 14px/1 'Golos Text',Arial,sans-serif; } .ds-nav a { color:#F1EFF4; text-decoration:none; text-underline-offset:5px; } .ds-nav a:hover { text-decoration:underline; } .ds-nav a:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
+      "description": "Restrained text navigation on the dark Hero surface.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Основная навигация\"><a href=\"#work\">Работы</a><a href=\"#contacts\">Контакты</a></nav>",
+      "css": ".ds-nav { display:flex; gap:24px; font:500 12px/1.3 'Golos Text',Arial,sans-serif; letter-spacing:-.01em; } .ds-nav a { color:#F1EFF4; min-height:44px; display:inline-flex; align-items:center; text-decoration:none; } .ds-nav a:hover { color:#F7F7FA; text-decoration:underline; text-underline-offset:5px; } .ds-nav a:focus-visible { outline:2px solid #2D63E5; outline-offset:4px; }"
     }
   ],
   "narrative": {
     "northStar": "Практическая рабочая среда",
-    "overview": "A proof-led technical educator portfolio built around a single dark-studio Hero photograph. Blue handles primary action, mineral teal provides limited orientation, and case materials do the persuasive work.",
+    "overview": "This portfolio should feel like a technically mature workspace in which evidence is ready to inspect: selected programmes, source material, videos, and presentations lead the conversation. The interface is direct, calm, and purposeful—never a school template or a decorative personal-brand collage.\n\nThe visual system begins with one editorially placed Hero photograph in a dark studio setting. A single blue action colour keeps the interface focused; the photo remains the only portrait on the page. Most content is carried by typography, measured spacing, and proof-oriented project lists.",
     "keyCharacteristics": [
-      "Evidence before contact",
-      "Flat structural surfaces",
-      "One photo only",
-      "Blue for action, mineral teal for orientation"
+      "Dark Hero, light reading surfaces, and high-contrast technical structure.",
+      "Blue is reserved for actions and keyboard focus.",
+      "Flat surfaces and precise dividers replace decorative depth.",
+      "Case studies and material links are the central proof mechanism."
     ],
     "rules": [
       {
         "name": "The Single-Signal Rule",
-        "body": "Blue invites action; mineral teal provides orientation. Never combine them in a gradient, glow, or competing pair of buttons.",
+        "body": "Blue invites action and keyboard focus. Links use the surrounding ink colour with an underline; never add a second accent colour, gradients, or glows.",
         "section": "colors"
       },
       {
         "name": "The Evidence-First Rule",
-        "body": "Every headline claim should sit near inspectable proof.",
+        "body": "Headings make a specific claim; nearby supporting copy or a linked artefact must make that claim inspectable.",
         "section": "typography"
       },
       {
         "name": "The Flat-by-Default Rule",
-        "body": "Depth comes from surface changes and dividers, not decorative shadows.",
+        "body": "Depth comes from switching between Studio Ink and Clear Surface, plus one-pixel dividers—not from floating cards or ambient shadows.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Use #2D63E5 for the single primary CTA.",
-      "Use #2B6A61 for supporting orientation, including icons, metadata, and hover states.",
-      "Make project material links easy to inspect."
+      "Do use Studio Ink (`#17141D`) for the Hero and major confidence-building sections.",
+      "Do reserve Signal Blue (`#2D63E5`) for the primary CTA and keyboard focus.",
+      "Do use the surrounding ink colour and underlines for links, icons, and metadata.",
+      "Do make videos, presentations, and project links easy to inspect before asking for contact.",
+      "Do preserve readable contrast, balanced headings, and reduced-motion alternatives."
     ],
     "donts": [
-      "Don't use competing blue-and-teal decoration, neon glows, or glass surfaces.",
-      "Don't use childlike classroom styling or collage layouts.",
-      "Don't add a second portrait outside the Hero."
+      "Don't use gradients, neon glows, glass surfaces, or competing accent colours; this palette must not read as generic AI-tech styling.",
+      "Don't use childlike palettes, playful classroom typography, scrapbook/CV collages, oversized decorative illustration, or visual noise.",
+      "Don't turn project proof into a grid of identical icon cards.",
+      "Don't use large rounded cards, coloured side stripes, or border-plus-soft-shadow treatments.",
+      "Don't add a second portrait to the contact block or reduce the positioning to frontend alone."
     ]
   }
 }
