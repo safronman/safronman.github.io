@@ -45,16 +45,19 @@
   width: 64px;
   height: 64px;
   place-items: center;
-  padding-left: 3px;
-  border: 1px solid rgba(247, 247, 250, 0.7);
   border-radius: 50%;
-  color: var(--paper);
-  font-size: 1.25rem;
-  line-height: 1;
+  color: #fff;
+  background: var(--signal);
   transition:
     background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
     color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.play svg {
+  width: 38%;
+  height: 38%;
+  margin-left: 3px;
 }
 
 .preview:hover::after {
@@ -62,8 +65,6 @@
 }
 
 .preview:hover .play {
-  background: var(--paper);
-  color: var(--ink);
   transform: scale(1.06);
 }
 
@@ -93,6 +94,5 @@
   .play {
     width: 56px;
     height: 56px;
-    font-size: 1rem;
   }
 }

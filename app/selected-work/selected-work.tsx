@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PlayIcon from "@/app/play-icon/play-icon";
 import s from "./selected-work.module.css";
 
 type Work = {
@@ -11,6 +12,7 @@ type Work = {
   title: string;
   type: string;
   url: string;
+  isVideo?: boolean;
 };
 
 type AdditionalMaterial = {
@@ -18,6 +20,7 @@ type AdditionalMaterial = {
   image: string;
   title: string;
   url: string;
+  isVideo?: boolean;
 };
 
 const selectedWork: readonly Work[] = [
@@ -35,6 +38,7 @@ const selectedWork: readonly Work[] = [
         url: "https://it-incubator.io/react/ru/react-middle-senior-tutorials/rtk-query-musicfun-free-course/1-application-setup-queries-mutations?s=C248EC",
       },
     ],
+    isVideo: true,
     title: "RTK Query: полный курс",
     type: "Видеокурс",
     url: "https://youtu.be/5qtCsfMytuk?si=YXT7klLij9eOLKyJ",
@@ -49,6 +53,7 @@ const selectedWork: readonly Work[] = [
         url: "https://youtu.be/4YF06mvcJ4k",
       },
     ],
+    isVideo: true,
     title: "Преподавание: фрагмент занятия",
     type: "Занятие с группой",
     url: "https://youtu.be/Rf3OgZd4trk",
@@ -119,6 +124,7 @@ const additionalMaterialGroups: readonly {
         description:
           "Видео-кейс о различиях HTTP, polling, SSE и WebSocket: техническая систематизация и motion design.",
         image: "/presentation/presentation-realtime-cover.png",
+        isVideo: true,
         title: "Real-Time: HTTP, Polling, SSE и WebSocket",
         url: "https://youtu.be/pO7CYYoHO6o",
       },
@@ -164,6 +170,11 @@ export default function SelectedWork() {
                 sizes="(max-width: 760px) 100vw, 50vw"
                 src={item.image}
               />
+              {item.isVideo && (
+                <span aria-hidden="true" className={s.coverPlay}>
+                  <PlayIcon />
+                </span>
+              )}
               <span aria-hidden="true" className={s.coverAction}>
                 Открыть ↗
               </span>
@@ -209,6 +220,11 @@ export default function SelectedWork() {
                         sizes="(max-width: 520px) 112px, 136px"
                         src={item.image}
                       />
+                      {item.isVideo && (
+                        <span aria-hidden="true" className={s.materialPlay}>
+                          <PlayIcon />
+                        </span>
+                      )}
                     </a>
                     <div>
                       <h5>{item.title}</h5>

@@ -71,6 +71,33 @@
   transition: background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.coverPlay,
+.materialPlay {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--signal);
+  pointer-events: none;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.coverPlay {
+  top: 50%;
+  left: 50%;
+  width: clamp(48px, 5vw, 64px);
+  height: clamp(48px, 5vw, 64px);
+  transform: translate(-50%, -50%);
+}
+
+.coverPlay svg {
+  width: 38%;
+  height: 38%;
+  margin-left: 3px;
+}
+
 .coverAction {
   position: absolute;
   z-index: 1;
@@ -88,6 +115,10 @@
 
 .coverLink:hover img {
   transform: scale(1.025);
+}
+
+.coverLink:hover .coverPlay {
+  transform: translate(-50%, -50%) scale(1.06);
 }
 
 .content {
@@ -204,6 +235,24 @@
   transform: scale(1.035);
 }
 
+.materialPlay {
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  transform: translate(-50%, -50%);
+}
+
+.materialPlay svg {
+  width: 42%;
+  height: 42%;
+  margin-left: 2px;
+}
+
+.materialCover:hover .materialPlay {
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
 .materialGroup li > div > p {
   margin-top: 6px;
   color: var(--muted-on-dark);
@@ -269,6 +318,11 @@
   }
 
   .materialCover img {
+    transition: none;
+  }
+
+  .coverPlay,
+  .materialPlay {
     transition: none;
   }
 }

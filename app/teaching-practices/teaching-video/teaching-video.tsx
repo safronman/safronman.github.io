@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import PlayIcon from "@/app/play-icon/play-icon";
 import s from "./teaching-video.module.css";
 
 const videoUrl = "https://youtu.be/enwgDI-we_U";
@@ -37,7 +38,7 @@ export default function TeachingVideo() {
               src="/video/video-auth-cover.png"
             />
             <span aria-hidden="true" className={s.play}>
-              ▶
+              <PlayIcon />
             </span>
           </button>
         )}
