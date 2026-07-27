@@ -35,7 +35,7 @@ export default function TeachingVideo() {
               fill
               priority={false}
               sizes="(max-width: 820px) 100vw, 50vw"
-              src="/video/video-auth-use-cover.png"
+              src="/video/video-lesson-auth-cover.png"
             />
             <span aria-hidden="true" className={s.play}>
               <PlayIcon />
