@@ -166,7 +166,7 @@ export default function SelectedWork() {
               target="_blank"
             >
               <Image
-                alt={`Обложка работы «${item.title}»`}
+                alt=""
                 fill
                 sizes="(max-width: 760px) 100vw, 50vw"
                 src={item.image}
@@ -216,7 +216,7 @@ export default function SelectedWork() {
                       target="_blank"
                     >
                       <Image
-                        alt={`Обложка материала «${item.title}»`}
+                        alt=""
                         fill
                         sizes="(max-width: 520px) 112px, 136px"
                         src={item.image}

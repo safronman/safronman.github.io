@@ -25,13 +25,13 @@ export default function TeachingVideo() {
           />
         ) : (
           <button
-            aria-label="Воспроизвести фрагмент занятия на YouTube"
+            aria-label="Воспроизвести фрагмент практического занятия «Auth. Работа с useEffect» на YouTube"
             className={s.preview}
             onClick={() => setIsPlaying(true)}
             type="button"
           >
             <Image
-              alt="Обложка фрагмента занятия"
+              alt=""
               fill
               priority={false}
               sizes="(max-width: 820px) 100vw, 50vw"

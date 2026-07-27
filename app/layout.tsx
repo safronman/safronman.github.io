@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/hero-portrait.png",
-        alt: "Technical Educator за рабочим столом в студии",
+        alt: "Валерий Сафронов за рабочим столом в студии",
       },
     ],
   },
@@ -65,7 +65,12 @@ export const metadata: Metadata = {
     card: "summary",
     title,
     description,
-    images: ["/hero-portrait.png"],
+    images: [
+      {
+        url: "/hero-portrait.png",
+        alt: "Валерий Сафронов за рабочим столом в студии",
+      },
+    ],
   },
 };
 

@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
         <figure className={s.portrait}>
           <Image
-            alt="Technical Educator за рабочим столом в студии с книгами и техническим оборудованием"
+            alt="Валерий Сафронов за рабочим столом с клавиатурой; на заднем плане книжные полки"
             fill
             priority
             sizes="(max-width: 820px) 100vw, 38vw"
