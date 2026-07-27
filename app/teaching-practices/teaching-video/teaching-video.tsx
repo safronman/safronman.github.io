@@ -31,7 +31,7 @@ export default function TeachingVideo() {
             type="button"
           >
             <Image
-              alt=""
+              alt="Валерий Сафронов за ноутбуком на обложке практического занятия по Auth и useEffect"
               fill
               priority={false}
               sizes="(max-width: 820px) 100vw, 50vw"

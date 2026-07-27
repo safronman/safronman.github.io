@@ -5,6 +5,7 @@ import s from "./selected-work.module.css";
 type Work = {
   description: string;
   image: string;
+  imageAlt?: string;
   links: readonly {
     label: string;
     url: string;
@@ -18,6 +19,7 @@ type Work = {
 type AdditionalMaterial = {
   description: string;
   image: string;
+  imageAlt?: string;
   title: string;
   url: string;
   isVideo?: boolean;
@@ -28,6 +30,7 @@ const selectedWork: readonly Work[] = [
     description:
       "Превращаю сложную техническую тему в цельный учебный продукт: от программы и практики до видеоуроков и методических материалов.",
     image: "/rtk-query-course-cover.png",
+    imageAlt: "Валерий Сафронов на обложке видеокурса RTK Query",
     links: [
       {
         label: "Смотреть курс",
@@ -47,6 +50,8 @@ const selectedWork: readonly Work[] = [
     description:
       "Помогаю студентам не просто слушать, а разбираться и применять знания — через вопросы, практические задачи и подробную обратную связь.",
     image: "/video/video-thunk-cover.png",
+    imageAlt:
+      "Валерий Сафронов в наушниках на обложке практического занятия по Thunk",
     links: [
       {
         label: "Смотреть фрагмент занятия",
@@ -98,6 +103,7 @@ const additionalMaterialGroups: readonly {
         description:
           "Плейлист о настройке Git, SSH-ключах и практиках, с которых начинается уверенная работа разработчика в команде.",
         image: "/git-course-cover.jpg",
+        imageAlt: "Валерий Сафронов на обложке курса по Git",
         isVideo: true,
         title: "Git: введение и базовый рабочий процесс",
         url: "https://youtu.be/BMo29Gkx8K0?si=6yh2OJcZP3vrtkw7",
@@ -106,6 +112,8 @@ const additionalMaterialGroups: readonly {
         description:
           "Курс о переиспользуемых компонентах, Portal, Radix UI и Storybook — от API до изолированной разработки.",
         image: "/modal-createportal-radix-ui-storybook-cover.png",
+        imageAlt:
+          "Валерий Сафронов на обложке курса Modern UI Development",
         title: "Современная разработка компонентов",
         url: "https://it-incubator.io/react/ru/react-middle-senior-tutorials/modal-createportal-radix-ui-storybook/modal?s=C248EC",
       },
@@ -113,6 +121,8 @@ const additionalMaterialGroups: readonly {
         description:
           "Практический интенсив по React: от структуры приложения и роутинга до запросов к серверу, хуков и динамических страниц.",
         image: "/video/video-rick-morty-cover.jpg",
+        imageAlt:
+          "Валерий Сафронов на обложке интенсива по React JS",
         title: "Пятидневный интенсив по React JS",
         url: "https://it-incubator.io/react/ru/reactjs-crash-course?s=C248EC",
       },
@@ -166,7 +176,7 @@ export default function SelectedWork() {
               target="_blank"
             >
               <Image
-                alt=""
+                alt={item.imageAlt ?? ""}
                 fill
                 sizes="(max-width: 760px) 100vw, 50vw"
                 src={item.image}
@@ -216,7 +226,7 @@ export default function SelectedWork() {
                       target="_blank"
                     >
                       <Image
-                        alt=""
+                        alt={item.imageAlt ?? ""}
                         fill
                         sizes="(max-width: 520px) 112px, 136px"
                         src={item.image}
