@@ -162,7 +162,7 @@ export default function SelectedWork() {
   return (
     <section className={s.work} id="work">
       <div className={s.intro}>
-        <h2>Работы и материалы</h2>
+        <h2>Материалы</h2>
       </div>
 
       <div className={s.grid}>

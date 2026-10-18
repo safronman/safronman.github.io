@@ -6,7 +6,7 @@ import s from "./header.module.css";
 
 const navigationItems = [
   ["Разработка", "experience"],
-  ["Работы", "work"],
+  ["Материалы", "work"],
   ["Подход", "approach"],
   ["Преподавание", "teaching"],
   ["Экспертиза", "expertise"],

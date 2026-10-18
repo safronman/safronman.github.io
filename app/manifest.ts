@@ -4,9 +4,10 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Technical Educator — Frontend-направление",
-    short_name: "Technical Educator",
-    description: "Портфолио технического эксперта по обучению.",
+    name: "Валерий Сафронов — Senior Frontend Developer, преподаватель и руководитель обучения",
+    short_name: "Валерий Сафронов",
+    description:
+      "Портфолио Валерия Сафронова: frontend-разработка, преподавание и руководство обучением.",
     start_url: "/",
     display: "standalone",
     background_color: "#f7f7fa",

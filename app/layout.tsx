@@ -10,15 +10,17 @@ const golosText = localFont({
 });
 
 const name = "Валерий Сафронов";
-const title = "Валерий Сафронов — Technical Educator по frontend-разработке";
+const jobTitle =
+  "Senior Frontend Developer, преподаватель и руководитель обучения";
+const title = `${name} — ${jobTitle}`;
 const description =
-  "Портфолио Валерия Сафронова — технического эксперта по обучению frontend-разработке.";
+  "Валерий Сафронов — Senior Frontend Developer, преподаватель и руководитель обучения. Опыт разработки веб-платформ, менторство и авторские учебные материалы.";
 
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name,
-  jobTitle: "Technical Educator",
+  jobTitle,
   description,
   url: siteUrl.toString(),
   image: new URL("/hero-portrait.png", siteUrl).toString(),
@@ -29,11 +31,14 @@ export const metadata: Metadata = {
   metadataBase: siteUrl,
   title,
   description,
-  applicationName: "Валерий Сафронов — Technical Educator",
+  applicationName: title,
   authors: [{ name, url: siteUrl }],
   creator: name,
   keywords: [
+    "Senior Frontend Developer",
+    "frontend-разработчик",
     "технический преподаватель",
+    "руководитель обучения",
     "frontend",
     "обучение разработке",
     "портфолио",
@@ -51,7 +56,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ru_RU",
     url: "/",
-    siteName: "Валерий Сафронов — Technical Educator",
+    siteName: title,
     title,
     description,
     images: [
