@@ -1,4 +1,4 @@
-import { ArrowUpRight, CodeXml, Mail, Send } from "lucide-react";
+import { ArrowUpRight, CodeXml, Mail, Send, UserRound } from "lucide-react";
 import s from "./contact.module.css";
 
 export default function Contact() {
@@ -38,6 +38,19 @@ export default function Contact() {
               </span>
               <a
                 href="https://github.com/safronman"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @safronman <ArrowUpRight aria-hidden="true" strokeWidth={1.8} />
+              </a>
+            </div>
+            <div className={s.linkRow}>
+              <span className={s.channel}>
+                <UserRound aria-hidden="true" strokeWidth={1.7} />
+                LinkedIn
+              </span>
+              <a
+                href="https://www.linkedin.com/in/safronman/"
                 target="_blank"
                 rel="noreferrer"
               >
