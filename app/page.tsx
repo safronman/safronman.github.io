@@ -6,6 +6,7 @@ import s from "./page.module.css";
 import SelectedWork from "./selected-work/selected-work";
 import TeachingPractices from "./teaching-practices/teaching-practices";
 import TechnicalFoundation from "./technical-foundation/technical-foundation";
+import WorkExperience from "./work-experience/work-experience";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <main id="main-content" tabIndex={-1}>
         <Hero />
+        <WorkExperience />
         <SelectedWork />
         <LearningApproach />
         <TeachingPractices />

@@ -1,0 +1,117 @@
+.experience {
+  padding: clamp(80px, 12vw, 160px) clamp(22px, 5vw, 82px);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.inner {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.5fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+
+.intro h2 {
+  font-size: clamp(2.375rem, 4.8vw, 4.5rem);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.intro > p {
+  max-width: 56ch;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.employment {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.5fr);
+  gap: clamp(32px, 6vw, 96px);
+  margin-top: clamp(48px, 7vw, 88px);
+  border-top: 1px solid var(--line);
+}
+
+.company {
+  padding-top: 32px;
+}
+
+.company h3 {
+  font-size: clamp(1.5rem, 2.25vw, 1.875rem);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.company > p {
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.company .tenure,
+.company .location {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.project {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.period {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project h4 {
+  max-width: 28ch;
+  margin-top: 12px;
+  font-size: clamp(1.5rem, 2.15vw, 1.875rem);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.description {
+  max-width: 68ch;
+  margin-top: 16px;
+  color: var(--muted);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.contributions {
+  display: grid;
+  gap: 12px;
+  max-width: 68ch;
+  margin-top: 24px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.contributions li {
+  padding-left: 4px;
+}
+
+@media (max-width: 760px) {
+  .intro,
+  .employment {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project:first-child {
+    border-top: 1px solid var(--line);
+  }
+}

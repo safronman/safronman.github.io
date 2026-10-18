@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import s from "./header.module.css";
 
 const navigationItems = [
+  ["Разработка", "experience"],
   ["Работы", "work"],
   ["Подход", "approach"],
   ["Преподавание", "teaching"],
